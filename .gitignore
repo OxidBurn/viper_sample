@@ -1,0 +1,13 @@
+#Cocoapods
+pod/Pods
+pod/Podfile.lock
+
+#Generamba
+pod/Templates
+pod/ViperSampleProject.xcworkspace
+
+#Project files
+.xcscheme
+project.xcworkspace/
+xcuserdata/
+project.pbxproj

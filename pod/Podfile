@@ -1,0 +1,12 @@
+project '../prj/ViperSampleProject.xcodeproj'
+
+platform :ios, '10.0'
+
+inhibit_all_warnings!
+
+target "ViperSampleProject" do
+  pod 'Typhoon'
+  pod "OCMock"
+  pod "RamblerTyphoonUtils"
+  pod "ViperMcFlurry"
+end
