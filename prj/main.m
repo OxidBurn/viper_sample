@@ -7,10 +7,21 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "AppDelegate.h"
+#import "InitialAppDelegate.h"
+#import "ActivityAppDelegate.h"
+#import <RamblerAppDelegateProxy.h>
 
 int main(int argc, char * argv[]) {
     @autoreleasepool {
-        return UIApplicationMain(argc, argv, nil, NSStringFromClass([AppDelegate class]));
+        
+        /**
+         @author Nikolay Chaban
+         
+         App delegates dependency injection
+         */
+        [[RamblerAppDelegateProxy injector] addAppDelegates: @[[InitialAppDelegate new],
+                                                               [ActivityAppDelegate new]]];
+        
+        return UIApplicationMain(argc, argv, nil, NSStringFromClass([RamblerAppDelegateProxy class]));
     }
 }

@@ -4,9 +4,11 @@ platform :ios, '10.0'
 
 inhibit_all_warnings!
 
-target "ViperSampleProject" do
+target 'ViperSampleProject' do
   pod 'Typhoon'
-  pod "OCMock"
-  pod "RamblerTyphoonUtils"
-  pod "ViperMcFlurry"
+  pod 'OCMock'
+  pod 'RamblerTyphoonUtils'
+  pod 'ViperMcFlurry'
+  pod 'RamblerAppDelegateProxy'
+  pod 'RamblerSegues'
 end
