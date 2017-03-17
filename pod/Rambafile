@@ -1,23 +1,30 @@
 ### Headers settings
-company: OBDS
+company: OnSight
 
 ### Xcode project settings
 project_name: ViperSampleProject
 xcodeproj_path: ../prj/ViperSampleProject.xcodeproj
+prefix: OS
 
 ### Code generation settings section
 # The main project target name
 project_target: ViperSampleProject
+
+# The file path for new modules
+project_file_path: ../src/Modules/
+
+# The Xcode group path to new modules
+project_group_path: Source/Modules/
 
 ### Tests generation settings section
 # The tests target name
 test_target: ViperSampleProject
 
 # The file path for new tests
-test_file_path: ../src/Tests/
+test_file_path: ../tests/Modules/
 
 # The Xcode group path to new tests
-test_group_path: Tests/Modules
+test_group_path: Tests/Modules/
 
 ### Dependencies settings section
 podfile_path: Podfile
@@ -27,3 +34,4 @@ templates:
 - {name: rviper_controller}
 - {name: mvvm_controller}
 - {name: swifty_viper}
+- {name: onsight_viper_controller, git: 'https://bitbucket.org/onsightukraine/onsight_viper_controller'}

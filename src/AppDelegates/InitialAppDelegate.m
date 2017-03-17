@@ -8,6 +8,12 @@
 
 #import "InitialAppDelegate.h"
 
+// Frameworks
+#import <RamblerTyphoonUtils/AssemblyCollector.h>
+
+// Classes
+#import "LoginModuleAssembly.h"
+
 @implementation InitialAppDelegate
 
 - (BOOL)           application: (UIApplication*) application
@@ -15,6 +21,16 @@
 {
     // Override point for customization after application launch.
     return YES;
+}
+
+
+#pragma mark - Assembly initialization -
+
+- (NSArray*) initialAssemblies
+{
+    RamblerInitialAssemblyCollector* collector = [RamblerInitialAssemblyCollector new];
+    
+    return [collector collectInitialAssemblyClasses];
 }
 
 @end
