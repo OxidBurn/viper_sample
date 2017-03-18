@@ -14,7 +14,7 @@ project_target: ViperSampleProject
 project_file_path: ../src/Modules/
 
 # The Xcode group path to new modules
-project_group_path: Source/Modules/
+project_group_path: Sources/Modules/
 
 ### Tests generation settings section
 # The tests target name
