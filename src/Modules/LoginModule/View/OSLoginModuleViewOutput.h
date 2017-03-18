@@ -19,4 +19,28 @@
  */
 - (void) didTriggerViewReadyEvent;
 
+
+/**
+ @author Chaban Nikolay
+ 
+ Method for setuping all view parameters, when controller view is loaded
+ */
+- (void) setupView;
+
+
+/**
+ @author Chaban Nikolay
+ 
+ Send request to the server with login info
+ */
+- (void) sendLoginRequest;
+
+
+/**
+ @author Chaban Nikolay
+ 
+ Show Register screen
+ */
+- (void) instantiateRegisterButtonClicked;
+
 @end

@@ -17,6 +17,14 @@
 #import "OSLoginModulePresenter.h"
 #import "OSLoginModuleRouter.h"
 
+#import "OSRegisterModuleAssembly.h"
+
+@interface OSLoginModuleAssembly()
+
+@property (strong, nonatomic, readonly) OSRegisterModuleAssembly* registerModuleAssembly;
+
+@end
+
 
 @implementation OSLoginModuleAssembly
 
@@ -69,6 +77,13 @@
                           
                               [definition injectProperty: @selector(transitionHandler)
                                                     with: [self viewLoginModule]];
+                              /**
+                               @author Nikolay Chaban
+                               
+                               Set register module factory property for transition to the Register module 
+                               */
+                              [definition injectProperty: @selector(registerModuleFactory)
+                                                    with: [self.registerModuleAssembly factoryRegisterModule]];
                                                     
                           }];
 }

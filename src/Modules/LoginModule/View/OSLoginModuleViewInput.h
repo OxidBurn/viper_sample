@@ -9,6 +9,8 @@
 // Frameworks
 @import Foundation;
 
+typedef void (^LoginModuleViewLoginDataResultBlock)(NSString* login, NSString* password);
+
 // Protocols
 @protocol OSLoginModuleViewInput <NSObject>
 
@@ -18,5 +20,15 @@
  Method for setup initial state of view
  */
 - (void) setupInitialState;
+
+
+/**
+ @author Nikolay Chaban
+ 
+ Method with returning login info data for request to server, login string and password string
+
+ @param resultBlock block with string login info
+ */
+- (void) getDataWithResultBlock: (LoginModuleViewLoginDataResultBlock) resultBlock;
 
 @end

@@ -34,5 +34,31 @@
 
 #pragma mark - Methods OSLoginModuleInteractorOutput -
 
+- (void) setupView
+{
+    
+}
+
+- (void) sendLoginRequest
+{
+    __weak typeof(self) blockSelf = self;
+    
+    [self.view getDataWithResultBlock: ^(NSString *login, NSString *password) {
+        
+        typeof(self) sself = blockSelf;
+        
+        /**
+         @author Nikolay Chaban
+         
+         Call method for opening User info screen
+         */
+        NSLog(@"Login: %@ password: %@", login, password);
+    }];
+}
+
+- (void) instantiateRegisterButtonClicked
+{
+    [self.router openRegisterModule];
+}
 
 @end

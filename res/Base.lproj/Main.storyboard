@@ -4,6 +4,7 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -11,7 +12,7 @@
         <!--Login Module View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="LoginModuleViewController" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="OSLoginModuleViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -40,12 +41,18 @@
                                 <rect key="frame" x="168" y="366" width="38" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Login"/>
+                                <connections>
+                                    <action selector="didClickLoginButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fyG-RR-VNA"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KkT-B4-nQ7">
                                 <rect key="frame" x="145.5" y="582" width="83" height="30"/>
                                 <state key="normal" title="Registration">
                                     <color key="titleColor" red="0.28320129286703333" green="0.64669689119170992" blue="0.28134237017712871" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="didClickRegisterButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="n0T-XD-aXf"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login Screen" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N6o-bN-mHR">
                                 <rect key="frame" x="122.5" y="131" width="130" height="21"/>
@@ -74,6 +81,8 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="loginTextField" destination="0ii-hl-gwX" id="FfN-CP-DUZ"/>
+                        <outlet property="passTextField" destination="lxL-cq-Qyg" id="HER-KW-7m3"/>
                         <segue destination="6v7-5D-QpE" kind="show" identifier="ShowRegistrationScreenSegue" id="Mry-Gm-YZL"/>
                         <segue destination="Jgu-BV-V9g" kind="show" identifier="ShowUserInfoScreenSegue" id="x8x-Tb-Nkv"/>
                     </connections>
@@ -145,10 +154,10 @@
             </objects>
             <point key="canvasLocation" x="1109.5999999999999" y="555.47226386806597"/>
         </scene>
-        <!--View Controller-->
+        <!--Register Module View Controller-->
         <scene sceneID="Yw1-pY-Dej">
             <objects>
-                <viewController id="6v7-5D-QpE" sceneMemberID="viewController">
+                <viewController restorationIdentifier="OSRegisterModuleViewController" storyboardIdentifier="OSRegisterModuleViewController" id="6v7-5D-QpE" customClass="OSRegisterModuleViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Wvf-B8-pSY"/>
                         <viewControllerLayoutGuide type="bottom" id="oMu-tU-vTR"/>

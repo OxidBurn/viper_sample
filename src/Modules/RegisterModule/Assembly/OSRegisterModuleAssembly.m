@@ -21,6 +21,41 @@
 @implementation OSRegisterModuleAssembly
 
 
+#pragma mark - Module factory -
+
+- (id<RamblerViperModuleFactoryProtocol>) factoryRegisterModule
+{
+    return [TyphoonDefinition withClass: [RamblerViperModuleFactory class]
+                          configuration: ^(TyphoonDefinition* definition) {
+                              
+                              [definition useInitializer: @selector(initWithStoryboard:andRestorationId:)
+                                              parameters: ^(TyphoonMethod *initializer) {
+                                  
+                                                  [initializer injectParameterWith: [self storyboardRegisterModule]];
+                                                  [initializer injectParameterWith: @"OSRegisterModuleViewController"];
+                              }];
+                              
+                          }];
+}
+
+- (UIStoryboard*) storyboardRegisterModule
+{
+    return [TyphoonDefinition withClass: [TyphoonStoryboard class]
+                          configuration: ^(TyphoonDefinition *definition) {
+                              
+                              [definition useInitializer: @selector(storyboardWithName:factory:bundle:)
+                                              parameters: ^(TyphoonMethod *initializer) {
+                                                  
+                                                  [initializer injectParameterWith: @"Main"];
+                                                  [initializer injectParameterWith: self];
+                                                  [initializer injectParameterWith: nil];
+                                                  
+                                              }];
+                              
+                          }];
+}
+
+
 #pragma mark - Initialization methods -
 
 - (OSRegisterModuleViewController*) viewRegisterModule 

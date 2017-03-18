@@ -6,6 +6,8 @@
 //  Copyright © 2017 OnSight. All rights reserved.
 //
 
+#import <ViperMcFlurry/ViperMcFlurry.h>
+
 // Classes
 #import "OSLoginModuleRouterInput.h"
 
@@ -15,5 +17,7 @@
 @interface OSLoginModuleRouter : NSObject <OSLoginModuleRouterInput>
 
 @property (nonatomic, weak) id<RamblerViperModuleTransitionHandlerProtocol> transitionHandler;
+
+@property (strong, nonatomic) id<RamblerViperModuleFactoryProtocol> registerModuleFactory;
 
 @end
