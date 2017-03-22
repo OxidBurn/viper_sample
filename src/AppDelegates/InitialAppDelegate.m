@@ -22,13 +22,4 @@
 }
 
 
-#pragma mark - Assembly initialization -
-
-- (NSArray*) initialAssemblies
-{
-    RamblerInitialAssemblyCollector* collector = [RamblerInitialAssemblyCollector new];
-    
-    return [collector collectInitialAssemblyClasses];
-}
-
 @end

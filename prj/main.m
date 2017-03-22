@@ -6,10 +6,14 @@
 //  Copyright © 2016 Nikolay Chaban. All rights reserved.
 //
 
+// Frameworks
 #import <UIKit/UIKit.h>
+#import <RamblerAppDelegateProxy.h>
+
+// Classes
 #import "InitialAppDelegate.h"
 #import "ActivityAppDelegate.h"
-#import <RamblerAppDelegateProxy.h>
+#import "TyphoonAppDelegate.h"
 
 int main(int argc, char * argv[]) {
     @autoreleasepool {
@@ -21,6 +25,8 @@ int main(int argc, char * argv[]) {
          */
         [[RamblerAppDelegateProxy injector] addAppDelegates: @[[InitialAppDelegate new],
                                                                [ActivityAppDelegate new]]];
+        
+        [[RamblerAppDelegateProxy injector] setDefaultAppDelegate: [TyphoonAppDelegate new]];
         
         return UIApplicationMain(argc, argv, nil, NSStringFromClass([RamblerAppDelegateProxy class]));
     }
