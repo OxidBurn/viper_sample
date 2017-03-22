@@ -66,6 +66,27 @@
         resultBlock(self.loginTextField.text, self.passTextField.text);
 }
 
+
+#pragma mark - Mehtods OSLoginModuleViewOutput -
+
+- (void) showLoginSuccessMessage
+{
+    /**
+     @author Nikolay Chaban
+     
+     For now showing success alert
+     Then need to re-write for showing user info screen
+     */
+    [self displayAlertWithTitle: @"Success"
+                     andMessage: @"Login successful!"];
+}
+
+- (void) showErrorWithLogin: (NSError*) error
+{
+    [self displayAlertWithTitle: @"Error"
+                     andMessage: error.localizedFailureReason];
+}
+
 #pragma mark - Actions -
 
 - (IBAction) didClickLoginButton: (UIButton*) sender
@@ -78,6 +99,28 @@
 - (IBAction) didClickRegisterButton: (UIButton*) sender
 {
     [self.output instantiateRegisterButtonClicked];
+}
+
+
+#pragma mark - Internal methods -
+
+//TODO: method need move to alert view factory
+- (void) displayAlertWithTitle: (NSString*) title
+                    andMessage: (NSString*) message
+{
+    UIAlertController* alertController = [UIAlertController alertControllerWithTitle: title
+                                                                             message: message
+                                                                      preferredStyle: UIAlertControllerStyleAlert];
+    
+    UIAlertAction* closeAction = [UIAlertAction actionWithTitle: @"Ok"
+                                                          style: UIAlertActionStyleDefault
+                                                        handler: ^(UIAlertAction * _Nonnull action) {}];
+    
+    [alertController addAction: closeAction];
+    
+    [self presentViewController: alertController
+                       animated: YES
+                     completion: nil];
 }
 
 @end

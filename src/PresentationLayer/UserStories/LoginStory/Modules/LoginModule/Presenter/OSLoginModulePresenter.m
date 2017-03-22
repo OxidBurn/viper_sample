@@ -31,14 +31,6 @@
 	[self.view setupInitialState];
 }
 
-
-#pragma mark - Methods OSLoginModuleInteractorOutput -
-
-- (void) setupView
-{
-    
-}
-
 - (void) sendLoginRequest
 {
     __weak typeof(self) blockSelf = self;
@@ -52,13 +44,32 @@
          
          Call method for opening User info screen
          */
-        NSLog(@"Login: %@ password: %@", login, password);
+        [sself.interactor loginUserToServerWithName: login
+                                       withPassword: password];
     }];
+}
+
+
+#pragma mark - Methods OSLoginModuleInteractorOutput -
+
+- (void) setupView
+{
+    
 }
 
 - (void) instantiateRegisterButtonClicked
 {
     [self.router openRegisterModule];
+}
+
+- (void) didLoggingUserToServerWithError: (NSError*) error
+{
+    [self.view showErrorWithLogin: error];
+}
+
+- (void) didLoggingUserToServerWithSuccess
+{
+    [self.view showLoginSuccessMessage];
 }
 
 @end

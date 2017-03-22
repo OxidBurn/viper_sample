@@ -16,6 +16,7 @@
 #import "OSLoginModuleInteractor.h"
 #import "OSLoginModulePresenter.h"
 #import "OSLoginModuleRouter.h"
+#import "ServiceComponents.h"
 
 #import "OSRegisterModuleAssembly.h"
 
@@ -51,6 +52,13 @@
                           
                               [definition injectProperty: @selector(output)
                                                     with: [self presenterLoginModule]];
+                              /**
+                               @author Nikolay Chaban
+                               
+                               Setup login service input protocol for processing login methods
+                               */
+                              [definition injectProperty: @selector(loginService)
+                                                    with: [self.serviceComponents loginService]];
                                                     
                           }];
 }

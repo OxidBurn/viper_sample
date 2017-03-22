@@ -11,9 +11,11 @@
 
 // Protocols
 @protocol OSLoginModuleInteractorOutput;
+@protocol LoginService;
 
 @interface OSLoginModuleInteractor : NSObject <OSLoginModuleInteractorInput>
 
 @property (nonatomic, weak) id<OSLoginModuleInteractorOutput> output;
+@property (strong, nonatomic) id<LoginService> loginService;
 
 @end

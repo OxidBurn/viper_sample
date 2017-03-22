@@ -11,4 +11,9 @@
 
 @protocol OSLoginModuleInteractorOutput <NSObject>
 
+
+- (void) didLoggingUserToServerWithSuccess;
+
+- (void) didLoggingUserToServerWithError: (NSError*) error;
+
 @end

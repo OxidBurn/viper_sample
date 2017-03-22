@@ -31,4 +31,22 @@ typedef void (^LoginModuleViewLoginDataResultBlock)(NSString* login, NSString* p
  */
 - (void) getDataWithResultBlock: (LoginModuleViewLoginDataResultBlock) resultBlock;
 
+
+/**
+ @author Nikolay Chaban
+ 
+ Open User info screen
+ */
+- (void) showLoginSuccessMessage;
+
+
+/**
+ @author Nikolay Chaban
+ 
+ Show alert view with error
+
+ @param error error with failed request info
+ */
+- (void) showErrorWithLogin: (NSError*) error;
+
 @end
