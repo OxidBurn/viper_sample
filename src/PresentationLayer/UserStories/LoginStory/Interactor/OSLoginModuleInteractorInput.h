@@ -11,4 +11,6 @@
 
 @protocol OSLoginModuleInteractorInput <NSObject>
 
+
+
 @end
