@@ -12,6 +12,7 @@
 #import "OSRegisterModuleViewInput.h"
 #import "OSRegisterModuleInteractorInput.h"
 #import "OSRegisterModuleRouterInput.h"
+#import "RegistrationParametersModel.h"
 
 @implementation OSRegisterModulePresenter
 
@@ -31,8 +32,38 @@
 	[self.view setupInitialState];
 }
 
+- (void) sendRegistrationRequest
+{
+    [self.interactor sendRegistrationRequestWithParameters: [self obtainUserInfoFromView]];
+}
+
 
 #pragma mark - Methods OSRegisterModuleInteractorOutput -
+
+- (void) didRegisterWithSuccess
+{
+    [self.view didFinishRegistrationWithSuccessOrError: nil];
+}
+
+- (void) didSendRequestWithError: (NSError*) error
+{
+    [self.view didFinishRegistrationWithSuccessOrError: error];
+}
+
+
+#pragma mark - Internal methods -
+
+- (RegistrationParametersModel*) obtainUserInfoFromView
+{
+    RegistrationParametersModel* registerModel = [RegistrationParametersModel new];
+    
+    registerModel.userName        = [self.view obtainUserName];
+    registerModel.password        = [self.view obtainUserPassword];
+    registerModel.confirmPassword = [self.view obtainUserConfirmPassword];
+    registerModel.fullName        = [self.view obtainFullName];
+    
+    return registerModel;
+}
 
 
 @end

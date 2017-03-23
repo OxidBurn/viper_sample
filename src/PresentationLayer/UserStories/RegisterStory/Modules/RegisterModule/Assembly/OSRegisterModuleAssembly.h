@@ -10,6 +10,9 @@
 #import <Typhoon/Typhoon.h>
 #import <RamblerTyphoonUtils/AssemblyCollector.h>
 
+// Classes
+#import "ModuleAssemblyBase.h"
+
 @protocol RamblerViperModuleFactoryProtocol;
 
 /**
@@ -17,7 +20,7 @@
 
  RegisterModule module
  */
-@interface OSRegisterModuleAssembly : TyphoonAssembly <RamblerInitialAssembly>
+@interface OSRegisterModuleAssembly : ModuleAssemblyBase <RamblerInitialAssembly>
 
 
 /**

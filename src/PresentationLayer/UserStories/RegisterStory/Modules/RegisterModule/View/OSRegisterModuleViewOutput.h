@@ -19,4 +19,6 @@
  */
 - (void) didTriggerViewReadyEvent;
 
+- (void) sendRegistrationRequest;
+
 @end

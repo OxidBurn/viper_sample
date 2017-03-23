@@ -16,6 +16,8 @@
 #import "OSRegisterModuleInteractor.h"
 #import "OSRegisterModulePresenter.h"
 #import "OSRegisterModuleRouter.h"
+#import "ServiceComponents.h"
+#import "PresentationLayerHelpersAssembly.h"
 
 
 @implementation OSRegisterModuleAssembly
@@ -78,6 +80,22 @@
                           
                               [definition injectProperty: @selector(output)
                                                     with: [self presenterRegisterModule]];
+                              
+                              /**
+                               @author Nikolay Chaban
+                               
+                               Inject register service property from service components
+                               */
+                              [definition injectProperty: @selector(registerService)
+                                                    with: [self.serviceComponents registerService]];
+                              
+                              /**
+                               @author Nikolay Chaban
+                               
+                               Inject entered registration info validator property from presentation layer helper assembly
+                               */
+                              [definition injectProperty: @selector(registrationValidator)
+                                                    with: [self.presentationLayerHelpersAssembly registrationValidator]];
                                                     
                           }];
 }

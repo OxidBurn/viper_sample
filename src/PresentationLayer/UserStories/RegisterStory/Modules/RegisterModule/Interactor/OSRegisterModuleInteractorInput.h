@@ -9,6 +9,20 @@
 // Frameworks
 @import Foundation;
 
+// Classes
+#import "RegistrationParametersModel.h"
+
 @protocol OSRegisterModuleInteractorInput <NSObject>
+
+
+/**
+ @author Nikolay Chaban
+ 
+ Method for procedure registration request
+
+ @param requestParameter request parameter object with user info
+ */
+- (void) sendRegistrationRequestWithParameters: (RegistrationParametersModel*) requestParameter;
+
 
 @end

@@ -8,12 +8,18 @@
 
 // Classes
 #import "OSRegisterModuleInteractorInput.h"
+#import "RegistrationInfoValidator.h"
 
 // Protocols
 @protocol OSRegisterModuleInteractorOutput;
+@protocol RegisterService;
 
 @interface OSRegisterModuleInteractor : NSObject <OSRegisterModuleInteractorInput>
 
 @property (nonatomic, weak) id<OSRegisterModuleInteractorOutput> output;
+
+@property (strong, nonatomic) id<RegisterService> registerService;
+
+@property (strong, nonatomic) RegistrationInfoValidator* registrationValidator;
 
 @end

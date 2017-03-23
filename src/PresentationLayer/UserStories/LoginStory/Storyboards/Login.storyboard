@@ -37,9 +37,8 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" secureTextEntry="YES"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="laa-0K-aBf">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="laa-0K-aBf">
                                 <rect key="frame" x="168" y="366" width="38" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Login"/>
                                 <connections>
                                     <action selector="didClickLoginButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fyG-RR-VNA"/>
@@ -67,6 +66,7 @@
                         </subviews>
                         <color key="backgroundColor" red="0.91213270243026823" green="1" blue="0.68912540722836013" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="laa-0K-aBf" firstAttribute="top" secondItem="lxL-cq-Qyg" secondAttribute="bottom" constant="35" id="457-pd-6q2"/>
                             <constraint firstItem="0ii-hl-gwX" firstAttribute="top" secondItem="N6o-bN-mHR" secondAttribute="bottom" constant="86" id="HCK-Tk-LhK"/>
                             <constraint firstItem="0ii-hl-gwX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="IFR-FH-38S"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="KkT-B4-nQ7" secondAttribute="bottom" constant="55" id="MJ5-Js-NvH"/>
@@ -76,10 +76,12 @@
                             <constraint firstItem="0ii-hl-gwX" firstAttribute="centerX" secondItem="N6o-bN-mHR" secondAttribute="centerX" id="bRn-jC-z5s"/>
                             <constraint firstItem="lxL-cq-Qyg" firstAttribute="top" secondItem="0ii-hl-gwX" secondAttribute="bottom" constant="33" id="ep0-9I-v11"/>
                             <constraint firstItem="KkT-B4-nQ7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hTj-F7-s8n"/>
+                            <constraint firstItem="laa-0K-aBf" firstAttribute="centerX" secondItem="lxL-cq-Qyg" secondAttribute="centerX" id="rQS-pN-HmS"/>
                             <constraint firstItem="lxL-cq-Qyg" firstAttribute="centerX" secondItem="0ii-hl-gwX" secondAttribute="centerX" id="sCQ-BG-lty"/>
                             <constraint firstItem="lxL-cq-Qyg" firstAttribute="height" secondItem="0ii-hl-gwX" secondAttribute="height" id="tub-sj-9Vy"/>
                         </constraints>
                     </view>
+                    <nil key="simulatedTopBarMetrics"/>
                     <connections>
                         <outlet property="loginTextField" destination="0ii-hl-gwX" id="FfN-CP-DUZ"/>
                         <outlet property="passTextField" destination="lxL-cq-Qyg" id="HER-KW-7m3"/>

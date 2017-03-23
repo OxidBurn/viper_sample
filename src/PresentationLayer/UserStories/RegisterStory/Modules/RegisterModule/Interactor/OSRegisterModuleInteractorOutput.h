@@ -11,4 +11,8 @@
 
 @protocol OSRegisterModuleInteractorOutput <NSObject>
 
+- (void) didRegisterWithSuccess;
+
+- (void) didSendRequestWithError: (NSError*) error;
+
 @end

@@ -19,4 +19,19 @@
  */
 - (void) setupInitialState;
 
+
+/**
+ @author Nikolay Chaban
+ 
+ Grab entered user info from text fields
+
+ @return string value from user name text field
+ */
+- (NSString*) obtainUserName;
+- (NSString*) obtainUserPassword;
+- (NSString*) obtainUserConfirmPassword;
+- (NSString*) obtainFullName;
+
+- (void) didFinishRegistrationWithSuccessOrError: (NSError*) error;
+
 @end

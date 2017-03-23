@@ -10,6 +10,7 @@
 
 // Classes
 #import "LoginServiceImplementation.h"
+#import "RegisterServiceImplementation.h"
 
 @implementation ServiceComponentsAssembly
 
@@ -19,6 +20,11 @@
 - (id<LoginService>) loginService
 {
     return [TyphoonDefinition withClass: [LoginServiceImplementation class]];
+}
+
+- (id<RegisterService>) registerService
+{
+    return [TyphoonDefinition withClass: [RegisterServiceImplementation class]];
 }
 
 @end
