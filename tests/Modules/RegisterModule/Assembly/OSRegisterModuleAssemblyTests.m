@@ -36,7 +36,7 @@
 
     self.assembly = [[OSRegisterModuleAssembly alloc] init];
     
-    [self.assembly activate];
+    [self.assembly activated];
 }
 
 - (void)tearDown {
