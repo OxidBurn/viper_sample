@@ -35,3 +35,4 @@ templates:
 - {name: mvvm_controller}
 - {name: swifty_viper}
 - {name: onsight_viper_controller, git: 'https://bitbucket.org/onsightukraine/onsight_viper_controller'}
+- {name: osviper_module, git: 'https://bitbucket.org/onsightukraine/osviper_module'}
