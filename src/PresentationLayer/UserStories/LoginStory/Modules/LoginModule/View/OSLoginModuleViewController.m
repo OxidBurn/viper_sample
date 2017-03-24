@@ -10,17 +10,15 @@
 
 // Classes
 #import "OSLoginModuleViewOutput.h"
+#import "AlertsFactory.h"
 
 @interface OSLoginModuleViewController()
 
 // properties
-
-
-// methods
-
 @property (unsafe_unretained, nonatomic) IBOutlet UITextField* loginTextField;
 @property (unsafe_unretained, nonatomic) IBOutlet UITextField* passTextField;
 
+// methods
 - (IBAction) didClickLoginButton: (UIButton*) sender;
 - (IBAction) didClickRegisterButton: (UIButton*) sender;
 
@@ -77,15 +75,18 @@
      For now showing success alert
      Then need to re-write for showing user info screen
      */
-    [self displayAlertWithTitle: @"Success"
-                     andMessage: @"Login successful!"];
+    [AlertsFactory showInformAlertControllerWithTitle: @"Success"
+                                          withMessage: @"Login successful!"
+                                       fromController: self];
 }
 
 - (void) showErrorWithLogin: (NSError*) error
 {
-    [self displayAlertWithTitle: @"Error"
-                     andMessage: error.localizedFailureReason];
+    [AlertsFactory showInformAlertControllerWithTitle: @"Error"
+                                          withMessage: error.localizedFailureReason
+                                       fromController: self];
 }
+
 
 #pragma mark - Actions -
 
@@ -99,28 +100,6 @@
 - (IBAction) didClickRegisterButton: (UIButton*) sender
 {
     [self.output instantiateRegisterButtonClicked];
-}
-
-
-#pragma mark - Internal methods -
-
-//TODO: method need move to alert view factory
-- (void) displayAlertWithTitle: (NSString*) title
-                    andMessage: (NSString*) message
-{
-    UIAlertController* alertController = [UIAlertController alertControllerWithTitle: title
-                                                                             message: message
-                                                                      preferredStyle: UIAlertControllerStyleAlert];
-    
-    UIAlertAction* closeAction = [UIAlertAction actionWithTitle: @"Ok"
-                                                          style: UIAlertActionStyleDefault
-                                                        handler: ^(UIAlertAction * _Nonnull action) {}];
-    
-    [alertController addAction: closeAction];
-    
-    [self presentViewController: alertController
-                       animated: YES
-                     completion: nil];
 }
 
 @end

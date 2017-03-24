@@ -10,14 +10,15 @@
 
 // Classes
 #import "OSRegisterModuleViewOutput.h"
+#import "AlertsFactory.h"
 
 @interface OSRegisterModuleViewController()
 
 // properties
-@property (weak, nonatomic) IBOutlet UITextField *userNameField;
-@property (weak, nonatomic) IBOutlet UITextField *passwordField;
-@property (weak, nonatomic) IBOutlet UITextField *confirmPasswordField;
-@property (weak, nonatomic) IBOutlet UITextField *fullNameField;
+@property (weak, nonatomic) IBOutlet UITextField* userNameField;
+@property (weak, nonatomic) IBOutlet UITextField* passwordField;
+@property (weak, nonatomic) IBOutlet UITextField* confirmPasswordField;
+@property (weak, nonatomic) IBOutlet UITextField* fullNameField;
 
 // methods
 
@@ -49,7 +50,6 @@
 }
 
 
-
 #pragma mark - Methods OSRegisterModuleViewInput -
 
 - (void) setupInitialState 
@@ -79,16 +79,23 @@
 
 - (void) didFinishRegistrationWithSuccessOrError: (NSError*) error
 {
+    NSString* title   = @"";
+    NSString* message = @"";
+    
     if ( error )
     {
-        [self displayAlertWithTitle: @"Warning"
-                         andMessage: error.localizedFailureReason];
+        title   = @"Warning";
+        message = error.localizedFailureReason;
     }
     else
     {
-        [self displayAlertWithTitle: @"Success"
-                         andMessage: @"Registration perform with success!"];
+        title   = @"Success";
+        message = @"Registration perform with success!";
     }
+    
+    [AlertsFactory showInformAlertControllerWithTitle: title
+                                          withMessage: message
+                                       fromController: self];
 }
 
 
@@ -97,28 +104,6 @@
 - (IBAction) didRegisterButtonClicked: (UIButton*) sender
 {
     [self.output sendRegistrationRequest];
-}
-
-
-#pragma mark - Internal methods -
-
-//TODO: method need move to alert view factory
-- (void) displayAlertWithTitle: (NSString*) title
-                    andMessage: (NSString*) message
-{
-    UIAlertController* alertController = [UIAlertController alertControllerWithTitle: title
-                                                                             message: message
-                                                                      preferredStyle: UIAlertControllerStyleAlert];
-    
-    UIAlertAction* closeAction = [UIAlertAction actionWithTitle: @"Ok"
-                                                          style: UIAlertActionStyleDefault
-                                                        handler: ^(UIAlertAction * _Nonnull action) {}];
-    
-    [alertController addAction: closeAction];
-    
-    [self presentViewController: alertController
-                       animated: YES
-                     completion: nil];
 }
 
 @end
