@@ -12,6 +12,7 @@
 // Protocols
 @protocol LoginService;
 @protocol RegisterService;
+@protocol UserInfoService;
 
 /**
  @author Nikolay Chaban
@@ -27,5 +28,7 @@
 - (id<LoginService>) loginService;
 
 - (id<RegisterService>) registerService;
+
+- (id<UserInfoService>) userInfoService;
 
 @end

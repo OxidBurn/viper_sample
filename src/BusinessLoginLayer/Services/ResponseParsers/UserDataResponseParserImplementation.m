@@ -10,7 +10,7 @@
 
 // Classes
 #import "UserDataResponseParser.h"
-#import "UserInfoResponseInfoObject.h"
+#import "UserInfoResponseObject.h"
 
 static NSString* fullName  = @"UserFullNameKey";
 static NSString* email     = @"UserEmailKey";
@@ -24,7 +24,7 @@ static NSString* login     = @"UserLoginKey";
 
 - (id) mapLoginResponse: (NSDictionary*) response
 {
-    UserInfoResponseInfoObject* userInfoObj = [UserInfoResponseInfoObject new];
+    UserInfoResponseObject* userInfoObj = [UserInfoResponseObject new];
     
     userInfoObj.fullName  = response[fullName];
     userInfoObj.email     = response[email];

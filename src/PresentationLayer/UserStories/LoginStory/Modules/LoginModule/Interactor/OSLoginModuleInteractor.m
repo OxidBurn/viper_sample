@@ -11,7 +11,8 @@
 // Classes
 #import "OSLoginModuleInteractorOutput.h"
 #import "LoginService.h"
-#import "UserInfoResponseInfoObject.h"
+#import "UserInfoService.h"
+#import "UserInfoResponseObject.h"
 
 @implementation OSLoginModuleInteractor
 
@@ -26,16 +27,30 @@
      
      Call method in login service for processing login server request
      */
+    @weakify(self)
+    
     [self.loginService loginToServerWithName: name
                                     withPass: password
-                              withCompletion: ^(BOOL isSuccess, UserInfoResponseInfoObject* response, NSError* error) {
+                              withCompletion: ^(BOOL isSuccess, UserInfoResponseObject* response, NSError* error) {
+                                  
+                                  @strongify(self)
                                   
                                   if ( isSuccess )
-                                      [self.output didLoggingUserToServerWithSuccess];
+                                  {
+                                      /**
+                                       @author Nikolay Chaban
+                                       
+                                       Save/update user info to database, from login request response
+                                       */
+                                      [self.userInfoService saveOrUpdateUserInfoInDB: response
+                                                                      withCompletion: ^(BOOL isUpdate) {
+                                                                         
+                                                                          [self.output didLoggingUserToServerWithSuccess];
+                                                                          
+                                                                      }];
+                                  }
                                   else
                                       [self.output didLoggingUserToServerWithError: error];
-                                  
-                                  NSLog(@"Server response: %@", response);
                                   
                               }];
 }

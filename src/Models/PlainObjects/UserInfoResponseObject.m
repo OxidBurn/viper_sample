@@ -6,9 +6,9 @@
 //  Copyright © 2017 Nikolay Chaban. All rights reserved.
 //
 
-#import "UserInfoResponseInfoObject.h"
+#import "UserInfoResponseObject.h"
 
-@implementation UserInfoResponseInfoObject
+@implementation UserInfoResponseObject
 
 
 #pragma mark - Description -

@@ -59,6 +59,14 @@
                                */
                               [definition injectProperty: @selector(loginService)
                                                     with: [self.serviceComponents loginService]];
+                              
+                              /**
+                               @author Nikolay Chaban
+                               
+                               Inject service property, for storing/updating user info to database 
+                               */
+                              [definition injectProperty: @selector(userInfoService)
+                                                    with: [self.serviceComponents userInfoService]];
                                                     
                           }];
 }

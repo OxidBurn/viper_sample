@@ -15,7 +15,7 @@
  PONSO object for parsing server resnponse and 
  store all user info in one object
  */
-@interface UserInfoResponseInfoObject : NSObject
+@interface UserInfoResponseObject : NSObject
 
 
 /**
