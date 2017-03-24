@@ -57,12 +57,12 @@
 		56E3680F1E85730D00F24E61 /* UserInfoServiceImplementation.m in Sources */ = {isa = PBXBuildFile; fileRef = 56E3680E1E85730D00F24E61 /* UserInfoServiceImplementation.m */; };
 		56E54D391E0C19E400E39B9F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 56E54D371E0C19E400E39B9F /* main.m */; };
 		56E54D3C1E0C19F200E39B9F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 56E54D3A1E0C19F200E39B9F /* Assets.xcassets */; };
-		56F69C8A1E8598C70099A584 /* _UserInfoModelObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 56F69C7E1E8598C70099A584 /* _UserInfoModelObject.m */; };
-		56F69C8B1E8598C70099A584 /* _UserInfoPlainObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 56F69C811E8598C70099A584 /* _UserInfoPlainObject.m */; };
-		56F69C8C1E8598C70099A584 /* UserInfoModelObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 56F69C841E8598C70099A584 /* UserInfoModelObject.m */; };
-		56F69C911E8599970099A584 /* UserInfoPlainObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 56F69C901E8599970099A584 /* UserInfoPlainObject.m */; };
 		56F69C961E85999C0099A584 /* RegistrationParametersModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 56F69C931E85999C0099A584 /* RegistrationParametersModel.m */; };
 		56F69C971E85999C0099A584 /* UserInfoResponseObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 56F69C951E85999C0099A584 /* UserInfoResponseObject.m */; };
+		56F69CBC1E859CCB0099A584 /* UserInfoPlainObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 56F69CBB1E859CCB0099A584 /* UserInfoPlainObject.m */; };
+		56F69CBF1E859CCF0099A584 /* UserInfoModelObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 56F69CBE1E859CCF0099A584 /* UserInfoModelObject.m */; };
+		56F69CC21E859CD40099A584 /* _UserInfoPlainObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 56F69CC11E859CD40099A584 /* _UserInfoPlainObject.m */; };
+		56F69CC51E859CD80099A584 /* _UserInfoModelObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 56F69CC41E859CD80099A584 /* _UserInfoModelObject.m */; };
 		8EEEE613F9F83DCFA1F44B47 /* OSRegisterModuleViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DD83D7E93BAF2849512996E4 /* OSRegisterModuleViewControllerTests.m */; };
 		C2193DCD3957593BD502BB80 /* libPods-ViperSampleProject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BE0ED5E1ED2D20FB17F8B9DA /* libPods-ViperSampleProject.a */; };
 		C559A0F4C40627334D183F5B /* OSRegisterModulePresenterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E9DA711612E6D02F8B0BC6F7 /* OSRegisterModulePresenterTests.m */; };
@@ -152,18 +152,18 @@
 		56E54D361E0C19E400E39B9F /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		56E54D371E0C19E400E39B9F /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		56E54D3A1E0C19F200E39B9F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../res/Assets.xcassets; sourceTree = "<group>"; };
-		56F69C7D1E8598C70099A584 /* _UserInfoModelObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _UserInfoModelObject.h; sourceTree = "<group>"; };
-		56F69C7E1E8598C70099A584 /* _UserInfoModelObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _UserInfoModelObject.m; sourceTree = "<group>"; };
-		56F69C801E8598C70099A584 /* _UserInfoPlainObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _UserInfoPlainObject.h; sourceTree = "<group>"; };
-		56F69C811E8598C70099A584 /* _UserInfoPlainObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _UserInfoPlainObject.m; sourceTree = "<group>"; };
-		56F69C831E8598C70099A584 /* UserInfoModelObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserInfoModelObject.h; sourceTree = "<group>"; };
-		56F69C841E8598C70099A584 /* UserInfoModelObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserInfoModelObject.m; sourceTree = "<group>"; };
-		56F69C8F1E8599970099A584 /* UserInfoPlainObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserInfoPlainObject.h; sourceTree = "<group>"; };
-		56F69C901E8599970099A584 /* UserInfoPlainObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserInfoPlainObject.m; sourceTree = "<group>"; };
 		56F69C921E85999C0099A584 /* RegistrationParametersModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegistrationParametersModel.h; sourceTree = "<group>"; };
 		56F69C931E85999C0099A584 /* RegistrationParametersModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegistrationParametersModel.m; sourceTree = "<group>"; };
 		56F69C941E85999C0099A584 /* UserInfoResponseObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserInfoResponseObject.h; sourceTree = "<group>"; };
 		56F69C951E85999C0099A584 /* UserInfoResponseObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserInfoResponseObject.m; sourceTree = "<group>"; };
+		56F69CBA1E859CCB0099A584 /* UserInfoPlainObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserInfoPlainObject.h; sourceTree = "<group>"; };
+		56F69CBB1E859CCB0099A584 /* UserInfoPlainObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserInfoPlainObject.m; sourceTree = "<group>"; };
+		56F69CBD1E859CCF0099A584 /* UserInfoModelObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserInfoModelObject.h; sourceTree = "<group>"; };
+		56F69CBE1E859CCF0099A584 /* UserInfoModelObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserInfoModelObject.m; sourceTree = "<group>"; };
+		56F69CC01E859CD40099A584 /* _UserInfoPlainObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _UserInfoPlainObject.h; sourceTree = "<group>"; };
+		56F69CC11E859CD40099A584 /* _UserInfoPlainObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _UserInfoPlainObject.m; sourceTree = "<group>"; };
+		56F69CC31E859CD80099A584 /* _UserInfoModelObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _UserInfoModelObject.h; sourceTree = "<group>"; };
+		56F69CC41E859CD80099A584 /* _UserInfoModelObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _UserInfoModelObject.m; sourceTree = "<group>"; };
 		A09DE182739F6F0915203814 /* OSRegisterModuleAssembly_Testable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = OSRegisterModuleAssembly_Testable.h; sourceTree = "<group>"; };
 		A806FD28F8021461295D2E17 /* OSRegisterModuleRouterTests.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = OSRegisterModuleRouterTests.m; sourceTree = "<group>"; };
 		B96206B7AFC6830E6498E1D6 /* OSRegisterModuleInteractorTests.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = OSRegisterModuleInteractorTests.m; sourceTree = "<group>"; };
@@ -226,9 +226,9 @@
 		562B85E31E847C0A0075F962 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				56F69C7C1E8598C70099A584 /* GeneratedMO */,
-				56F69C7F1E8598C70099A584 /* GeneratedPONSO */,
-				56F69C821E8598C70099A584 /* ManagedObjects */,
+				56F69C9B1E859A830099A584 /* GeneratedMO */,
+				56F69C9E1E859A830099A584 /* GeneratedPONSO */,
+				56F69CA11E859A830099A584 /* ManagedObjects */,
 				56D81E0B1E854759003AC213 /* PlainObjects */,
 				56F69C851E8598C70099A584 /* MapperObjects */,
 				56E367F41E85631500F24E61 /* FakeData */,
@@ -295,8 +295,8 @@
 		56D81E0B1E854759003AC213 /* PlainObjects */ = {
 			isa = PBXGroup;
 			children = (
-				56F69C8F1E8599970099A584 /* UserInfoPlainObject.h */,
-				56F69C901E8599970099A584 /* UserInfoPlainObject.m */,
+				56F69CBA1E859CCB0099A584 /* UserInfoPlainObject.h */,
+				56F69CBB1E859CCB0099A584 /* UserInfoPlainObject.m */,
 			);
 			path = PlainObjects;
 			sourceTree = "<group>";
@@ -695,33 +695,6 @@
 			name = Sources;
 			sourceTree = "<group>";
 		};
-		56F69C7C1E8598C70099A584 /* GeneratedMO */ = {
-			isa = PBXGroup;
-			children = (
-				56F69C7D1E8598C70099A584 /* _UserInfoModelObject.h */,
-				56F69C7E1E8598C70099A584 /* _UserInfoModelObject.m */,
-			);
-			path = GeneratedMO;
-			sourceTree = "<group>";
-		};
-		56F69C7F1E8598C70099A584 /* GeneratedPONSO */ = {
-			isa = PBXGroup;
-			children = (
-				56F69C801E8598C70099A584 /* _UserInfoPlainObject.h */,
-				56F69C811E8598C70099A584 /* _UserInfoPlainObject.m */,
-			);
-			path = GeneratedPONSO;
-			sourceTree = "<group>";
-		};
-		56F69C821E8598C70099A584 /* ManagedObjects */ = {
-			isa = PBXGroup;
-			children = (
-				56F69C831E8598C70099A584 /* UserInfoModelObject.h */,
-				56F69C841E8598C70099A584 /* UserInfoModelObject.m */,
-			);
-			path = ManagedObjects;
-			sourceTree = "<group>";
-		};
 		56F69C851E8598C70099A584 /* MapperObjects */ = {
 			isa = PBXGroup;
 			children = (
@@ -731,6 +704,33 @@
 				56F69C951E85999C0099A584 /* UserInfoResponseObject.m */,
 			);
 			path = MapperObjects;
+			sourceTree = "<group>";
+		};
+		56F69C9B1E859A830099A584 /* GeneratedMO */ = {
+			isa = PBXGroup;
+			children = (
+				56F69CC31E859CD80099A584 /* _UserInfoModelObject.h */,
+				56F69CC41E859CD80099A584 /* _UserInfoModelObject.m */,
+			);
+			path = GeneratedMO;
+			sourceTree = "<group>";
+		};
+		56F69C9E1E859A830099A584 /* GeneratedPONSO */ = {
+			isa = PBXGroup;
+			children = (
+				56F69CC01E859CD40099A584 /* _UserInfoPlainObject.h */,
+				56F69CC11E859CD40099A584 /* _UserInfoPlainObject.m */,
+			);
+			path = GeneratedPONSO;
+			sourceTree = "<group>";
+		};
+		56F69CA11E859A830099A584 /* ManagedObjects */ = {
+			isa = PBXGroup;
+			children = (
+				56F69CBD1E859CCF0099A584 /* UserInfoModelObject.h */,
+				56F69CBE1E859CCF0099A584 /* UserInfoModelObject.m */,
+			);
+			path = ManagedObjects;
 			sourceTree = "<group>";
 		};
 		919CF260CB2B835A9F20B870 /* Presenter */ = {
@@ -945,17 +945,18 @@
 				56DB4A171E833CF30015C039 /* OSLoginModuleInteractor.m in Sources */,
 				56DB4A181E833CF30015C039 /* OSLoginModulePresenter.m in Sources */,
 				56DB4A1F1E833CF30015C039 /* OSRegisterModuleViewController.m in Sources */,
+				56F69CC21E859CD40099A584 /* _UserInfoPlainObject.m in Sources */,
 				56DB49CB1E8335DA0015C039 /* TyphoonAppDelegate.m in Sources */,
 				56E367FA1E85633F00F24E61 /* FakeDataGenerator.m in Sources */,
 				56DB4A1C1E833CF30015C039 /* OSRegisterModuleInteractor.m in Sources */,
 				562B85F51E848EB20075F962 /* PresentationLayerHelpersAssembly.m in Sources */,
-				56F69C8B1E8598C70099A584 /* _UserInfoPlainObject.m in Sources */,
 				56E54D391E0C19E400E39B9F /* main.m in Sources */,
 				56DB49CA1E8335DA0015C039 /* InitialAppDelegate.m in Sources */,
-				56F69C8C1E8598C70099A584 /* UserInfoModelObject.m in Sources */,
 				56DB4A1E1E833CF30015C039 /* OSRegisterModuleRouter.m in Sources */,
+				56F69CBF1E859CCF0099A584 /* UserInfoModelObject.m in Sources */,
 				56DB49E31E833B140015C039 /* StoryboardAssembly.m in Sources */,
 				56F69C961E85999C0099A584 /* RegistrationParametersModel.m in Sources */,
+				56F69CC51E859CD80099A584 /* _UserInfoModelObject.m in Sources */,
 				56DB4A1B1E833CF30015C039 /* OSRegisterModuleAssembly.m in Sources */,
 				56DB4A161E833CF30015C039 /* OSLoginModuleAssembly.m in Sources */,
 				56D81E0A1E85406F003AC213 /* AlertsFactory.m in Sources */,
@@ -964,15 +965,14 @@
 				56DB4A1D1E833CF30015C039 /* OSRegisterModulePresenter.m in Sources */,
 				562B85E21E8467020075F962 /* RegisterServiceImplementation.m in Sources */,
 				56DB49C91E8335DA0015C039 /* ActivityAppDelegate.m in Sources */,
-				56F69C911E8599970099A584 /* UserInfoPlainObject.m in Sources */,
 				56DB49DD1E8339590015C039 /* ServiceComponentsAssembly.m in Sources */,
 				56DB4A191E833CF30015C039 /* OSLoginModuleRouter.m in Sources */,
 				56E3680F1E85730D00F24E61 /* UserInfoServiceImplementation.m in Sources */,
 				562B85F01E848D110075F962 /* RegistrationInfoValidator.m in Sources */,
 				56DB49E01E833A980015C039 /* ModuleAssemblyBase.m in Sources */,
-				56F69C8A1E8598C70099A584 /* _UserInfoModelObject.m in Sources */,
 				562B85ED1E848A0D0075F962 /* EXTScope.m in Sources */,
 				417DCD191BFF5A945E4D6532 /* OSRegisterModuleAssemblyTests.m in Sources */,
+				56F69CBC1E859CCB0099A584 /* UserInfoPlainObject.m in Sources */,
 				56F69C971E85999C0099A584 /* UserInfoResponseObject.m in Sources */,
 				8EEEE613F9F83DCFA1F44B47 /* OSRegisterModuleViewControllerTests.m in Sources */,
 				C559A0F4C40627334D183F5B /* OSRegisterModulePresenterTests.m in Sources */,
@@ -1165,6 +1165,7 @@
 				56F69C751E8594570099A584 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
