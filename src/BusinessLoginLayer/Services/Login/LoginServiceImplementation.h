@@ -12,6 +12,10 @@
 // Classes
 #import "LoginService.h"
 
+@protocol UserDataResponseParser;
+
 @interface LoginServiceImplementation : NSObject <LoginService>
+
+@property (weak, nonatomic) id<UserDataResponseParser> responseParser;
 
 @end

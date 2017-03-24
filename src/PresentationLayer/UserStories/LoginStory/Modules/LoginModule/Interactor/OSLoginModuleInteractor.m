@@ -11,6 +11,7 @@
 // Classes
 #import "OSLoginModuleInteractorOutput.h"
 #import "LoginService.h"
+#import "UserInfoResponseInfoObject.h"
 
 @implementation OSLoginModuleInteractor
 
@@ -27,12 +28,14 @@
      */
     [self.loginService loginToServerWithName: name
                                     withPass: password
-                              withCompletion: ^(BOOL isSuccess, NSError* error) {
+                              withCompletion: ^(BOOL isSuccess, UserInfoResponseInfoObject* response, NSError* error) {
                                   
                                   if ( isSuccess )
                                       [self.output didLoggingUserToServerWithSuccess];
                                   else
                                       [self.output didLoggingUserToServerWithError: error];
+                                  
+                                  NSLog(@"Server response: %@", response);
                                   
                               }];
 }

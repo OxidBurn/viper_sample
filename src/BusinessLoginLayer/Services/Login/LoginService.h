@@ -13,7 +13,7 @@
 ///-------------------------------------------------
 /// @name Blocks type definition
 ///-------------------------------------------------
-typedef void(^LoginCompletionBlock)(BOOL isSuccess, NSError* error);
+typedef void(^LoginCompletionBlock)(BOOL isSuccess, id responseObj, NSError* error);
 
 /**
  @author Nikolay Chaban
@@ -33,7 +33,7 @@ typedef void(^LoginCompletionBlock)(BOOL isSuccess, NSError* error);
 
  @param name string user name parameter
  @param password sting user password parameter
- @param completion login request completion block
+ @param completion login request completion block with success bool flag, response plain object and error if exist
  */
 - (void) loginToServerWithName: (NSString*)            name
                       withPass: (NSString*)            password

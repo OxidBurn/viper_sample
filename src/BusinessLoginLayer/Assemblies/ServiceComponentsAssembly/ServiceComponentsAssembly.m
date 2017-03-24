@@ -11,6 +11,7 @@
 // Classes
 #import "LoginServiceImplementation.h"
 #import "RegisterServiceImplementation.h"
+#import "UserDataResponseParserImplementation.h"
 
 @implementation ServiceComponentsAssembly
 
@@ -19,7 +20,13 @@
 
 - (id<LoginService>) loginService
 {
-    return [TyphoonDefinition withClass: [LoginServiceImplementation class]];
+    return [TyphoonDefinition withClass: [LoginServiceImplementation class]
+                          configuration: ^(TyphoonDefinition* definition) {
+        
+                              [definition injectProperty: @selector(responseParser)
+                                                    with: [UserDataResponseParserImplementation class]];
+                              
+    }];
 }
 
 - (id<RegisterService>) registerService

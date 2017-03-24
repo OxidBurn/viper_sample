@@ -8,6 +8,10 @@
 
 #import "LoginServiceImplementation.h"
 
+// Classes
+#import "FakeDataGenerator.h"
+#import "UserDataResponseParser.h"
+
 @implementation LoginServiceImplementation
 
 
@@ -44,8 +48,21 @@
                                      userInfo: userInfo];
     }
     
+    /**
+     @author Nikolay Chaban
+     
+     Generation fake login request response dictionary,
+     Dictionary contain info:
+     - full name
+     - email
+     - username
+     - image path
+     
+     */
+    NSDictionary* loginResponse = [FakeDataGenerator generateFakeLoginResponseWithLogin: name];
+    
     if ( completion )
-        completion(isSuccess, loginError);
+        completion(isSuccess, [self.responseParser mapLoginResponse: loginResponse], loginError);
 }
 
 @end
