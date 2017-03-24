@@ -24,7 +24,7 @@
                           configuration: ^(TyphoonDefinition* definition) {
         
                               [definition injectProperty: @selector(responseParser)
-                                                    with: [UserDataResponseParserImplementation class]];
+                                                    with: [self responseParser]];
                               
     }];
 }
@@ -32,6 +32,14 @@
 - (id<RegisterService>) registerService
 {
     return [TyphoonDefinition withClass: [RegisterServiceImplementation class]];
+}
+
+
+#pragma mark - Internal methods -
+
+- (id<UserDataResponseParser>) responseParser
+{
+    return [TyphoonDefinition withClass: [UserDataResponseParserImplementation class]];
 }
 
 @end

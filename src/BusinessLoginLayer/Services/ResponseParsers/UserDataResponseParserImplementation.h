@@ -7,7 +7,7 @@
 //
 
 // Protocols
-@protocol UserDataResponseParser;
+#import "UserDataResponseParser.h"
 
 @interface UserDataResponseParserImplementation : NSObject <UserDataResponseParser>
 

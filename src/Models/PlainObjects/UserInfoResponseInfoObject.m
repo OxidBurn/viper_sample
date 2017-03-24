@@ -13,7 +13,7 @@
 
 #pragma mark - Description -
 
-- (NSString*) debugDescription
+- (NSString*) description
 {
     return [NSString stringWithFormat: @"Full name: %@, email: %@, UserName: %@", self.fullName, self.email, self.username];
 }

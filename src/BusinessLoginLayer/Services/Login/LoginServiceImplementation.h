@@ -16,6 +16,6 @@
 
 @interface LoginServiceImplementation : NSObject <LoginService>
 
-@property (weak, nonatomic) id<UserDataResponseParser> responseParser;
+@property (strong, nonatomic) id<UserDataResponseParser> responseParser;
 
 @end

@@ -22,7 +22,7 @@ static NSString* login     = @"UserLoginKey";
 
 #pragma mark - Protocol methods -
 
-- (UserInfoResponseInfoObject*) mapLoginResponse: (NSDictionary*) response
+- (id) mapLoginResponse: (NSDictionary*) response
 {
     UserInfoResponseInfoObject* userInfoObj = [UserInfoResponseInfoObject new];
     
