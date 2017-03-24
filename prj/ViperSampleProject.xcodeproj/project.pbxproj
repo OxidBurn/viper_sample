@@ -6,6 +6,20 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		56F69C731E8594570099A584 /* Mogenerator */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 56F69C761E8594570099A584 /* Build configuration list for PBXAggregateTarget "Mogenerator" */;
+			buildPhases = (
+				56F69C771E8594610099A584 /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = Mogenerator;
+			productName = Mogenerator;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
 		30D7B0D4FD3F99535E58573F /* OSRegisterModuleInteractorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B96206B7AFC6830E6498E1D6 /* OSRegisterModuleInteractorTests.m */; };
 		417DCD191BFF5A945E4D6532 /* OSRegisterModuleAssemblyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3251E224107D5BD3B494A30F /* OSRegisterModuleAssemblyTests.m */; };
@@ -767,6 +781,11 @@
 						CreatedOnToolsVersion = 8.2.1;
 						ProvisioningStyle = Automatic;
 					};
+					56F69C731E8594570099A584 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 27A5X8DE8E;
+						ProvisioningStyle = Automatic;
+					};
 				};
 			};
 			buildConfigurationList = 56E54D141E0C179700E39B9F /* Build configuration list for PBXProject "ViperSampleProject" */;
@@ -783,6 +802,7 @@
 			projectRoot = "";
 			targets = (
 				56E54D181E0C179700E39B9F /* ViperSampleProject */,
+				56F69C731E8594570099A584 /* Mogenerator */,
 			);
 		};
 /* End PBXProject section */
@@ -833,6 +853,19 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/../pod/Pods/Target Support Files/Pods-ViperSampleProject/Pods-ViperSampleProject-resources.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		56F69C771E8594610099A584 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/../pod/Scripts/mogenerator.sh\"";
 		};
 		B75D993391DCDBAD1906A054 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -1032,6 +1065,22 @@
 			};
 			name = Release;
 		};
+		56F69C741E8594570099A584 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 27A5X8DE8E;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		56F69C751E8594570099A584 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 27A5X8DE8E;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1052,6 +1101,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		56F69C761E8594570099A584 /* Build configuration list for PBXAggregateTarget "Mogenerator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				56F69C741E8594570099A584 /* Debug */,
+				56F69C751E8594570099A584 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 
