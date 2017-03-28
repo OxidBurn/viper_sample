@@ -16,7 +16,11 @@
 // properties
 @property (weak, nonatomic) IBOutlet UIImageView* userImgView;
 
-@property (weak, nonatomic) IBOutlet UILabel* usernameLabel;
+@property (weak, nonatomic) IBOutlet UILabel* fullnameLabel;
+
+@property (weak, nonatomic) IBOutlet UILabel *emailLabel;
+
+@property (weak, nonatomic) IBOutlet UILabel *userNameLabel;
 
 // methods
 
@@ -67,8 +71,10 @@
  */
 - (void) setupInitialStateWithUser: (UserInfoPlainObject*) user
 {
-    self.usernameLabel.text = user.fullName;
+    self.fullnameLabel.text = user.fullName;
     self.userImgView.image  = [UIImage imageNamed: user.imagePath];
+    self.emailLabel.text = user.email;
+  //  self.userNameLabel.text = user
 }
 
 @end

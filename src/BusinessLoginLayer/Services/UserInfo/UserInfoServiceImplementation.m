@@ -42,6 +42,8 @@
 }
 
 /**
+ @author Valeria Mozghova
+ 
  method for getting user from DB
 
  @param userID parameter for searching in DB
