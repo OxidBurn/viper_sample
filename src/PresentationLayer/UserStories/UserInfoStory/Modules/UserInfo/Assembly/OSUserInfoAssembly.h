@@ -9,6 +9,8 @@
 // Frameworks
 #import <Typhoon/Typhoon.h>
 #import <RamblerTyphoonUtils/AssemblyCollector.h>
+
+// Class
 #import "ModuleAssemblyBase.h"
 
 //Protocols

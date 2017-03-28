@@ -22,6 +22,42 @@
 @implementation OSUserInfoAssembly
 
 
+#pragma mark - Module factory -
+
+- (id<RamblerViperModuleFactoryProtocol>) factoryUserModule
+{
+    return [TyphoonDefinition withClass: [RamblerViperModuleFactory class]
+                          configuration: ^(TyphoonDefinition* definition) {
+                              
+                              [definition useInitializer: @selector(initWithStoryboard:andRestorationId:)
+                                              parameters: ^(TyphoonMethod *initializer) {
+                                                  
+                                                  [initializer injectParameterWith: [self storybardUserInfoModule]];
+                                                  [initializer injectParameterWith: @"OSUserInfoModuleStoryboardID"];
+                                                  
+                                              }];
+                              
+                          }];
+}
+
+- (UIStoryboard*) storybardUserInfoModule
+{
+    return [TyphoonDefinition withClass: [TyphoonStoryboard class]
+                          configuration: ^(TyphoonDefinition* definition) {
+                              
+                              [definition useInitializer: @selector(storyboardWithName:factory:bundle:)
+                                              parameters: ^(TyphoonMethod* initializer) {
+                                                  
+                                                  [initializer injectParameterWith: @"UserInfo"];
+                                                  [initializer injectParameterWith: self];
+                                                  [initializer injectParameterWith: nil];
+                                                  
+                                              }];
+                              
+                          }];
+}
+
+
 #pragma mark - Initialization methods -
 
 - (OSUserInfoViewController*) viewUserInfo 

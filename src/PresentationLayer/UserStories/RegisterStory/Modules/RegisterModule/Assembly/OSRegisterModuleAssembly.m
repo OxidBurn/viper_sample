@@ -48,7 +48,7 @@
                               [definition useInitializer: @selector(storyboardWithName:factory:bundle:)
                                               parameters: ^(TyphoonMethod *initializer) {
                                                   
-                                                  [initializer injectParameterWith: @"Main"];
+                                                  [initializer injectParameterWith: @"Register"];
                                                   [initializer injectParameterWith: self];
                                                   [initializer injectParameterWith: nil];
                                                   
@@ -98,7 +98,7 @@
                                                     with: [self.presentationLayerHelpersAssembly registrationValidator]];
                               
                               /**
-                               @author Nikolay Chaban
+                               @author Valeria Mozghova
                                
                                Inject ponsomizer for converting objects
                                */

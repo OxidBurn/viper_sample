@@ -13,6 +13,17 @@
 #import "OSUserInfoInteractorInput.h"
 #import "OSUserInfoRouterInput.h"
 
+@interface OSUserInfoPresenter()
+
+// properties
+
+@property (strong, nonatomic) UserInfoPlainObject* userInfo;
+
+// methods
+
+
+@end
+
 @implementation OSUserInfoPresenter
 
 
@@ -29,7 +40,7 @@
 
 - (void) configureModuleWithUser: (UserInfoPlainObject*) user
 {
-    [self.view setupInitialStateWithUser: user];
+    self.userInfo = user;
 }
 
 #pragma mark - Methods OSUserInfoViewOutput -
@@ -37,6 +48,8 @@
 - (void) didTriggerViewReadyEvent 
 {
 	[self.view setupInitialState];
+    
+    [self.view setupInitialStateWithUser: self.userInfo];
 }
 
 

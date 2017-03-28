@@ -23,9 +23,9 @@
 #import <objc/runtime.h>
 #import <CoreData/CoreData.h>
 
-static NSString *const ROSPONSOPostfix = @"PlainObject";
+static NSString *const ROSPONSOPostfix          = @"PlainObject";
 static NSString *const ROSPONSOSuperClassPrefix = @"_";
-static NSString *const ROSNSMOPostfix = @"ModelObject";
+static NSString *const ROSNSMOPostfix           = @"ModelObject";
 
 NS_ASSUME_NONNULL_BEGIN
 

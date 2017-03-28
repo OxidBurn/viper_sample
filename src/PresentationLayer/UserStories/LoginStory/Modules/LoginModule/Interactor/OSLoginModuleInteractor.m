@@ -46,9 +46,7 @@
                                       [self.userInfoService saveOrUpdateUserInfoInDB: response
                                                                       withCompletion: ^(BOOL isUpdate) {
                                                                          
-                                                                       //   [self.output didLoggingUserToServerWithSuccess];
-                                                                          
-                                                                          [self.output didLoggingUser: [self obtainUserPlainObjectWithID:response.userID]];
+                                                                          [self.output didLoggingUser: [self obtainUserPlainObjectWithID: response.userID]];
                                                                           
                                                                       }];
                                   }
@@ -58,9 +56,12 @@
                               }];
 }
 
+
+#pragma mark - Internal methods -
+
 - (UserInfoPlainObject*) obtainUserPlainObjectWithID: (NSNumber*) userID
 {
-    UserInfoPlainObject* user = [self.ponsomizer convertObject: [self.userInfoService getUserInfoMOWithID: userID]];
+    UserInfoPlainObject* user = [self.ponsomizer convertObject: [self.userInfoService obtainUserInfoMOWithID: userID]];
     
     return user;
 }

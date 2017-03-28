@@ -27,7 +27,7 @@
 		417DCD191BFF5A945E4D6532 /* OSRegisterModuleAssemblyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3251E224107D5BD3B494A30F /* OSRegisterModuleAssemblyTests.m */; };
 		560458DF1E84316D00CFFED1 /* Register.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 560458DE1E84316D00CFFED1 /* Register.storyboard */; };
 		560458E11E84318E00CFFED1 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 560458E01E84318E00CFFED1 /* Login.storyboard */; };
-		560458E31E8431FC00CFFED1 /* UserInfo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 560458E21E8431FC00CFFED1 /* UserInfo.storyboard */; };
+		561B8B6E1E8AA38C00238561 /* UserInfo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 561B8B6D1E8AA38C00238561 /* UserInfo.storyboard */; };
 		562B85E21E8467020075F962 /* RegisterServiceImplementation.m in Sources */ = {isa = PBXBuildFile; fileRef = 562B85E11E8467020075F962 /* RegisterServiceImplementation.m */; };
 		562B85ED1E848A0D0075F962 /* EXTScope.m in Sources */ = {isa = PBXBuildFile; fileRef = 562B85EB1E848A0D0075F962 /* EXTScope.m */; };
 		562B85F01E848D110075F962 /* RegistrationInfoValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = 562B85EF1E848D110075F962 /* RegistrationInfoValidator.m */; };
@@ -88,7 +88,7 @@
 		4D369659818283ED342DEE1C /* OSUserInfoPresenterTests.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = OSUserInfoPresenterTests.m; sourceTree = "<group>"; };
 		560458DE1E84316D00CFFED1 /* Register.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Register.storyboard; sourceTree = "<group>"; };
 		560458E01E84318E00CFFED1 /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
-		560458E21E8431FC00CFFED1 /* UserInfo.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = UserInfo.storyboard; path = ../../../UserInfo.storyboard; sourceTree = "<group>"; };
+		561B8B6D1E8AA38C00238561 /* UserInfo.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = UserInfo.storyboard; sourceTree = "<group>"; };
 		562B85DF1E8466C60075F962 /* RegisterService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RegisterService.h; path = Register/RegisterService.h; sourceTree = "<group>"; };
 		562B85E01E8467020075F962 /* RegisterServiceImplementation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RegisterServiceImplementation.h; path = Register/RegisterServiceImplementation.h; sourceTree = "<group>"; };
 		562B85E11E8467020075F962 /* RegisterServiceImplementation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RegisterServiceImplementation.m; path = Register/RegisterServiceImplementation.m; sourceTree = "<group>"; };
@@ -258,6 +258,14 @@
 				0258A53294BF76A840823196 /* Modules */,
 			);
 			path = Tests;
+			sourceTree = "<group>";
+		};
+		561B8B6C1E8AA38C00238561 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				561B8B6D1E8AA38C00238561 /* UserInfo.storyboard */,
+			);
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 		562B85DD1E84668F0075F962 /* Register */ = {
@@ -853,7 +861,7 @@
 			isa = PBXGroup;
 			children = (
 				C598C3A61E8A6F42000C2465 /* Modules */,
-				C598C3BD1E8A6F42000C2465 /* Storyboards */,
+				561B8B6C1E8AA38C00238561 /* Storyboards */,
 			);
 			path = UserInfoStory;
 			sourceTree = "<group>";
@@ -927,14 +935,6 @@
 				C598C3BC1E8A6F42000C2465 /* OSUserInfoViewOutput.h */,
 			);
 			path = View;
-			sourceTree = "<group>";
-		};
-		C598C3BD1E8A6F42000C2465 /* Storyboards */ = {
-			isa = PBXGroup;
-			children = (
-				560458E21E8431FC00CFFED1 /* UserInfo.storyboard */,
-			);
-			path = Storyboards;
 			sourceTree = "<group>";
 		};
 		CC73A04028DC60F514BA0AC4 /* Presenter */ = {
@@ -1072,7 +1072,7 @@
 				56DB49CD1E8335DA0015C039 /* LaunchScreen.storyboard in Resources */,
 				560458E11E84318E00CFFED1 /* Login.storyboard in Resources */,
 				560458DF1E84316D00CFFED1 /* Register.storyboard in Resources */,
-				560458E31E8431FC00CFFED1 /* UserInfo.storyboard in Resources */,
+				561B8B6E1E8AA38C00238561 /* UserInfo.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

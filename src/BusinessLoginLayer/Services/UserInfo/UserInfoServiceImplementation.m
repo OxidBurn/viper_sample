@@ -7,6 +7,11 @@
 //
 
 #import "UserInfoServiceImplementation.h"
+
+// Frameworks
+#import <MagicalRecord/MagicalRecord.h>
+
+// Classes
 #import "UserInfoModelObject.h"
 
 @implementation UserInfoServiceImplementation
@@ -17,22 +22,24 @@
 - (void) saveOrUpdateUserInfoInDB: (UserInfoResponseObject*) info
                    withCompletion: (CompletionUpdateBlock)   completion
 {
-    [MagicalRecord saveWithBlock:^(NSManagedObjectContext *localContext) {
+    [MagicalRecord saveWithBlock: ^(NSManagedObjectContext* localContext) {
         
-        UserInfoModelObject *localPerson = [UserInfoModelObject MR_createEntityInContext: localContext];;
+        UserInfoModelObject* localPerson = [UserInfoModelObject MR_createEntityInContext: localContext];;
+        
         localPerson.fullName  = info.fullName;
         localPerson.email     = info.email;
         localPerson.imagePath = info.imagePath;
         localPerson.userID    = info.userID;
+    }
+                      completion: ^(BOOL contextDidSave, NSError * _Nullable error) {
+        
+                          if ( completion )
+                              completion(contextDidSave);
+                          
     }];
-    
-    NSLog(@"Object for storing to database %@", info);
-    
-    if ( completion )
-        completion(YES);
 }
 
-- (UserInfoModelObject*) getUserInfoMOWithID: (NSNumber*) userID
+- (UserInfoModelObject*) obtainUserInfoMOWithID: (NSNumber*) userID
 {
     NSPredicate* predicate = [NSPredicate predicateWithFormat: @"userID == %@", userID];
     

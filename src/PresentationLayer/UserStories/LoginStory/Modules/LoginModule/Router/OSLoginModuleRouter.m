@@ -37,7 +37,7 @@
 
 - (void) openUserInfoModuleWithUserInfo: (UserInfoPlainObject*) user
 {
-    [[self.transitionHandler openModuleUsingSegue: LoginToUserInfoSegue] thenChainUsingBlock:^id<RamblerViperModuleOutput>(id<OSUserInfoModuleInput> moduleInput) {
+    [[self.transitionHandler openModuleUsingSegue: LoginToUserInfoSegue] thenChainUsingBlock: ^id<RamblerViperModuleOutput>(id<OSUserInfoModuleInput> moduleInput) {
         
         [moduleInput configureModuleWithUser: user];
         

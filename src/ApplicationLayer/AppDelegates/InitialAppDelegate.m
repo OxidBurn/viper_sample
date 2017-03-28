@@ -10,6 +10,7 @@
 
 // Frameworks
 #import <RamblerTyphoonUtils/AssemblyCollector.h>
+#import <MagicalRecord/MagicalRecord.h>
 
 
 @implementation InitialAppDelegate

@@ -109,6 +109,8 @@
                                */
                               [definition injectProperty: @selector(registerModuleFactory)
                                                     with: [self.registerModuleAssembly factoryRegisterModule]];
+                              
+                              
                                                     
                           }];
 }

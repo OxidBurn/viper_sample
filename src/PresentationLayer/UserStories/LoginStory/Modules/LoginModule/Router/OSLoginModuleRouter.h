@@ -20,4 +20,6 @@
 
 @property (strong, nonatomic) id<RamblerViperModuleFactoryProtocol> registerModuleFactory;
 
+@property (strong, nonatomic) id<RamblerViperModuleFactoryProtocol> userInfoModuleFactory;
+
 @end
