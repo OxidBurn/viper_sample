@@ -59,6 +59,12 @@
 
 #pragma mark - Internal methods -
 
+/**
+ method for converting user managed object to plain object
+
+ @param userID parameter for searching user in DB
+ @return converted user from managed object to plain object
+ */
 - (UserInfoPlainObject*) obtainUserPlainObjectWithID: (NSNumber*) userID
 {
     UserInfoPlainObject* user = [self.ponsomizer convertObject: [self.userInfoService obtainUserInfoMOWithID: userID]];

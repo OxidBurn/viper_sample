@@ -35,10 +35,17 @@
     }];
 }
 
+
+
 - (void) openUserInfoModuleWithUserInfo: (UserInfoPlainObject*) user
 {
     [[self.transitionHandler openModuleUsingSegue: LoginToUserInfoSegue] thenChainUsingBlock: ^id<RamblerViperModuleOutput>(id<OSUserInfoModuleInput> moduleInput) {
         
+        /**
+         @author Valeria Mozghova
+         
+         Block is used for configuring presented view with user data
+         */
         [moduleInput configureModuleWithUser: user];
         
         return nil;

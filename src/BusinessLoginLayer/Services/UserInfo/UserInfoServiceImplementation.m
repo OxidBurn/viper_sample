@@ -19,9 +19,11 @@
 
 #pragma mark - Public methods -
 
+
 - (void) saveOrUpdateUserInfoInDB: (UserInfoResponseObject*) info
                    withCompletion: (CompletionUpdateBlock)   completion
 {
+    
     [MagicalRecord saveWithBlock: ^(NSManagedObjectContext* localContext) {
         
         UserInfoModelObject* localPerson = [UserInfoModelObject MR_createEntityInContext: localContext];;
@@ -38,6 +40,13 @@
                           
     }];
 }
+
+/**
+ method for getting user from DB
+
+ @param userID parameter for searching in DB
+ @return user managed object
+ */
 
 - (UserInfoModelObject*) obtainUserInfoMOWithID: (NSNumber*) userID
 {
