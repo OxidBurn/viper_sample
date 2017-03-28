@@ -18,6 +18,7 @@
     [aCoder encodeObject:self.imagePath forKey:@"imagePath"];
     [aCoder encodeObject:self.password forKey:@"password"];
     [aCoder encodeObject:self.userID forKey:@"userID"];
+    [aCoder encodeObject:self.username forKey:@"username"];
 }
 
 - (id)initWithCoder:(NSCoder *)aDecoder {
@@ -29,6 +30,7 @@
         _imagePath = [[aDecoder decodeObjectForKey:@"imagePath"] copy];
         _password = [[aDecoder decodeObjectForKey:@"password"] copy];
         _userID = [[aDecoder decodeObjectForKey:@"userID"] copy];
+        _username = [[aDecoder decodeObjectForKey:@"username"] copy];
     }
 
     return self;
@@ -44,6 +46,7 @@
     replica.imagePath = self.imagePath;
     replica.password = self.password;
     replica.userID = self.userID;
+    replica.username = self.username;
 
     return replica;
 }

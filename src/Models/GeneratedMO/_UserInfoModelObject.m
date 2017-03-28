@@ -66,6 +66,8 @@
 	[self setPrimitiveUserID:@(value_)];
 }
 
+@dynamic username;
+
 @end
 
 @implementation UserInfoModelObjectAttributes 
@@ -83,6 +85,9 @@
 }
 + (NSString *)userID {
 	return @"userID";
+}
++ (NSString *)username {
+	return @"username";
 }
 @end
 

@@ -32,6 +32,7 @@
         localPerson.email     = info.email;
         localPerson.imagePath = info.imagePath;
         localPerson.userID    = info.userID;
+        localPerson.username  = info.username;
     }
                       completion: ^(BOOL contextDidSave, NSError * _Nullable error) {
         
