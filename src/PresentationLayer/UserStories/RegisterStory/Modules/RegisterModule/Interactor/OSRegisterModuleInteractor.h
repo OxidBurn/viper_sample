@@ -13,6 +13,7 @@
 // Protocols
 @protocol OSRegisterModuleInteractorOutput;
 @protocol RegisterService;
+@protocol ROSPonsomizer;
 
 @interface OSRegisterModuleInteractor : NSObject <OSRegisterModuleInteractorInput>
 
@@ -21,5 +22,7 @@
 @property (strong, nonatomic) id<RegisterService> registerService;
 
 @property (strong, nonatomic) RegistrationInfoValidator* registrationValidator;
+
+@property (nonatomic, strong) id <ROSPonsomizer> ponsomizer;
 
 @end

@@ -96,6 +96,15 @@
                                */
                               [definition injectProperty: @selector(registrationValidator)
                                                     with: [self.presentationLayerHelpersAssembly registrationValidator]];
+                              
+                              /**
+                               @author Nikolay Chaban
+                               
+                               Inject ponsomizer for converting objects
+                               */
+                              [definition injectProperty: @selector(ponsomizer)
+                                                    with: [self.ponsomizerAssembly ponsomizer]];
+                              
                                                     
                           }];
 }

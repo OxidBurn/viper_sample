@@ -12,6 +12,7 @@
 
 // Classes
 #import "ModuleAssemblyBase.h"
+#import "PonsomizerAssembly.h"
 
 @protocol RamblerViperModuleFactoryProtocol;
 
@@ -31,5 +32,7 @@
  @return register module factory protocol
  */
 - (id<RamblerViperModuleFactoryProtocol>) factoryRegisterModule;
+
+@property (nonatomic, strong) PonsomizerAssembly *ponsomizerAssembly;
 
 @end
