@@ -59,9 +59,16 @@
 	*/
 }
 
+
+/**
+ Method for setting up initial
+
+ @param user - loggeg user
+ */
 - (void) setupInitialStateWithUser: (UserInfoPlainObject*) user
 {
     self.usernameLabel.text = user.fullName;
+    self.userImgView.image  = [UIImage imageNamed: user.imagePath];
 }
 
 @end
