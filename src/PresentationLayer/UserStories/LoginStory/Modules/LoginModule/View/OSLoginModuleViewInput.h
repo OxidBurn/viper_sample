@@ -21,7 +21,6 @@ typedef void (^LoginModuleViewLoginDataResultBlock)(NSString* login, NSString* p
  */
 - (void) setupInitialState;
 
-
 /**
  @author Nikolay Chaban
  

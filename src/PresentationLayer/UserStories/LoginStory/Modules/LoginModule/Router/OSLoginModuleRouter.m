@@ -13,6 +13,7 @@
 
 // Classes
 #import "LoginModuleSegueIdentifiersConstants.h"
+#import "OSUserInfoModuleInput.h"
 
 @implementation OSLoginModuleRouter
 
@@ -28,6 +29,17 @@
          
          This block we can use in case if need to pass some info to destination controller
          */
+        
+        return nil;
+        
+    }];
+}
+
+- (void) openUserInfoModuleWithUserInfo: (UserInfoPlainObject*) user
+{
+    [[self.transitionHandler openModuleUsingSegue: LoginToUserInfoSegue] thenChainUsingBlock:^id<RamblerViperModuleOutput>(id<OSUserInfoModuleInput> moduleInput) {
+        
+        [moduleInput configureModuleWithUser: user];
         
         return nil;
         

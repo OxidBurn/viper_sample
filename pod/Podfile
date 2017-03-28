@@ -11,4 +11,5 @@ target 'ViperSampleProject' do
   pod 'ViperMcFlurry'
   pod 'RamblerAppDelegateProxy'
   pod 'RamblerSegues'
+  pod 'MagicalRecord'
 end

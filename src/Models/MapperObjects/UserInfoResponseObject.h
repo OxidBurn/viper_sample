@@ -50,4 +50,11 @@
  */
 @property (strong, nonatomic) NSString* username;
 
+/**
+ @author Nikolay Chaban
+ 
+user id
+ */
+@property (strong, nonatomic) NSNumber* userID;
+
 @end

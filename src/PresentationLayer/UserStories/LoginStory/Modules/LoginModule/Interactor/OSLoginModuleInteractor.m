@@ -13,6 +13,7 @@
 #import "LoginService.h"
 #import "UserInfoService.h"
 #import "UserInfoResponseObject.h"
+#import "ROSPonsomizer.h"
 
 @implementation OSLoginModuleInteractor
 
@@ -45,7 +46,9 @@
                                       [self.userInfoService saveOrUpdateUserInfoInDB: response
                                                                       withCompletion: ^(BOOL isUpdate) {
                                                                          
-                                                                          [self.output didLoggingUserToServerWithSuccess];
+                                                                       //   [self.output didLoggingUserToServerWithSuccess];
+                                                                          
+                                                                          [self.output didLoggingUser: [self obtainUserPlainObjectWithID:response.userID]];
                                                                           
                                                                       }];
                                   }
@@ -55,4 +58,10 @@
                               }];
 }
 
+- (UserInfoPlainObject*) obtainUserPlainObjectWithID: (NSNumber*) userID
+{
+    UserInfoPlainObject* user = [self.ponsomizer convertObject: [self.userInfoService getUserInfoMOWithID: userID]];
+    
+    return user;
+}
 @end

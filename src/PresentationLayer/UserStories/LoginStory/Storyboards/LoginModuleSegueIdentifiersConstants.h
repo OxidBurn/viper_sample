@@ -12,3 +12,5 @@
  Const string with transition segue identifier from Login to Register screen
  */
 static NSString* const LoginToRegisterSegue = @"ShowRegistrationScreenSegue";
+
+static NSString* const LoginToUserInfoSegue = @"ShowUserInfoScreenSegue";

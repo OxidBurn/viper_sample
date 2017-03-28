@@ -9,6 +9,9 @@
 // Frameworks
 @import Foundation;
 
+//Classes
+#import "UserInfoPlainObject.h"
+
 @protocol OSLoginModuleRouterInput <NSObject>
 
 /**
@@ -19,6 +22,14 @@
  */
 - (void) openRegisterModule;
 
+/**
+ @author Valeriya Mozghovaya
+ 
+ Method for opening UserInfo screen from Login screen with using Storyboard segue
+ by pressing on "Login" button
+ */
+
+- (void) openUserInfoModuleWithUserInfo: (UserInfoPlainObject*) user;
 
 /**
  @author Chaban Nikolay

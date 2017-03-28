@@ -19,6 +19,7 @@
 #import "ServiceComponents.h"
 
 #import "OSRegisterModuleAssembly.h"
+#import "PonsomizerAssembly.h"
 
 @interface OSLoginModuleAssembly()
 
@@ -67,6 +68,14 @@
                                */
                               [definition injectProperty: @selector(userInfoService)
                                                     with: [self.serviceComponents userInfoService]];
+                              
+                              /**
+                               @author Valeriya Mozghovaya
+                               
+                               Inject ponsomizer for converting MO to PONSO
+                               */
+                              [definition injectProperty: @selector(ponsomizer)
+                                                    with: [self.ponsomizerAssembly ponsomizer]];
                                                     
                           }];
 }

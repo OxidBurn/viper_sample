@@ -11,12 +11,14 @@
 // Frameworks
 #import <RamblerTyphoonUtils/AssemblyCollector.h>
 
+
 @implementation InitialAppDelegate
 
 - (BOOL)           application: (UIApplication*) application
  didFinishLaunchingWithOptions: (NSDictionary*)  launchOptions
 {
     // Override point for customization after application launch.
+    [MagicalRecord setupCoreDataStackWithStoreNamed: @"ViperSampleModel"];
     
     return YES;
 }

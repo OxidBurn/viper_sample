@@ -16,6 +16,8 @@
     [aCoder encodeObject:self.email forKey:@"email"];
     [aCoder encodeObject:self.fullName forKey:@"fullName"];
     [aCoder encodeObject:self.imagePath forKey:@"imagePath"];
+    [aCoder encodeObject:self.password forKey:@"password"];
+    [aCoder encodeObject:self.userID forKey:@"userID"];
 }
 
 - (id)initWithCoder:(NSCoder *)aDecoder {
@@ -25,6 +27,8 @@
         _email = [[aDecoder decodeObjectForKey:@"email"] copy];
         _fullName = [[aDecoder decodeObjectForKey:@"fullName"] copy];
         _imagePath = [[aDecoder decodeObjectForKey:@"imagePath"] copy];
+        _password = [[aDecoder decodeObjectForKey:@"password"] copy];
+        _userID = [[aDecoder decodeObjectForKey:@"userID"] copy];
     }
 
     return self;
@@ -38,6 +42,8 @@
     replica.email = self.email;
     replica.fullName = self.fullName;
     replica.imagePath = self.imagePath;
+    replica.password = self.password;
+    replica.userID = self.userID;
 
     return replica;
 }

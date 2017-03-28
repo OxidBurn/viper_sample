@@ -13,11 +13,13 @@
 @protocol OSLoginModuleInteractorOutput;
 @protocol LoginService;
 @protocol UserInfoService;
+@protocol ROSPonsomizer;
 
 @interface OSLoginModuleInteractor : NSObject <OSLoginModuleInteractorInput>
 
-@property (nonatomic, weak) id<OSLoginModuleInteractorOutput> output;
+@property (nonatomic, weak)   id<OSLoginModuleInteractorOutput> output;
 @property (strong, nonatomic) id<LoginService> loginService;
 @property (strong, nonatomic) id<UserInfoService> userInfoService;
+@property (nonatomic, strong) id <ROSPonsomizer> ponsomizer;
 
 @end

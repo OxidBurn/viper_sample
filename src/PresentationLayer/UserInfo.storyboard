@@ -1,20 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--User Info View Controller-->
         <scene sceneID="oJW-eQ-MRk">
             <objects>
-                <viewController storyboardIdentifier="UIViewController-Jgu-BV-V9g" id="Jgu-BV-V9g" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="UIViewController-Jgu-BV-V9g" id="Jgu-BV-V9g" customClass="OSUserInfoViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="oF7-mm-A4m"/>
                         <viewControllerLayoutGuide type="bottom" id="q7X-pU-dcz"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="dm2-8p-12r">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="uWZ-jy-nW1">
@@ -63,7 +67,10 @@
                             <constraint firstItem="Bzg-2R-Mnc" firstAttribute="leading" secondItem="PQc-Pa-axk" secondAttribute="trailing" constant="8" id="wKl-v6-vnd"/>
                         </constraints>
                     </view>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4_7.fullscreen"/>
+                    <connections>
+                        <outlet property="userImgView" destination="uWZ-jy-nW1" id="0Rl-Zf-WkI"/>
+                        <outlet property="usernameLabel" destination="Bzg-2R-Mnc" id="Z3J-Gk-to0"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zJy-jN-xAp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

@@ -11,6 +11,7 @@
 
 // Classes
 #import "UserInfoResponseObject.h"
+#import "UserInfoModelObject.h"
 
 ///-------------------------------------------------
 /// @name Completion block definition
@@ -40,5 +41,6 @@ typedef void(^CompletionUpdateBlock)(BOOL isUpdate);
 - (void) saveOrUpdateUserInfoInDB: (UserInfoResponseObject*) info
                    withCompletion: (CompletionUpdateBlock)   completion;
 
+- (UserInfoModelObject*) getUserInfoMOWithID: (NSNumber*) userID;
 
 @end

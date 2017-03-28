@@ -37,14 +37,14 @@
     
     [self.view getDataWithResultBlock: ^(NSString *login, NSString *password) {
         
-        typeof(self) sself = blockSelf;
+        typeof(self) self = blockSelf;
         
         /**
          @author Nikolay Chaban
          
          Call method for opening User info screen
          */
-        [sself.interactor loginUserToServerWithName: login
+        [self.interactor loginUserToServerWithName: login
                                        withPassword: password];
     }];
 }
@@ -69,7 +69,12 @@
 
 - (void) didLoggingUserToServerWithSuccess
 {
-    [self.view showLoginSuccessMessage];
+   // [self.view showLoginSuccessMessage];
+}
+
+- (void) didLoggingUser: (UserInfoPlainObject*) user
+{
+    [self.router openUserInfoModuleWithUserInfo: user];
 }
 
 @end

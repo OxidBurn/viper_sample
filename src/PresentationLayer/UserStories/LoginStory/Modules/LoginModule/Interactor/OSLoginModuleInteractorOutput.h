@@ -9,11 +9,16 @@
 //Frameworks
 @import Foundation;
 
+//Classes
+#import "UserInfoPlainObject.h"
+
 @protocol OSLoginModuleInteractorOutput <NSObject>
 
 
 - (void) didLoggingUserToServerWithSuccess;
 
 - (void) didLoggingUserToServerWithError: (NSError*) error;
+
+- (void) didLoggingUser: (UserInfoPlainObject*) user;
 
 @end

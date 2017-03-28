@@ -86,11 +86,20 @@
                         <outlet property="loginTextField" destination="0ii-hl-gwX" id="FfN-CP-DUZ"/>
                         <outlet property="passTextField" destination="lxL-cq-Qyg" id="HER-KW-7m3"/>
                         <segue destination="M25-52-kcQ" kind="show" identifier="ShowRegistrationScreenSegue" id="Mry-Gm-YZL"/>
+                        <segue destination="9Ff-PV-7l5" kind="show" identifier="ShowUserInfoScreenSegue" id="enb-iO-IIb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-33" y="146"/>
+        </scene>
+        <!--Storyboard Reference-->
+        <scene sceneID="cSa-W3-iWa">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="UIViewController-Jgu-BV-V9g" id="9Ff-PV-7l5" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rQJ-sD-4b6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="575" y="296"/>
         </scene>
         <!--OSRegisterModuleViewController-->
         <scene sceneID="qBJ-y9-AMG">

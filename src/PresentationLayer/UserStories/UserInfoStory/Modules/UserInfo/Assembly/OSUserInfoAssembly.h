@@ -1,26 +1,25 @@
 //
-//  OSLoginModuleAssembly.h
+//  OSUserInfoAssembly.h
 //  ViperSampleProject
 //
-//  Created by Nikolay Chaban on 18/03/2017.
+//  Created by Valeria Mozghova on 28/03/2017.
 //  Copyright © 2017 OnSight. All rights reserved.
 //
 
 // Frameworks
 #import <Typhoon/Typhoon.h>
 #import <RamblerTyphoonUtils/AssemblyCollector.h>
-
-// Classes
 #import "ModuleAssemblyBase.h"
 
+//Protocols
 @class PonsomizerAssembly;
 
 /**
- @author Nikolay Chaban
+ @author Valeria Mozghova
 
- LoginModule module
+ UserInfo module
  */
-@interface OSLoginModuleAssembly : ModuleAssemblyBase <RamblerInitialAssembly>
+@interface OSUserInfoAssembly : ModuleAssemblyBase <RamblerInitialAssembly>
 
 @property (nonatomic, strong) PonsomizerAssembly* ponsomizerAssembly;
 
