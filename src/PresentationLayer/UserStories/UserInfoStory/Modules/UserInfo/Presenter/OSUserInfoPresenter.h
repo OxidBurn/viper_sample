@@ -10,6 +10,7 @@
 #import "OSUserInfoViewOutput.h"
 #import "OSUserInfoInteractorOutput.h"
 #import "OSUserInfoModuleInput.h"
+#import "UserInfoPresenterStateStorage.h"
 
 // Protocols
 @protocol OSUserInfoViewInput;
@@ -21,5 +22,6 @@
 @property (nonatomic, weak) id<OSUserInfoViewInput> view;
 @property (nonatomic, strong) id<OSUserInfoInteractorInput> interactor;
 @property (nonatomic, strong) id<OSUserInfoRouterInput> router;
+@property (strong, nonatomic) UserInfoPresenterStateStorage* presenterStateStorage;
 
 @end

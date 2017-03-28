@@ -28,6 +28,7 @@
 		560458DF1E84316D00CFFED1 /* Register.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 560458DE1E84316D00CFFED1 /* Register.storyboard */; };
 		560458E11E84318E00CFFED1 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 560458E01E84318E00CFFED1 /* Login.storyboard */; };
 		561B8B6E1E8AA38C00238561 /* UserInfo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 561B8B6D1E8AA38C00238561 /* UserInfo.storyboard */; };
+		561B8B721E8AAB3100238561 /* UserInfoPresenterStateStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 561B8B711E8AAB3100238561 /* UserInfoPresenterStateStorage.m */; };
 		562B85E21E8467020075F962 /* RegisterServiceImplementation.m in Sources */ = {isa = PBXBuildFile; fileRef = 562B85E11E8467020075F962 /* RegisterServiceImplementation.m */; };
 		562B85ED1E848A0D0075F962 /* EXTScope.m in Sources */ = {isa = PBXBuildFile; fileRef = 562B85EB1E848A0D0075F962 /* EXTScope.m */; };
 		562B85F01E848D110075F962 /* RegistrationInfoValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = 562B85EF1E848D110075F962 /* RegistrationInfoValidator.m */; };
@@ -89,6 +90,8 @@
 		560458DE1E84316D00CFFED1 /* Register.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Register.storyboard; sourceTree = "<group>"; };
 		560458E01E84318E00CFFED1 /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		561B8B6D1E8AA38C00238561 /* UserInfo.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = UserInfo.storyboard; sourceTree = "<group>"; };
+		561B8B701E8AAB3100238561 /* UserInfoPresenterStateStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserInfoPresenterStateStorage.h; sourceTree = "<group>"; };
+		561B8B711E8AAB3100238561 /* UserInfoPresenterStateStorage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserInfoPresenterStateStorage.m; sourceTree = "<group>"; };
 		562B85DF1E8466C60075F962 /* RegisterService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RegisterService.h; path = Register/RegisterService.h; sourceTree = "<group>"; };
 		562B85E01E8467020075F962 /* RegisterServiceImplementation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RegisterServiceImplementation.h; path = Register/RegisterServiceImplementation.h; sourceTree = "<group>"; };
 		562B85E11E8467020075F962 /* RegisterServiceImplementation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RegisterServiceImplementation.m; path = Register/RegisterServiceImplementation.m; sourceTree = "<group>"; };
@@ -266,6 +269,15 @@
 				561B8B6D1E8AA38C00238561 /* UserInfo.storyboard */,
 			);
 			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		561B8B6F1E8AAB1600238561 /* PresenterStateStorage */ = {
+			isa = PBXGroup;
+			children = (
+				561B8B701E8AAB3100238561 /* UserInfoPresenterStateStorage.h */,
+				561B8B711E8AAB3100238561 /* UserInfoPresenterStateStorage.m */,
+			);
+			path = PresenterStateStorage;
 			sourceTree = "<group>";
 		};
 		562B85DD1E84668F0075F962 /* Register */ = {
@@ -909,6 +921,7 @@
 		C598C3B01E8A6F42000C2465 /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
+				561B8B6F1E8AAB1600238561 /* PresenterStateStorage */,
 				C598C3B11E8A6F42000C2465 /* OSUserInfoModuleInput.h */,
 				C598C3B21E8A6F42000C2465 /* OSUserInfoPresenter.h */,
 				C598C3B31E8A6F42000C2465 /* OSUserInfoPresenter.m */,
@@ -1163,6 +1176,7 @@
 				56F69CC51E859CD80099A584 /* _UserInfoModelObject.m in Sources */,
 				56DB4A1B1E833CF30015C039 /* OSRegisterModuleAssembly.m in Sources */,
 				56DB4A161E833CF30015C039 /* OSLoginModuleAssembly.m in Sources */,
+				561B8B721E8AAB3100238561 /* UserInfoPresenterStateStorage.m in Sources */,
 				56D81E0A1E85406F003AC213 /* AlertsFactory.m in Sources */,
 				56DB49CC1E8335DA0015C039 /* LoginServiceImplementation.m in Sources */,
 				56DB4A1A1E833CF30015C039 /* OSLoginModuleViewController.m in Sources */,

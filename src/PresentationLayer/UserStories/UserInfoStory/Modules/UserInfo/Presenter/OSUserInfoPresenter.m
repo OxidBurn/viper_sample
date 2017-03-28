@@ -17,10 +17,7 @@
 
 // properties
 
-@property (strong, nonatomic) UserInfoPlainObject* userInfo;
-
 // methods
-
 
 @end
 
@@ -40,7 +37,7 @@
 
 - (void) configureModuleWithUser: (UserInfoPlainObject*) user
 {
-    self.userInfo = user;
+    self.presenterStateStorage.userInfo = user;
 }
 
 #pragma mark - Methods OSUserInfoViewOutput -
@@ -49,7 +46,12 @@
 {
 	[self.view setupInitialState];
     
-    [self.view setupInitialStateWithUser: self.userInfo];
+    /**
+     @author Nikolay Chaban
+     
+     Setup initial state of the view with passing user parameter
+     */
+    [self.view setupInitialStateWithUser: self.presenterStateStorage.userInfo];
 }
 
 

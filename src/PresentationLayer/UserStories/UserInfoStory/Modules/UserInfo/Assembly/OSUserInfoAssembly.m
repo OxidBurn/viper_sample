@@ -17,6 +17,7 @@
 #import "OSUserInfoPresenter.h"
 #import "OSUserInfoRouter.h"
 #import "PonsomizerAssembly.h"
+#import "UserInfoPresenterStateStorage.h"
 
 
 @implementation OSUserInfoAssembly
@@ -102,6 +103,14 @@
                                                     with: [self interactorUserInfo]];
                               [definition injectProperty: @selector(router)
                                                     with: [self routerUserInfo]];
+                              
+                              /**
+                               @author Nikolay Chaban
+                               
+                               Inject user info module presenter storage property
+                               */
+                              [definition injectProperty: @selector(presenterStateStorage)
+                                                    with: [self presenterStateStorage]];
                                                     
                           }];
 }
@@ -115,6 +124,14 @@
                                                     with: [self viewUserInfo]];
                                                     
                           }];
+}
+
+
+#pragma mark - Internal module assembly initialization -
+
+- (UserInfoPresenterStateStorage*) presenterStateStorage
+{
+    return [TyphoonDefinition withClass: [UserInfoPresenterStateStorage class]];
 }
 
 @end
