@@ -29,6 +29,7 @@
 		560458E11E84318E00CFFED1 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 560458E01E84318E00CFFED1 /* Login.storyboard */; };
 		561B8B6E1E8AA38C00238561 /* UserInfo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 561B8B6D1E8AA38C00238561 /* UserInfo.storyboard */; };
 		561B8B721E8AAB3100238561 /* UserInfoPresenterStateStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 561B8B711E8AAB3100238561 /* UserInfoPresenterStateStorage.m */; };
+		561B8B751E8AADD400238561 /* HopkinsAvatar.png in Resources */ = {isa = PBXBuildFile; fileRef = 561B8B741E8AADD400238561 /* HopkinsAvatar.png */; };
 		562B85E21E8467020075F962 /* RegisterServiceImplementation.m in Sources */ = {isa = PBXBuildFile; fileRef = 562B85E11E8467020075F962 /* RegisterServiceImplementation.m */; };
 		562B85ED1E848A0D0075F962 /* EXTScope.m in Sources */ = {isa = PBXBuildFile; fileRef = 562B85EB1E848A0D0075F962 /* EXTScope.m */; };
 		562B85F01E848D110075F962 /* RegistrationInfoValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = 562B85EF1E848D110075F962 /* RegistrationInfoValidator.m */; };
@@ -92,6 +93,7 @@
 		561B8B6D1E8AA38C00238561 /* UserInfo.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = UserInfo.storyboard; sourceTree = "<group>"; };
 		561B8B701E8AAB3100238561 /* UserInfoPresenterStateStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserInfoPresenterStateStorage.h; sourceTree = "<group>"; };
 		561B8B711E8AAB3100238561 /* UserInfoPresenterStateStorage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserInfoPresenterStateStorage.m; sourceTree = "<group>"; };
+		561B8B741E8AADD400238561 /* HopkinsAvatar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HopkinsAvatar.png; sourceTree = "<group>"; };
 		562B85DF1E8466C60075F962 /* RegisterService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RegisterService.h; path = Register/RegisterService.h; sourceTree = "<group>"; };
 		562B85E01E8467020075F962 /* RegisterServiceImplementation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RegisterServiceImplementation.h; path = Register/RegisterServiceImplementation.h; sourceTree = "<group>"; };
 		562B85E11E8467020075F962 /* RegisterServiceImplementation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RegisterServiceImplementation.m; path = Register/RegisterServiceImplementation.m; sourceTree = "<group>"; };
@@ -278,6 +280,15 @@
 				561B8B711E8AAB3100238561 /* UserInfoPresenterStateStorage.m */,
 			);
 			path = PresenterStateStorage;
+			sourceTree = "<group>";
+		};
+		561B8B731E8AADD400238561 /* avatars */ = {
+			isa = PBXGroup;
+			children = (
+				561B8B741E8AADD400238561 /* HopkinsAvatar.png */,
+			);
+			name = avatars;
+			path = ../res/avatars;
 			sourceTree = "<group>";
 		};
 		562B85DD1E84668F0075F962 /* Register */ = {
@@ -749,6 +760,7 @@
 		56E54D341E0C19D000E39B9F /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				561B8B731E8AADD400238561 /* avatars */,
 				56E54D3A1E0C19F200E39B9F /* Assets.xcassets */,
 			);
 			name = Resources;
@@ -1086,6 +1098,7 @@
 				560458E11E84318E00CFFED1 /* Login.storyboard in Resources */,
 				560458DF1E84316D00CFFED1 /* Register.storyboard in Resources */,
 				561B8B6E1E8AA38C00238561 /* UserInfo.storyboard in Resources */,
+				561B8B751E8AADD400238561 /* HopkinsAvatar.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
