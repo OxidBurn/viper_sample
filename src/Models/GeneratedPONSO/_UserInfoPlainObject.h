@@ -14,5 +14,6 @@
 @property (nonatomic, copy, readwrite) NSString *imagePath;
 @property (nonatomic, copy, readwrite) NSString *password;
 @property (nonatomic, copy, readwrite) NSNumber *userID;
+@property (nonatomic, copy, readwrite) NSString *username;
 
 @end

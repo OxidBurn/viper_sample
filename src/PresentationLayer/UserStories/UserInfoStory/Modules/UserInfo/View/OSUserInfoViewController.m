@@ -50,7 +50,6 @@
 }
 
 
-
 #pragma mark - Methods OSUserInfoViewInput -
 
 - (void) setupInitialState 
@@ -65,7 +64,7 @@
 
 
 /**
- Method for setting up initial
+ Method for setting up view with initial configuration
 
  @param user - loggeg user
  */
@@ -74,7 +73,7 @@
     self.fullnameLabel.text = user.fullName;
     self.userImgView.image  = [UIImage imageNamed: user.imagePath];
     self.emailLabel.text = user.email;
-  //  self.userNameLabel.text = user
+    self.userNameLabel.text = user.username;
 }
 
 @end
