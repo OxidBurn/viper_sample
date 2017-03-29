@@ -12,4 +12,6 @@ target 'ViperSampleProject' do
   pod 'RamblerAppDelegateProxy'
   pod 'RamblerSegues'
   pod 'MagicalRecord'
+  pod 'Nimbus/Models', :git => 'https://github.com/rambler-ios/nimbus'
+  pod 'Nimbus/Collections', :git => 'https://github.com/rambler-ios/nimbus'
 end
