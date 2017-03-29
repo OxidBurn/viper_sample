@@ -135,10 +135,10 @@
             </objects>
             <point key="canvasLocation" x="808.79999999999995" y="552.77361319340332"/>
         </scene>
-        <!--View Controller-->
+        <!--User Update Info View Controller-->
         <scene sceneID="gCb-hW-Pzx">
             <objects>
-                <viewController id="hJF-Ar-9nH" sceneMemberID="viewController">
+                <viewController id="hJF-Ar-9nH" customClass="OSUserUpdateInfoViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Lg3-Mw-5uq">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="252"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -173,6 +173,9 @@
                                     <constraint firstAttribute="width" constant="55" id="GbB-Ug-hrK"/>
                                 </constraints>
                                 <state key="normal" title="Update"/>
+                                <connections>
+                                    <action selector="clickUpdateBtn:" destination="hJF-Ar-9nH" eventType="touchUpInside" id="sEk-8t-1ex"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.66963425526388842" green="1" blue="0.88581138739551413" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -192,6 +195,11 @@
                             <constraint firstItem="xOv-n3-czn" firstAttribute="leading" secondItem="Lg3-Mw-5uq" secondAttribute="leadingMargin" id="pMJ-CR-FQX"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="emailField" destination="NRk-x2-LxL" id="h3W-Qu-p0T"/>
+                        <outlet property="fullNameField" destination="RJd-ke-8df" id="DNY-7j-b8X"/>
+                        <outlet property="userNameField" destination="xOv-n3-czn" id="awk-7f-VvR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cxl-00-Bsk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
