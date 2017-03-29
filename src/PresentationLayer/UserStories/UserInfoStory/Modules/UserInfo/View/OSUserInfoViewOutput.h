@@ -9,6 +9,9 @@
 // Frameworks
 @import Foundation;
 
+// Classes
+@class UserInfoPlainObject;
+
 // Protocols
 @protocol OSUserInfoViewOutput <NSObject>
 

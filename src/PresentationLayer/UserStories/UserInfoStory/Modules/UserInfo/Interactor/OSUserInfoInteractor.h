@@ -12,10 +12,12 @@
 // Protocols
 @protocol OSUserInfoInteractorOutput;
 @protocol ROSPonsomizer;
+@protocol UserInfoService;
 
 @interface OSUserInfoInteractor : NSObject <OSUserInfoInteractorInput>
 
 @property (nonatomic, weak) id<OSUserInfoInteractorOutput> output;
 @property (nonatomic, strong) id<ROSPonsomizer> ponsomizer;
+@property (strong, nonatomic) id<UserInfoService> userInfoService;
 
 @end

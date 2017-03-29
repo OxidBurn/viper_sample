@@ -11,4 +11,6 @@
 
 @protocol OSUserUpdateInfoInteractorOutput <NSObject>
 
+- (void) didUpdateUserInfoInDB;
+
 @end

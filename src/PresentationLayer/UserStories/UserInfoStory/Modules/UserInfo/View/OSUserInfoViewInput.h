@@ -25,4 +25,6 @@
 
 - (void) setupInitialStateWithUser: (UserInfoPlainObject*) user;
 
+- (void) updateUserInfo: (UserInfoPlainObject*) user;
+
 @end

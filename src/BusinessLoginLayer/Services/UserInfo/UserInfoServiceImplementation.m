@@ -42,6 +42,26 @@
     }];
 }
 
+- (void) updateUserInfoInDB: (UserInfoPlainObject*)  info
+             withCompletion: (CompletionUpdateBlock) completion
+{
+    [MagicalRecord saveWithBlock: ^(NSManagedObjectContext * _Nonnull localContext) {
+        
+        UserInfoModelObject* localPerson = [[self obtainUserInfoMOWithID: info.userID] MR_inContext: localContext];
+        
+        localPerson.username = info.username;
+        localPerson.fullName = info.fullName;
+        localPerson.email    = info.email;
+        
+    }
+                      completion: ^(BOOL contextDidSave, NSError * _Nullable error) {
+                          
+                          if ( completion )
+                              completion(contextDidSave);
+                          
+                      }];
+}
+
 /**
  @author Valeria Mozghova
  
