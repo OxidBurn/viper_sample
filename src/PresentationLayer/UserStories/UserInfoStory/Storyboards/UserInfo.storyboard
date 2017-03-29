@@ -92,11 +92,8 @@
                                 <color key="textColor" red="0.14901960780000001" green="0.1764705882" blue="0.2156862745" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qnJ-KJ-3Yr">
+                            <containerView opaque="NO" contentMode="scaleToFill" restorationIdentifier="updateUserInfo" translatesAutoresizingMaskIntoConstraints="NO" id="qnJ-KJ-3Yr">
                                 <rect key="frame" x="0.0" y="415" width="375" height="252"/>
-                                <connections>
-                                    <segue destination="hJF-Ar-9nH" kind="embed" id="aL1-vJ-tac"/>
-                                </connections>
                             </containerView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.85284795241244704" blue="0.76126856848916691" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -127,8 +124,10 @@
                     <connections>
                         <outlet property="emailLabel" destination="BK2-SF-nJj" id="08l-jV-VTX"/>
                         <outlet property="fullnameLabel" destination="Bzg-2R-Mnc" id="omA-9o-lyd"/>
+                        <outlet property="updateInfoView" destination="qnJ-KJ-3Yr" id="o9U-JS-1G8"/>
                         <outlet property="userImgView" destination="uWZ-jy-nW1" id="0Rl-Zf-WkI"/>
                         <outlet property="userNameLabel" destination="zR1-rE-Y5f" id="sZY-MC-c7Y"/>
+                        <segue destination="hJF-Ar-9nH" kind="custom" identifier="UpdateUserInfoSegueID" customClass="RamblerEmbedSegue" id="Ex5-yR-027"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zJy-jN-xAp" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -140,7 +139,7 @@
             <objects>
                 <viewController id="hJF-Ar-9nH" customClass="OSUserUpdateInfoViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Lg3-Mw-5uq">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="252"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Update user info" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eGO-uR-0lo">
@@ -203,7 +202,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cxl-00-Bsk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="808.79999999999995" y="1115.4422788605698"/>
+            <point key="canvasLocation" x="1673" y="1128"/>
         </scene>
     </scenes>
 </document>

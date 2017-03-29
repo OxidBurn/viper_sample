@@ -16,4 +16,18 @@
 
 #pragma mark - Methods OSUserUpdateInfoInteractorInput -
 
+- (void) updateUserInfoInDB: (UserInfoPlainObject*) userInfo
+{
+    @weakify(self)
+    
+    [self.userInfoService updateUserInfoInDB: userInfo
+                              withCompletion: ^(BOOL isUpdate) {
+                  
+                                  @strongify(self)
+                                  
+                                  [self.output didUpdateUserInfoInDB];
+                                  
+                              }];
+}
+
 @end

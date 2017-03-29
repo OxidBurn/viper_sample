@@ -16,6 +16,8 @@
 #import "OSUserUpdateInfoInteractor.h"
 #import "OSUserUpdateInfoPresenter.h"
 #import "OSUserUpdateInfoRouter.h"
+#import "UserInfoServiceImplementation.h"
+#import "ServiceComponents.h"
 
 
 @implementation OSUserUpdateInfoAssembly
@@ -43,6 +45,14 @@
                           
                               [definition injectProperty: @selector(output)
                                                     with: [self presenterUserUpdateInfo]];
+                              
+                              /**
+                               @author Nikolay Chaban
+                               
+                               Setup login service input protocol for processing login methods
+                               */
+                              [definition injectProperty: @selector(userInfoService)
+                                                    with: [self.serviceComponents userInfoService]];
                                                     
                           }];
 }

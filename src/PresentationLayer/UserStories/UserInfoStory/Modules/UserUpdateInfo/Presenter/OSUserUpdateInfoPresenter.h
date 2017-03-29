@@ -9,6 +9,7 @@
 // Classes
 #import "OSUserUpdateInfoViewOutput.h"
 #import "OSUserUpdateInfoInteractorOutput.h"
+#import "OSUserUpdateInfoModuleOutput.h"
 #import "OSUserUpdateInfoModuleInput.h"
 
 // Protocols
@@ -16,10 +17,11 @@
 @protocol OSUserUpdateInfoInteractorInput;
 @protocol OSUserUpdateInfoRouterInput;
 
-@interface OSUserUpdateInfoPresenter : NSObject <OSUserUpdateInfoModuleInput, OSUserUpdateInfoViewOutput, OSUserUpdateInfoInteractorOutput>
+@interface OSUserUpdateInfoPresenter : NSObject <OSUserUpdateInfoViewOutput, OSUserUpdateInfoInteractorOutput, OSUserUpdateInfoModuleInput>
 
 @property (nonatomic, weak) id<OSUserUpdateInfoViewInput> view;
 @property (nonatomic, strong) id<OSUserUpdateInfoInteractorInput> interactor;
 @property (nonatomic, strong) id<OSUserUpdateInfoRouterInput> router;
+@property (weak, nonatomic) id<OSUserUpdateInfoModuleOutput> moduleOutput;
 
 @end

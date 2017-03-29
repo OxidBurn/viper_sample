@@ -122,6 +122,8 @@
 		561B8B891E8BBCBF00238561 /* OSUserUpdateInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSUserUpdateInfoViewController.m; sourceTree = "<group>"; };
 		561B8B8A1E8BBCBF00238561 /* OSUserUpdateInfoViewInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSUserUpdateInfoViewInput.h; sourceTree = "<group>"; };
 		561B8B8B1E8BBCBF00238561 /* OSUserUpdateInfoViewOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSUserUpdateInfoViewOutput.h; sourceTree = "<group>"; };
+		561B8B911E8BD6C100238561 /* UserInfoModuleSegueIdentifiersConstance.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserInfoModuleSegueIdentifiersConstance.h; sourceTree = "<group>"; };
+		561B8B921E8BD96D00238561 /* OSUserUpdateInfoModuleOutput.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OSUserUpdateInfoModuleOutput.h; sourceTree = "<group>"; };
 		562B85DF1E8466C60075F962 /* RegisterService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RegisterService.h; path = Register/RegisterService.h; sourceTree = "<group>"; };
 		562B85E01E8467020075F962 /* RegisterServiceImplementation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RegisterServiceImplementation.h; path = Register/RegisterServiceImplementation.h; sourceTree = "<group>"; };
 		562B85E11E8467020075F962 /* RegisterServiceImplementation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RegisterServiceImplementation.m; path = Register/RegisterServiceImplementation.m; sourceTree = "<group>"; };
@@ -310,6 +312,7 @@
 			isa = PBXGroup;
 			children = (
 				561B8B6D1E8AA38C00238561 /* UserInfo.storyboard */,
+				561B8B911E8BD6C100238561 /* UserInfoModuleSegueIdentifiersConstance.h */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -370,6 +373,7 @@
 				561B8B801E8BBCBF00238561 /* OSUserUpdateInfoModuleInput.h */,
 				561B8B811E8BBCBF00238561 /* OSUserUpdateInfoPresenter.h */,
 				561B8B821E8BBCBF00238561 /* OSUserUpdateInfoPresenter.m */,
+				561B8B921E8BD96D00238561 /* OSUserUpdateInfoModuleOutput.h */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";

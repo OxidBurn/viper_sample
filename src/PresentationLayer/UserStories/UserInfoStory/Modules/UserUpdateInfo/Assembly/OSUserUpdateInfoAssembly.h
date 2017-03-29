@@ -10,11 +10,14 @@
 #import <Typhoon/Typhoon.h>
 #import <RamblerTyphoonUtils/AssemblyCollector.h>
 
+// Classes
+#import "ModuleAssemblyBase.h"
+
 /**
  @author Nikolay Chaban
 
  UserUpdateInfo module
  */
-@interface OSUserUpdateInfoAssembly : TyphoonAssembly <RamblerInitialAssembly>
+@interface OSUserUpdateInfoAssembly : ModuleAssemblyBase <RamblerInitialAssembly>
 
 @end
