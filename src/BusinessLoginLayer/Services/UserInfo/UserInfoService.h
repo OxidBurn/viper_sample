@@ -52,4 +52,6 @@ typedef void(^CompletionUpdateBlock)(BOOL isUpdate);
  */
 - (UserInfoModelObject*) obtainUserInfoMOWithUsername: (NSString*) username;
 
+- (NSArray*) obtainAllRegisteredUsers;
+
 @end

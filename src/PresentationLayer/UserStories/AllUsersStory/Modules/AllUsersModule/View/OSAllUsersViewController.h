@@ -11,6 +11,7 @@
 
 // Classes
 #import "OSAllUsersViewInput.h"
+#import "AllUsersDataDisplayManager.h"
 
 // Protocols
 @protocol OSAllUsersViewOutput;
@@ -18,5 +19,7 @@
 @interface OSAllUsersViewController : UIViewController <OSAllUsersViewInput>
 
 @property (nonatomic, strong) id<OSAllUsersViewOutput> output;
+
+@property (nonatomic, strong) AllUsersDataDisplayManager* dataDisplayManager;
 
 @end

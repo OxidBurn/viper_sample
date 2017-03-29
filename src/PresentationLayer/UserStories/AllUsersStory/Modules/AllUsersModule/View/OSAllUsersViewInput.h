@@ -19,4 +19,6 @@
  */
 - (void) setupInitialState;
 
+- (void) setupViewStateWithUsersArray: (NSArray*) users;
+
 @end

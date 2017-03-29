@@ -36,6 +36,17 @@
 }
 
 
+/**
+ @author Valeria Mozghova
+ 
+ method for showing all users while user performs segue to AllUsersScreen
+ */
+- (void) setupView
+{
+    NSArray* usersArray = [self.interactor obtainListOfUsers];
+    
+    [self.view setupViewStateWithUsersArray: usersArray];
+}
 #pragma mark - Methods OSAllUsersInteractorOutput -
 
 

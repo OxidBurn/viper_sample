@@ -11,4 +11,6 @@
 
 @protocol OSAllUsersInteractorInput <NSObject>
 
+- (NSArray*) obtainListOfUsers;
+
 @end

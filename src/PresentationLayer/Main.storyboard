@@ -12,7 +12,7 @@
         <!--Navigation Controller-->
         <scene sceneID="bzy-yN-ONx">
             <objects>
-                <navigationController id="GVK-UK-a7O" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="GVK-UK-a7O" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="SBT-ES-Ofc">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>

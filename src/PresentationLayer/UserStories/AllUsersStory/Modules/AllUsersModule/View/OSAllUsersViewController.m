@@ -15,7 +15,7 @@
 
 // properties
 
-@property (weak, nonatomic) IBOutlet UITableView*allUsersTableView;
+@property (weak, nonatomic) IBOutlet UITableView* allUsersTableView;
 
 // methods
 
@@ -30,6 +30,8 @@
 	[super viewDidLoad];
 
 	[self.output didTriggerViewReadyEvent];
+    
+    [self.output setupView];
 }
 
 
@@ -54,6 +56,24 @@
 	In this method there is setup of the initial view parameter, 
 	which depend from controller life cycle (creation of elements, animation, etc.)
 	*/
+}
+
+
+/**
+ @author Valeria Mozghova
+ 
+ Method for filling view with array of users to display
+
+ @param users - data to display
+ */
+- (void) setupViewStateWithUsersArray: (NSArray*) users
+{
+    self.allUsersTableView.dataSource = [self.dataDisplayManager dataSourceForTableView: self.allUsersTableView];
+    
+    self.allUsersTableView.delegate   = [self.dataDisplayManager delegateForTableView: self.allUsersTableView
+                                                             withBaseDelegate: self.dataDisplayManager];
+    
+    [self.dataDisplayManager updateTableViewModelWithUsers: users];
 }
 
 @end

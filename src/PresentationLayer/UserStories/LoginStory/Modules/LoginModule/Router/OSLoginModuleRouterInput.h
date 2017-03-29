@@ -39,4 +39,13 @@
  */
 - (void) instantiateRegisterModule;
 
+/**
+ @author Valeria Mozghova
+ 
+ Method for opening AllUsers screen from Login screen with using Storyboard segue
+ by pressing on "Show all users" button
+ */
+
+- (void) openAllUsersModule;
+
 @end

@@ -16,7 +16,8 @@
 #import "OSAllUsersInteractor.h"
 #import "OSAllUsersPresenter.h"
 #import "OSAllUsersRouter.h"
-
+#import "UsersCellObjectBuilder.h"
+#import "ServiceComponents.h"
 
 @implementation OSAllUsersAssembly
 
@@ -32,6 +33,8 @@
                                                     with: [self presenterAllUsers]];
                               [definition injectProperty: @selector(moduleInput)
                                                     with: [self presenterAllUsers]];
+                              [definition injectProperty: @selector(dataDisplayManager)
+                                                    with: [self dataDisplayManager]];
                                                     
                           }];
 }
@@ -43,6 +46,22 @@
                           
                               [definition injectProperty: @selector(output)
                                                     with: [self presenterAllUsers]];
+                              
+                              /**
+                               @author Valeria Mozghova
+                               
+                               Inject service property, for storing/updating user info to database
+                               */
+                              [definition injectProperty: @selector(userInfoService)
+                                                    with: [self.serviceComponents userInfoService]];
+                              
+                              /**
+                               @author Valeria Mozghova
+                               
+                               Inject ponsomizer for converting MO to PONSO
+                               */
+                              [definition injectProperty: @selector(ponsomizer)
+                                                    with: [self.ponsomizerAssembly ponsomizer]];
                                                     
                           }];
 }
@@ -71,6 +90,24 @@
                                                     with: [self viewAllUsers]];
                                                     
                           }];
+}
+
+#pragma mark - Internal module assembly initialization -
+
+- (AllUsersDataDisplayManager*) dataDisplayManager
+{
+    return [TyphoonDefinition withClass: [AllUsersDataDisplayManager class]
+                          configuration:^(TyphoonDefinition* definition) {
+                              
+                              [definition injectProperty:@selector(cellObjectBuilder)
+                                                    with:[self cellObjectBuilder]];
+                          }];
+}
+
+
+- (UsersCellObjectBuilder*) cellObjectBuilder
+{
+    return [TyphoonDefinition withClass: [UsersCellObjectBuilder class]];
 }
 
 @end

@@ -21,6 +21,7 @@
 // methods
 - (IBAction) didClickLoginButton: (UIButton*) sender;
 - (IBAction) didClickRegisterButton: (UIButton*) sender;
+- (IBAction) didClickAllUsers: (UIButton*) sender;
 
 @end
 
@@ -100,6 +101,11 @@
 - (IBAction) didClickRegisterButton: (UIButton*) sender
 {
     [self.output instantiateRegisterButtonClicked];
+}
+
+- (IBAction) didClickAllUsers: (UIButton*) sender
+{
+    [self.output didTapShowAllUsers];
 }
 
 @end

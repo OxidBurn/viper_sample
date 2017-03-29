@@ -35,7 +35,13 @@
     }];
 }
 
-
+- (void) openAllUsersModule
+{
+    [[self.transitionHandler openModuleUsingSegue: LoginToAllUsersSegue] thenChainUsingBlock:^id<RamblerViperModuleOutput>(id<RamblerViperModuleInput> moduleInput) {
+        
+        return nil;
+    }];
+}
 
 - (void) openUserInfoModuleWithUserInfo: (UserInfoPlainObject*) user
 {

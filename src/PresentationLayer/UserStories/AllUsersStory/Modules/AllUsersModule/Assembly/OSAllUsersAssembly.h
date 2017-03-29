@@ -10,11 +10,16 @@
 #import <Typhoon/Typhoon.h>
 #import <RamblerTyphoonUtils/AssemblyCollector.h>
 
+#import "ModuleAssemblyBase.h"
+#import "PonsomizerAssembly.h"
+
 /**
  @author Valeria Mozghova
 
  AllUsers module
  */
-@interface OSAllUsersAssembly : TyphoonAssembly <RamblerInitialAssembly>
+@interface OSAllUsersAssembly : ModuleAssemblyBase <RamblerInitialAssembly>
+
+@property (nonatomic, strong) PonsomizerAssembly* ponsomizerAssembly;
 
 @end

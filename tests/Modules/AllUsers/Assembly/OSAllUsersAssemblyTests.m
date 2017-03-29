@@ -36,7 +36,7 @@
 
     self.assembly = [[OSAllUsersAssembly alloc] init];
     
-    [self.assembly activate];
+  //  [self.assembly activate];
 }
 
 - (void)tearDown {
