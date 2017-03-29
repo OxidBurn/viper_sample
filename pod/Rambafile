@@ -11,10 +11,10 @@ prefix: OS
 project_target: ViperSampleProject
 
 # The file path for new modules
-project_file_path: ../src/Modules/
+project_file_path: ../src/PresentationLayer/UserStories/
 
 # The Xcode group path to new modules
-project_group_path: Sources/Modules/
+project_group_path: Sources/PresentationLayer/UserStories/
 
 ### Tests generation settings section
 # The tests target name
