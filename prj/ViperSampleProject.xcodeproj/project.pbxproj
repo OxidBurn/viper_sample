@@ -21,15 +21,23 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		0198F01329556C8598E9EF78 /* OSUserUpdateInfoModuleRouterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 96A3670F016FA432E4EFF495 /* OSUserUpdateInfoModuleRouterTests.m */; };
 		0F3D5C0241D9E324371B5A6A /* OSUserInfoRouterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F4133B7B82D38F51D592B825 /* OSUserInfoRouterTests.m */; };
+		1542B5E87ADA3BF4F76C794B /* OSUserUpdateInfoModuleInteractorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 83E6C0C423133D787785A974 /* OSUserUpdateInfoModuleInteractorTests.m */; };
 		2C9A5E434B0B49FBA43EACCD /* OSUserInfoInteractorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F2F7E48EBFDA67FEC2C57E7 /* OSUserInfoInteractorTests.m */; };
 		30D7B0D4FD3F99535E58573F /* OSRegisterModuleInteractorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B96206B7AFC6830E6498E1D6 /* OSRegisterModuleInteractorTests.m */; };
+		401D3FA339FA418028FAC196 /* OSUserUpdateInfoPresenterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CBD4E4BB0D54FAAF2493FE2 /* OSUserUpdateInfoPresenterTests.m */; };
 		417DCD191BFF5A945E4D6532 /* OSRegisterModuleAssemblyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3251E224107D5BD3B494A30F /* OSRegisterModuleAssemblyTests.m */; };
 		560458DF1E84316D00CFFED1 /* Register.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 560458DE1E84316D00CFFED1 /* Register.storyboard */; };
 		560458E11E84318E00CFFED1 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 560458E01E84318E00CFFED1 /* Login.storyboard */; };
 		561B8B6E1E8AA38C00238561 /* UserInfo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 561B8B6D1E8AA38C00238561 /* UserInfo.storyboard */; };
 		561B8B721E8AAB3100238561 /* UserInfoPresenterStateStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 561B8B711E8AAB3100238561 /* UserInfoPresenterStateStorage.m */; };
 		561B8B751E8AADD400238561 /* HopkinsAvatar.png in Resources */ = {isa = PBXBuildFile; fileRef = 561B8B741E8AADD400238561 /* HopkinsAvatar.png */; };
+		561B8B8C1E8BBCBF00238561 /* OSUserUpdateInfoAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = 561B8B791E8BBCBF00238561 /* OSUserUpdateInfoAssembly.m */; };
+		561B8B8D1E8BBCBF00238561 /* OSUserUpdateInfoInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = 561B8B7C1E8BBCBF00238561 /* OSUserUpdateInfoInteractor.m */; };
+		561B8B8E1E8BBCBF00238561 /* OSUserUpdateInfoPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 561B8B821E8BBCBF00238561 /* OSUserUpdateInfoPresenter.m */; };
+		561B8B8F1E8BBCBF00238561 /* OSUserUpdateInfoRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 561B8B851E8BBCBF00238561 /* OSUserUpdateInfoRouter.m */; };
+		561B8B901E8BBCBF00238561 /* OSUserUpdateInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 561B8B891E8BBCBF00238561 /* OSUserUpdateInfoViewController.m */; };
 		562B85E21E8467020075F962 /* RegisterServiceImplementation.m in Sources */ = {isa = PBXBuildFile; fileRef = 562B85E11E8467020075F962 /* RegisterServiceImplementation.m */; };
 		562B85ED1E848A0D0075F962 /* EXTScope.m in Sources */ = {isa = PBXBuildFile; fileRef = 562B85EB1E848A0D0075F962 /* EXTScope.m */; };
 		562B85F01E848D110075F962 /* RegistrationInfoValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = 562B85EF1E848D110075F962 /* RegistrationInfoValidator.m */; };
@@ -67,7 +75,10 @@
 		56F69CBF1E859CCF0099A584 /* UserInfoModelObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 56F69CBE1E859CCF0099A584 /* UserInfoModelObject.m */; };
 		56F69CC21E859CD40099A584 /* _UserInfoPlainObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 56F69CC11E859CD40099A584 /* _UserInfoPlainObject.m */; };
 		56F69CC51E859CD80099A584 /* _UserInfoModelObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 56F69CC41E859CD80099A584 /* _UserInfoModelObject.m */; };
+		57BF94427CF7B08297380068 /* OSUserUpdateInfoViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B51E9FA10A991DC0AF5B0E3 /* OSUserUpdateInfoViewControllerTests.m */; };
 		58FEE1B2A635EF7652C0AF39 /* OSUserInfoAssemblyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D84E89B94E123217DAD84E12 /* OSUserInfoAssemblyTests.m */; };
+		5F64B99A0AEA5AA1184AE61D /* OSUserUpdateInfoRouterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 14DE8B88AF0074DDF20722B0 /* OSUserUpdateInfoRouterTests.m */; };
+		6F28529F041EE5E78E33A3BA /* OSUserUpdateInfoModuleViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A858D462C1F8242CD986D562 /* OSUserUpdateInfoModuleViewControllerTests.m */; };
 		728DAB619E2F7A9F2E69978E /* OSUserInfoViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C17E74500738E8FB6EA7191 /* OSUserInfoViewControllerTests.m */; };
 		8EEEE613F9F83DCFA1F44B47 /* OSRegisterModuleViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DD83D7E93BAF2849512996E4 /* OSRegisterModuleViewControllerTests.m */; };
 		C2193DCD3957593BD502BB80 /* libPods-ViperSampleProject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BE0ED5E1ED2D20FB17F8B9DA /* libPods-ViperSampleProject.a */; };
@@ -79,21 +90,44 @@
 		C598C3C01E8A6F42000C2465 /* OSUserInfoPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = C598C3B31E8A6F42000C2465 /* OSUserInfoPresenter.m */; };
 		C598C3C11E8A6F42000C2465 /* OSUserInfoRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = C598C3B61E8A6F42000C2465 /* OSUserInfoRouter.m */; };
 		C598C3C21E8A6F42000C2465 /* OSUserInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C598C3BA1E8A6F42000C2465 /* OSUserInfoViewController.m */; };
+		D4D69F176D1B10E047C4CFD4 /* OSUserUpdateInfoModuleAssemblyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B783C075C8AA8665EAE84E92 /* OSUserUpdateInfoModuleAssemblyTests.m */; };
 		D6B6D41C3B0DACE740576EAF /* OSRegisterModuleRouterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A806FD28F8021461295D2E17 /* OSRegisterModuleRouterTests.m */; };
+		E41B148E7448ED2D838BA7FA /* OSUserUpdateInfoModulePresenterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F74B82BBB7424B77AC30478 /* OSUserUpdateInfoModulePresenterTests.m */; };
 		E77641C8D7C431543D9C617D /* OSUserInfoPresenterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D369659818283ED342DEE1C /* OSUserInfoPresenterTests.m */; };
+		F1D878A5D2896A1268B297AF /* OSUserUpdateInfoInteractorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EDE195D4963AF7A7788B552F /* OSUserUpdateInfoInteractorTests.m */; };
+		F76B580054116BE60D2BCA8F /* OSUserUpdateInfoAssemblyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 78972DF42C13646A58E1D22B /* OSUserUpdateInfoAssemblyTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		14DE8B88AF0074DDF20722B0 /* OSUserUpdateInfoRouterTests.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = OSUserUpdateInfoRouterTests.m; sourceTree = "<group>"; };
+		2B51E9FA10A991DC0AF5B0E3 /* OSUserUpdateInfoViewControllerTests.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = OSUserUpdateInfoViewControllerTests.m; sourceTree = "<group>"; };
 		2C17E74500738E8FB6EA7191 /* OSUserInfoViewControllerTests.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = OSUserInfoViewControllerTests.m; sourceTree = "<group>"; };
 		3251E224107D5BD3B494A30F /* OSRegisterModuleAssemblyTests.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = OSRegisterModuleAssemblyTests.m; sourceTree = "<group>"; };
 		354CB79CA8490A7DB5CE863E /* OSUserInfoAssembly_Testable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = OSUserInfoAssembly_Testable.h; sourceTree = "<group>"; };
 		4D369659818283ED342DEE1C /* OSUserInfoPresenterTests.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = OSUserInfoPresenterTests.m; sourceTree = "<group>"; };
+		4F74B82BBB7424B77AC30478 /* OSUserUpdateInfoModulePresenterTests.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = OSUserUpdateInfoModulePresenterTests.m; sourceTree = "<group>"; };
 		560458DE1E84316D00CFFED1 /* Register.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Register.storyboard; sourceTree = "<group>"; };
 		560458E01E84318E00CFFED1 /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		561B8B6D1E8AA38C00238561 /* UserInfo.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = UserInfo.storyboard; sourceTree = "<group>"; };
 		561B8B701E8AAB3100238561 /* UserInfoPresenterStateStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserInfoPresenterStateStorage.h; sourceTree = "<group>"; };
 		561B8B711E8AAB3100238561 /* UserInfoPresenterStateStorage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserInfoPresenterStateStorage.m; sourceTree = "<group>"; };
 		561B8B741E8AADD400238561 /* HopkinsAvatar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HopkinsAvatar.png; sourceTree = "<group>"; };
+		561B8B781E8BBCBF00238561 /* OSUserUpdateInfoAssembly.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSUserUpdateInfoAssembly.h; sourceTree = "<group>"; };
+		561B8B791E8BBCBF00238561 /* OSUserUpdateInfoAssembly.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSUserUpdateInfoAssembly.m; sourceTree = "<group>"; };
+		561B8B7B1E8BBCBF00238561 /* OSUserUpdateInfoInteractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSUserUpdateInfoInteractor.h; sourceTree = "<group>"; };
+		561B8B7C1E8BBCBF00238561 /* OSUserUpdateInfoInteractor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSUserUpdateInfoInteractor.m; sourceTree = "<group>"; };
+		561B8B7D1E8BBCBF00238561 /* OSUserUpdateInfoInteractorInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSUserUpdateInfoInteractorInput.h; sourceTree = "<group>"; };
+		561B8B7E1E8BBCBF00238561 /* OSUserUpdateInfoInteractorOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSUserUpdateInfoInteractorOutput.h; sourceTree = "<group>"; };
+		561B8B801E8BBCBF00238561 /* OSUserUpdateInfoModuleInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSUserUpdateInfoModuleInput.h; sourceTree = "<group>"; };
+		561B8B811E8BBCBF00238561 /* OSUserUpdateInfoPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSUserUpdateInfoPresenter.h; sourceTree = "<group>"; };
+		561B8B821E8BBCBF00238561 /* OSUserUpdateInfoPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSUserUpdateInfoPresenter.m; sourceTree = "<group>"; };
+		561B8B841E8BBCBF00238561 /* OSUserUpdateInfoRouter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSUserUpdateInfoRouter.h; sourceTree = "<group>"; };
+		561B8B851E8BBCBF00238561 /* OSUserUpdateInfoRouter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSUserUpdateInfoRouter.m; sourceTree = "<group>"; };
+		561B8B861E8BBCBF00238561 /* OSUserUpdateInfoRouterInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSUserUpdateInfoRouterInput.h; sourceTree = "<group>"; };
+		561B8B881E8BBCBF00238561 /* OSUserUpdateInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSUserUpdateInfoViewController.h; sourceTree = "<group>"; };
+		561B8B891E8BBCBF00238561 /* OSUserUpdateInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSUserUpdateInfoViewController.m; sourceTree = "<group>"; };
+		561B8B8A1E8BBCBF00238561 /* OSUserUpdateInfoViewInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSUserUpdateInfoViewInput.h; sourceTree = "<group>"; };
+		561B8B8B1E8BBCBF00238561 /* OSUserUpdateInfoViewOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSUserUpdateInfoViewOutput.h; sourceTree = "<group>"; };
 		562B85DF1E8466C60075F962 /* RegisterService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RegisterService.h; path = Register/RegisterService.h; sourceTree = "<group>"; };
 		562B85E01E8467020075F962 /* RegisterServiceImplementation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RegisterServiceImplementation.h; path = Register/RegisterServiceImplementation.h; sourceTree = "<group>"; };
 		562B85E11E8467020075F962 /* RegisterServiceImplementation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RegisterServiceImplementation.m; path = Register/RegisterServiceImplementation.m; sourceTree = "<group>"; };
@@ -184,12 +218,20 @@
 		56F69CC11E859CD40099A584 /* _UserInfoPlainObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _UserInfoPlainObject.m; sourceTree = "<group>"; };
 		56F69CC31E859CD80099A584 /* _UserInfoModelObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _UserInfoModelObject.h; sourceTree = "<group>"; };
 		56F69CC41E859CD80099A584 /* _UserInfoModelObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _UserInfoModelObject.m; sourceTree = "<group>"; };
+		6CBD4E4BB0D54FAAF2493FE2 /* OSUserUpdateInfoPresenterTests.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = OSUserUpdateInfoPresenterTests.m; sourceTree = "<group>"; };
 		6F2F7E48EBFDA67FEC2C57E7 /* OSUserInfoInteractorTests.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = OSUserInfoInteractorTests.m; sourceTree = "<group>"; };
+		78972DF42C13646A58E1D22B /* OSUserUpdateInfoAssemblyTests.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = OSUserUpdateInfoAssemblyTests.m; sourceTree = "<group>"; };
+		7C5F9A1C0C3E4387B6DA013C /* OSUserUpdateInfoModuleAssembly_Testable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = OSUserUpdateInfoModuleAssembly_Testable.h; sourceTree = "<group>"; };
+		83E6C0C423133D787785A974 /* OSUserUpdateInfoModuleInteractorTests.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = OSUserUpdateInfoModuleInteractorTests.m; sourceTree = "<group>"; };
+		96A3670F016FA432E4EFF495 /* OSUserUpdateInfoModuleRouterTests.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = OSUserUpdateInfoModuleRouterTests.m; sourceTree = "<group>"; };
 		A09DE182739F6F0915203814 /* OSRegisterModuleAssembly_Testable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = OSRegisterModuleAssembly_Testable.h; sourceTree = "<group>"; };
 		A806FD28F8021461295D2E17 /* OSRegisterModuleRouterTests.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = OSRegisterModuleRouterTests.m; sourceTree = "<group>"; };
+		A858D462C1F8242CD986D562 /* OSUserUpdateInfoModuleViewControllerTests.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = OSUserUpdateInfoModuleViewControllerTests.m; sourceTree = "<group>"; };
+		B783C075C8AA8665EAE84E92 /* OSUserUpdateInfoModuleAssemblyTests.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = OSUserUpdateInfoModuleAssemblyTests.m; sourceTree = "<group>"; };
 		B96206B7AFC6830E6498E1D6 /* OSRegisterModuleInteractorTests.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = OSRegisterModuleInteractorTests.m; sourceTree = "<group>"; };
 		BE0ED5E1ED2D20FB17F8B9DA /* libPods-ViperSampleProject.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ViperSampleProject.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE5141D79125132AC5762AC4 /* Pods-ViperSampleProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ViperSampleProject.debug.xcconfig"; path = "../pod/Pods/Target Support Files/Pods-ViperSampleProject/Pods-ViperSampleProject.debug.xcconfig"; sourceTree = "<group>"; };
+		C265B9BCF34E029E18545949 /* OSUserUpdateInfoAssembly_Testable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = OSUserUpdateInfoAssembly_Testable.h; sourceTree = "<group>"; };
 		C598C32E1E891535000C2465 /* ROSPonsomizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ROSPonsomizer.h; sourceTree = "<group>"; };
 		C598C32F1E891535000C2465 /* ROSPonsomizerImplementation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ROSPonsomizerImplementation.h; sourceTree = "<group>"; };
 		C598C3301E891535000C2465 /* ROSPonsomizerImplementation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ROSPonsomizerImplementation.m; sourceTree = "<group>"; };
@@ -214,6 +256,7 @@
 		D84E89B94E123217DAD84E12 /* OSUserInfoAssemblyTests.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = OSUserInfoAssemblyTests.m; sourceTree = "<group>"; };
 		DD83D7E93BAF2849512996E4 /* OSRegisterModuleViewControllerTests.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = OSRegisterModuleViewControllerTests.m; sourceTree = "<group>"; };
 		E9DA711612E6D02F8B0BC6F7 /* OSRegisterModulePresenterTests.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = OSRegisterModulePresenterTests.m; sourceTree = "<group>"; };
+		EDE195D4963AF7A7788B552F /* OSUserUpdateInfoInteractorTests.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = OSUserUpdateInfoInteractorTests.m; sourceTree = "<group>"; };
 		F1C486A694A3656C7F9BF31B /* Pods-ViperSampleProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ViperSampleProject.release.xcconfig"; path = "../pod/Pods/Target Support Files/Pods-ViperSampleProject/Pods-ViperSampleProject.release.xcconfig"; sourceTree = "<group>"; };
 		F4133B7B82D38F51D592B825 /* OSUserInfoRouterTests.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = OSUserInfoRouterTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -236,6 +279,8 @@
 			children = (
 				EE05ECA779A289809EADE700 /* RegisterModule */,
 				81C484F80D733B0DD5C410C6 /* UserInfo */,
+				8114F40B7617E537C0491ADE /* UserUpdateInfoModule */,
+				E1E2AAB6C8C32DA9C1A728FB /* UserUpdateInfo */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -265,6 +310,22 @@
 			path = Tests;
 			sourceTree = "<group>";
 		};
+		5021E51C71100B2D801C978C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2B51E9FA10A991DC0AF5B0E3 /* OSUserUpdateInfoViewControllerTests.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		53CD9DBAB4F76CE4A75E8E19 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				83E6C0C423133D787785A974 /* OSUserUpdateInfoModuleInteractorTests.m */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
 		561B8B6C1E8AA38C00238561 /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
@@ -289,6 +350,69 @@
 			);
 			name = avatars;
 			path = ../res/avatars;
+			sourceTree = "<group>";
+		};
+		561B8B761E8BBCBF00238561 /* UserUpdateInfo */ = {
+			isa = PBXGroup;
+			children = (
+				561B8B771E8BBCBF00238561 /* Assembly */,
+				561B8B7A1E8BBCBF00238561 /* Interactor */,
+				561B8B7F1E8BBCBF00238561 /* Presenter */,
+				561B8B831E8BBCBF00238561 /* Router */,
+				561B8B871E8BBCBF00238561 /* View */,
+			);
+			path = UserUpdateInfo;
+			sourceTree = "<group>";
+		};
+		561B8B771E8BBCBF00238561 /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				561B8B781E8BBCBF00238561 /* OSUserUpdateInfoAssembly.h */,
+				561B8B791E8BBCBF00238561 /* OSUserUpdateInfoAssembly.m */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		561B8B7A1E8BBCBF00238561 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				561B8B7B1E8BBCBF00238561 /* OSUserUpdateInfoInteractor.h */,
+				561B8B7C1E8BBCBF00238561 /* OSUserUpdateInfoInteractor.m */,
+				561B8B7D1E8BBCBF00238561 /* OSUserUpdateInfoInteractorInput.h */,
+				561B8B7E1E8BBCBF00238561 /* OSUserUpdateInfoInteractorOutput.h */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		561B8B7F1E8BBCBF00238561 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				561B8B801E8BBCBF00238561 /* OSUserUpdateInfoModuleInput.h */,
+				561B8B811E8BBCBF00238561 /* OSUserUpdateInfoPresenter.h */,
+				561B8B821E8BBCBF00238561 /* OSUserUpdateInfoPresenter.m */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		561B8B831E8BBCBF00238561 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				561B8B841E8BBCBF00238561 /* OSUserUpdateInfoRouter.h */,
+				561B8B851E8BBCBF00238561 /* OSUserUpdateInfoRouter.m */,
+				561B8B861E8BBCBF00238561 /* OSUserUpdateInfoRouterInput.h */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		561B8B871E8BBCBF00238561 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				561B8B881E8BBCBF00238561 /* OSUserUpdateInfoViewController.h */,
+				561B8B891E8BBCBF00238561 /* OSUserUpdateInfoViewController.m */,
+				561B8B8A1E8BBCBF00238561 /* OSUserUpdateInfoViewInput.h */,
+				561B8B8B1E8BBCBF00238561 /* OSUserUpdateInfoViewOutput.h */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		562B85DD1E84668F0075F962 /* Register */ = {
@@ -816,6 +940,14 @@
 			path = ManagedObjects;
 			sourceTree = "<group>";
 		};
+		654D8C7B3820AEA9C03B26B5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A858D462C1F8242CD986D562 /* OSUserUpdateInfoModuleViewControllerTests.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		697C273ED86BD752CCDDFACF /* Interactor */ = {
 			isa = PBXGroup;
 			children = (
@@ -823,6 +955,27 @@
 			);
 			path = Interactor;
 			sourceTree = "<group>";
+		};
+		7739FE26269D4A86B21E81B7 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				96A3670F016FA432E4EFF495 /* OSUserUpdateInfoModuleRouterTests.m */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		8114F40B7617E537C0491ADE /* UserUpdateInfoModule */ = {
+			isa = PBXGroup;
+			children = (
+				C8068149C2BFDF4A16C2C82E /* Assembly */,
+				654D8C7B3820AEA9C03B26B5 /* View */,
+				C67F0D19C0143808684037B3 /* Presenter */,
+				53CD9DBAB4F76CE4A75E8E19 /* Interactor */,
+				7739FE26269D4A86B21E81B7 /* Router */,
+			);
+			name = UserUpdateInfoModule;
+			path = ../tests/Modules/UserUpdateInfoModule;
+			sourceTree = SOURCE_ROOT;
 		};
 		81C484F80D733B0DD5C410C6 /* UserInfo */ = {
 			isa = PBXGroup;
@@ -845,6 +998,14 @@
 			path = Presenter;
 			sourceTree = "<group>";
 		};
+		9A57FE55C9095E65B69D389B /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				14DE8B88AF0074DDF20722B0 /* OSUserUpdateInfoRouterTests.m */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
 		A60CE9690312BFCF4B837924 /* Interactor */ = {
 			isa = PBXGroup;
 			children = (
@@ -860,6 +1021,14 @@
 				BE0ED5E1ED2D20FB17F8B9DA /* libPods-ViperSampleProject.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BCEF3504A573DB90FB20F724 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				EDE195D4963AF7A7788B552F /* OSUserUpdateInfoInteractorTests.m */,
+			);
+			path = Interactor;
 			sourceTree = "<group>";
 		};
 		C598C32D1E891535000C2465 /* Ponsomizer */ = {
@@ -893,6 +1062,7 @@
 		C598C3A61E8A6F42000C2465 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				561B8B761E8BBCBF00238561 /* UserUpdateInfo */,
 				C598C3A71E8A6F42000C2465 /* UserInfo */,
 			);
 			path = Modules;
@@ -962,6 +1132,23 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		C67F0D19C0143808684037B3 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				4F74B82BBB7424B77AC30478 /* OSUserUpdateInfoModulePresenterTests.m */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		C8068149C2BFDF4A16C2C82E /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				B783C075C8AA8665EAE84E92 /* OSUserUpdateInfoModuleAssemblyTests.m */,
+				7C5F9A1C0C3E4387B6DA013C /* OSUserUpdateInfoModuleAssembly_Testable.h */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
 		CC73A04028DC60F514BA0AC4 /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
@@ -979,6 +1166,14 @@
 			path = Assembly;
 			sourceTree = "<group>";
 		};
+		D8E64DBBADEEEAE5BEE80CE1 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				6CBD4E4BB0D54FAAF2493FE2 /* OSUserUpdateInfoPresenterTests.m */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
 		E040C48D45FFB85E3C10B154 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -986,6 +1181,19 @@
 			);
 			path = View;
 			sourceTree = "<group>";
+		};
+		E1E2AAB6C8C32DA9C1A728FB /* UserUpdateInfo */ = {
+			isa = PBXGroup;
+			children = (
+				FEE4C62637CB4DE76EA891B5 /* Assembly */,
+				5021E51C71100B2D801C978C /* View */,
+				D8E64DBBADEEEAE5BEE80CE1 /* Presenter */,
+				BCEF3504A573DB90FB20F724 /* Interactor */,
+				9A57FE55C9095E65B69D389B /* Router */,
+			);
+			name = UserUpdateInfo;
+			path = ../tests/Modules/UserUpdateInfo;
+			sourceTree = SOURCE_ROOT;
 		};
 		EE05ECA779A289809EADE700 /* RegisterModule */ = {
 			isa = PBXGroup;
@@ -1023,6 +1231,15 @@
 				F4133B7B82D38F51D592B825 /* OSUserInfoRouterTests.m */,
 			);
 			path = Router;
+			sourceTree = "<group>";
+		};
+		FEE4C62637CB4DE76EA891B5 /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				78972DF42C13646A58E1D22B /* OSUserUpdateInfoAssemblyTests.m */,
+				C265B9BCF34E029E18545949 /* OSUserUpdateInfoAssembly_Testable.h */,
+			);
+			path = Assembly;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1185,12 +1402,14 @@
 				56DB4A1E1E833CF30015C039 /* OSRegisterModuleRouter.m in Sources */,
 				56F69CBF1E859CCF0099A584 /* UserInfoModelObject.m in Sources */,
 				56DB49E31E833B140015C039 /* StoryboardAssembly.m in Sources */,
+				561B8B8C1E8BBCBF00238561 /* OSUserUpdateInfoAssembly.m in Sources */,
 				56F69C961E85999C0099A584 /* RegistrationParametersModel.m in Sources */,
 				56F69CC51E859CD80099A584 /* _UserInfoModelObject.m in Sources */,
 				56DB4A1B1E833CF30015C039 /* OSRegisterModuleAssembly.m in Sources */,
 				56DB4A161E833CF30015C039 /* OSLoginModuleAssembly.m in Sources */,
 				561B8B721E8AAB3100238561 /* UserInfoPresenterStateStorage.m in Sources */,
 				56D81E0A1E85406F003AC213 /* AlertsFactory.m in Sources */,
+				561B8B8D1E8BBCBF00238561 /* OSUserUpdateInfoInteractor.m in Sources */,
 				56DB49CC1E8335DA0015C039 /* LoginServiceImplementation.m in Sources */,
 				56DB4A1A1E833CF30015C039 /* OSLoginModuleViewController.m in Sources */,
 				56DB4A1D1E833CF30015C039 /* OSRegisterModulePresenter.m in Sources */,
@@ -1198,6 +1417,7 @@
 				56DB49C91E8335DA0015C039 /* ActivityAppDelegate.m in Sources */,
 				C598C3C21E8A6F42000C2465 /* OSUserInfoViewController.m in Sources */,
 				C598C3C11E8A6F42000C2465 /* OSUserInfoRouter.m in Sources */,
+				561B8B8E1E8BBCBF00238561 /* OSUserUpdateInfoPresenter.m in Sources */,
 				56DB49DD1E8339590015C039 /* ServiceComponentsAssembly.m in Sources */,
 				56DB4A191E833CF30015C039 /* OSLoginModuleRouter.m in Sources */,
 				56E3680F1E85730D00F24E61 /* UserInfoServiceImplementation.m in Sources */,
@@ -1215,12 +1435,24 @@
 				30D7B0D4FD3F99535E58573F /* OSRegisterModuleInteractorTests.m in Sources */,
 				C598C3351E891543000C2465 /* PonsomizerAssembly.m in Sources */,
 				56E368081E8566CA00F24E61 /* UserDataResponseParserImplementation.m in Sources */,
+				561B8B901E8BBCBF00238561 /* OSUserUpdateInfoViewController.m in Sources */,
 				D6B6D41C3B0DACE740576EAF /* OSRegisterModuleRouterTests.m in Sources */,
 				58FEE1B2A635EF7652C0AF39 /* OSUserInfoAssemblyTests.m in Sources */,
 				728DAB619E2F7A9F2E69978E /* OSUserInfoViewControllerTests.m in Sources */,
 				E77641C8D7C431543D9C617D /* OSUserInfoPresenterTests.m in Sources */,
 				2C9A5E434B0B49FBA43EACCD /* OSUserInfoInteractorTests.m in Sources */,
 				0F3D5C0241D9E324371B5A6A /* OSUserInfoRouterTests.m in Sources */,
+				D4D69F176D1B10E047C4CFD4 /* OSUserUpdateInfoModuleAssemblyTests.m in Sources */,
+				6F28529F041EE5E78E33A3BA /* OSUserUpdateInfoModuleViewControllerTests.m in Sources */,
+				E41B148E7448ED2D838BA7FA /* OSUserUpdateInfoModulePresenterTests.m in Sources */,
+				1542B5E87ADA3BF4F76C794B /* OSUserUpdateInfoModuleInteractorTests.m in Sources */,
+				561B8B8F1E8BBCBF00238561 /* OSUserUpdateInfoRouter.m in Sources */,
+				0198F01329556C8598E9EF78 /* OSUserUpdateInfoModuleRouterTests.m in Sources */,
+				F76B580054116BE60D2BCA8F /* OSUserUpdateInfoAssemblyTests.m in Sources */,
+				57BF94427CF7B08297380068 /* OSUserUpdateInfoViewControllerTests.m in Sources */,
+				401D3FA339FA418028FAC196 /* OSUserUpdateInfoPresenterTests.m in Sources */,
+				F1D878A5D2896A1268B297AF /* OSUserUpdateInfoInteractorTests.m in Sources */,
+				5F64B99A0AEA5AA1184AE61D /* OSUserUpdateInfoRouterTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
