@@ -11,7 +11,7 @@
 // Classes
 #import "OSRegisterModuleInteractorOutput.h"
 #import "RegisterServiceImplementation.h"
-
+#import "UserInfoService.h"
 
 @implementation OSRegisterModuleInteractor
 
@@ -51,7 +51,7 @@
      
      Check if user entered valid registration info
      Validation:
-     1. user name containt at least 2 symbols
+     1. user name contain at least 2 symbols
      2. password contain more than 6 symbols
      3. password and confirm password is equal
      
