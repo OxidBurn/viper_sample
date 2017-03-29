@@ -47,9 +47,9 @@ typedef void(^CompletionUpdateBlock)(BOOL isUpdate);
  
  Method designed for fetching object from DB and converting to the old plain object
 
- @param userID user id number value, for fetch core data predicate
+ @param username username unique value, for fetch core data predicate
  @return plain object converted from user info core data managed object
  */
-- (UserInfoModelObject*) obtainUserInfoMOWithID: (NSNumber*) userID;
+- (UserInfoModelObject*) obtainUserInfoMOWithUsername: (NSString*) username;
 
 @end

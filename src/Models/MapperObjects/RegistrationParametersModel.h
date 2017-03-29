@@ -16,4 +16,6 @@
 
 @property (strong, nonatomic) NSString* fullName;
 
+@property (nonatomic, strong) NSString* email;
+
 @end

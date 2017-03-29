@@ -105,6 +105,14 @@
                               [definition injectProperty: @selector(ponsomizer)
                                                     with: [self.ponsomizerAssembly ponsomizer]];
                               
+                              /**
+                               @author Valeria Mozghova
+                               
+                               Inject user info service property from service components
+                               */
+                              [definition injectProperty: @selector(userInfoService)
+                                                    with: [self.serviceComponents userInfoService]];
+                              
                                                     
                           }];
 }

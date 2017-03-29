@@ -33,6 +33,6 @@
  */
 - (id<RamblerViperModuleFactoryProtocol>) factoryRegisterModule;
 
-@property (nonatomic, strong) PonsomizerAssembly *ponsomizerAssembly;
+@property (nonatomic, strong) PonsomizerAssembly* ponsomizerAssembly;
 
 @end

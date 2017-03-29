@@ -39,16 +39,33 @@
                                   if ( isSuccess )
                                   {
                                       /**
-                                       @author Nikolay Chaban
+                                       @author Valeriya Mozghovaya
                                        
-                                       Save/update user info to database, from login request response
+                                        Searching logged in user in DB
                                        */
-                                      [self.userInfoService saveOrUpdateUserInfoInDB: response
-                                                                      withCompletion: ^(BOOL isUpdate) {
-                                                                         
-                                                                          [self.output didLoggingUser: [self obtainUserPlainObjectWithID: response.userID]];
-                                                                          
-                                                                      }];
+
+                                      UserInfoPlainObject* user = [self obtainUserPlainObjectWithUsername: name];
+                                      if (user)
+                                      {
+                                          [self.output didLoggingUser: user];
+                                      }
+                                      
+                                      else
+                                      {
+                                          
+                                          NSDictionary *userInfo = @{
+                                                                     NSLocalizedDescriptionKey: NSLocalizedString(@"Operation was unsuccessful.", nil),
+                                                                     NSLocalizedFailureReasonErrorKey: NSLocalizedString(@"No user with such login found", nil),
+                                                                     NSLocalizedRecoverySuggestionErrorKey: NSLocalizedString(@"Have you tried turning it off and on again?", nil)
+                                                                     };
+                                          
+                                          NSError* error = [NSError  errorWithDomain: NSPOSIXErrorDomain
+                                                                                code: -10
+                                                                            userInfo: userInfo];
+                                         
+                                          [self.output didLoggingUserToServerWithError: error];
+                                      }
+                                      
                                   }
                                   else
                                       [self.output didLoggingUserToServerWithError: error];
@@ -62,12 +79,12 @@
 /**
  method for converting user managed object to plain object
 
- @param userID parameter for searching user in DB
+ @param username parameter for searching user in DB
  @return converted user from managed object to plain object
  */
-- (UserInfoPlainObject*) obtainUserPlainObjectWithID: (NSNumber*) userID
+- (UserInfoPlainObject*) obtainUserPlainObjectWithUsername: (NSString*) username
 {
-    UserInfoPlainObject* user = [self.ponsomizer convertObject: [self.userInfoService obtainUserInfoMOWithID: userID]];
+    UserInfoPlainObject* user = [self.ponsomizer convertObject: [self.userInfoService obtainUserInfoMOWithUsername: username]];
     
     return user;
 }

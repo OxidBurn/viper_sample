@@ -19,6 +19,7 @@
 @property (weak, nonatomic) IBOutlet UITextField* passwordField;
 @property (weak, nonatomic) IBOutlet UITextField* confirmPasswordField;
 @property (weak, nonatomic) IBOutlet UITextField* fullNameField;
+@property (weak, nonatomic) IBOutlet UITextField* emailField;
 
 // methods
 
@@ -75,6 +76,11 @@
 - (NSString*) obtainFullName
 {
     return self.fullNameField.text;
+}
+
+- (NSString*) obtainEmail
+{
+    return self.emailField.text;
 }
 
 - (void) didFinishRegistrationWithSuccessOrError: (NSError*) error

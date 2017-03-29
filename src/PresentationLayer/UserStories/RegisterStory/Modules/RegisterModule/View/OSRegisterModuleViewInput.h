@@ -31,6 +31,7 @@
 - (NSString*) obtainUserPassword;
 - (NSString*) obtainUserConfirmPassword;
 - (NSString*) obtainFullName;
+- (NSString*) obtainEmail;
 
 - (void) didFinishRegistrationWithSuccessOrError: (NSError*) error;
 

@@ -23,10 +23,9 @@
 - (void) saveOrUpdateUserInfoInDB: (UserInfoResponseObject*) info
                    withCompletion: (CompletionUpdateBlock)   completion
 {
-    
     [MagicalRecord saveWithBlock: ^(NSManagedObjectContext* localContext) {
         
-        UserInfoModelObject* localPerson = [UserInfoModelObject MR_createEntityInContext: localContext];;
+        UserInfoModelObject* localPerson = [UserInfoModelObject MR_createEntityInContext: localContext];
         
         localPerson.fullName  = info.fullName;
         localPerson.email     = info.email;
@@ -47,13 +46,13 @@
  
  method for getting user from DB
 
- @param userID parameter for searching in DB
+ @param username parameter for searching in DB
  @return user managed object
  */
 
-- (UserInfoModelObject*) obtainUserInfoMOWithID: (NSNumber*) userID
+- (UserInfoModelObject*) obtainUserInfoMOWithUsername: (NSString*) username
 {
-    NSPredicate* predicate = [NSPredicate predicateWithFormat: @"userID == %@", userID];
+    NSPredicate* predicate = [NSPredicate predicateWithFormat: @"username == %@", username];
     
     UserInfoModelObject* user  = [UserInfoModelObject MR_findFirstWithPredicate: predicate];
     
