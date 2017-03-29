@@ -72,6 +72,15 @@
    // [self.view showLoginSuccessMessage];
 }
 
+
+/**
+
+ @author Valeria Mozghova
+ 
+ method for passing logged user
+ 
+ @param user - logged user
+ */
 - (void) didLoggingUser: (UserInfoPlainObject*) user
 {
     [self.router openUserInfoModuleWithUserInfo: user];

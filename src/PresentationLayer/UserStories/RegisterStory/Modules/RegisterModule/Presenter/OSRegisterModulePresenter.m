@@ -42,6 +42,7 @@
 
 - (void) didRegisterWithSuccess
 {
+    //[self.interactor ]
     [self.view didFinishRegistrationWithSuccessOrError: nil];
 }
 
@@ -61,6 +62,7 @@
     registerModel.password        = [self.view obtainUserPassword];
     registerModel.confirmPassword = [self.view obtainUserConfirmPassword];
     registerModel.fullName        = [self.view obtainFullName];
+    registerModel.email           = [self.view obtainEmail];
     
     return registerModel;
 }

@@ -11,9 +11,26 @@
 // Frameworks
 #import <ViperMcFlurry/ViperMcFlurry.h>
 
+// Classes
+#import "UserInfoModuleSegueIdentifiersConstance.h"
+#import "OSUserUpdateInfoModuleOutput.h"
+#import "OSUserUpdateInfoModuleInput.h"
+
 @implementation OSUserInfoRouter
 
 
 #pragma mark - Methods OSUserInfoRouterInput -
+
+- (void) configureUpdateUserInfoModuleWithInfo: (UserInfoPlainObject*)             info
+                              withModuleOutput: (id<OSUserUpdateInfoModuleOutput>) moduleOutput
+{
+    [[self.transitionHandler openModuleUsingSegue: updateUserInfoSubModuleSegueID] thenChainUsingBlock: ^id<OSUserUpdateInfoModuleOutput>(id<OSUserUpdateInfoModuleInput> moduleInput) {
+       
+        [moduleInput configureModuleWithUser: info];
+        
+        return moduleOutput;
+        
+    }];
+}
 
 @end

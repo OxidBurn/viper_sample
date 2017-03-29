@@ -9,6 +9,13 @@
 // Frameworks
 @import Foundation;
 
+// Classes
+@class UserInfoPlainObject;
+#import "OSUserUpdateInfoModuleOutput.h"
+
 @protocol OSUserInfoRouterInput <NSObject>
+
+- (void) configureUpdateUserInfoModuleWithInfo: (UserInfoPlainObject*)             info
+                              withModuleOutput: (id<OSUserUpdateInfoModuleOutput>) moduleInput;
 
 @end

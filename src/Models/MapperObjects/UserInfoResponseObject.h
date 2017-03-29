@@ -51,10 +51,12 @@
 @property (strong, nonatomic) NSString* username;
 
 /**
- @author Nikolay Chaban
+ @author Valeria Mozghova
  
 user id
  */
 @property (strong, nonatomic) NSNumber* userID;
+
+
 
 @end

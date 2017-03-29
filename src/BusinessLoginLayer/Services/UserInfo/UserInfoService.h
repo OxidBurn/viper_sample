@@ -12,6 +12,7 @@
 // Classes
 #import "UserInfoResponseObject.h"
 #import "UserInfoModelObject.h"
+#import "UserInfoPlainObject.h"
 
 ///-------------------------------------------------
 /// @name Completion block definition
@@ -45,11 +46,23 @@ typedef void(^CompletionUpdateBlock)(BOOL isUpdate);
 /**
  @author Nikolay Chaban
  
+ Method for updating user information in database
+
+ @param info updated object with user info
+ @param completion completion block with success save parameter
+ */
+- (void) updateUserInfoInDB: (UserInfoPlainObject*)  info
+             withCompletion: (CompletionUpdateBlock) completion;
+
+
+/**
+ @author Nikolay Chaban
+ 
  Method designed for fetching object from DB and converting to the old plain object
 
- @param userID user id number value, for fetch core data predicate
+ @param username username unique value, for fetch core data predicate
  @return plain object converted from user info core data managed object
  */
-- (UserInfoModelObject*) obtainUserInfoMOWithID: (NSNumber*) userID;
+- (UserInfoModelObject*) obtainUserInfoMOWithUsername: (NSString*) username;
 
 @end

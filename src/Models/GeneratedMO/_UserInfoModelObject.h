@@ -34,6 +34,8 @@ NS_ASSUME_NONNULL_BEGIN
 - (int16_t)userIDValue;
 - (void)setUserIDValue:(int16_t)value_;
 
+@property (nonatomic, strong, nullable) NSString* username;
+
 @end
 
 @interface _UserInfoModelObject (CoreDataGeneratedPrimitiveAccessors)
@@ -56,6 +58,9 @@ NS_ASSUME_NONNULL_BEGIN
 - (int16_t)primitiveUserIDValue;
 - (void)setPrimitiveUserIDValue:(int16_t)value_;
 
+- (nullable NSString*)primitiveUsername;
+- (void)setPrimitiveUsername:(nullable NSString*)value;
+
 @end
 
 @interface UserInfoModelObjectAttributes: NSObject 
@@ -64,6 +69,7 @@ NS_ASSUME_NONNULL_BEGIN
 + (NSString *)imagePath;
 + (NSString *)password;
 + (NSString *)userID;
++ (NSString *)username;
 @end
 
 NS_ASSUME_NONNULL_END
