@@ -66,11 +66,19 @@
                                     <action selector="didRegisterButtonClicked:" destination="6v7-5D-QpE" eventType="touchUpInside" id="fsG-uf-1vY"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cbv-cy-3fj">
+                                <rect key="frame" x="64" y="427" width="247" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="0.68113888452028859" green="1" blue="0.89981844183842574" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="fYy-xj-ZiA" firstAttribute="top" secondItem="DIT-Hb-hxV" secondAttribute="bottom" constant="84" id="4I7-aC-sZy"/>
                             <constraint firstItem="ehv-71-k6I" firstAttribute="top" secondItem="JyL-Cp-y6E" secondAttribute="bottom" constant="16" id="57B-Ve-lxe"/>
+                            <constraint firstItem="cbv-cy-3fj" firstAttribute="top" secondItem="DIT-Hb-hxV" secondAttribute="bottom" constant="16" id="5Vf-0f-DGs"/>
+                            <constraint firstItem="cbv-cy-3fj" firstAttribute="width" secondItem="DIT-Hb-hxV" secondAttribute="width" id="6kt-kK-Taq"/>
                             <constraint firstItem="Vfn-2E-BeS" firstAttribute="height" secondItem="ehv-71-k6I" secondAttribute="height" id="7b7-OE-gpP"/>
                             <constraint firstItem="JyL-Cp-y6E" firstAttribute="top" secondItem="lbK-qv-uoL" secondAttribute="bottom" constant="86" id="Bu1-dP-8qt"/>
                             <constraint firstItem="ehv-71-k6I" firstAttribute="centerX" secondItem="JyL-Cp-y6E" secondAttribute="centerX" id="FX6-qi-za7"/>
@@ -81,6 +89,7 @@
                             <constraint firstItem="DIT-Hb-hxV" firstAttribute="top" secondItem="Vfn-2E-BeS" secondAttribute="bottom" constant="15" id="TH0-0A-UYu"/>
                             <constraint firstItem="Vfn-2E-BeS" firstAttribute="width" secondItem="ehv-71-k6I" secondAttribute="width" id="XjO-qO-pdw"/>
                             <constraint firstItem="DIT-Hb-hxV" firstAttribute="width" secondItem="Vfn-2E-BeS" secondAttribute="width" id="aTA-rg-wWB"/>
+                            <constraint firstItem="cbv-cy-3fj" firstAttribute="centerX" secondItem="DIT-Hb-hxV" secondAttribute="centerX" id="buQ-jV-JGR"/>
                             <constraint firstItem="ehv-71-k6I" firstAttribute="height" secondItem="JyL-Cp-y6E" secondAttribute="height" id="fBs-f4-e1V"/>
                             <constraint firstItem="lbK-qv-uoL" firstAttribute="centerX" secondItem="ieN-3u-JAi" secondAttribute="centerX" id="nst-3G-DdN"/>
                             <constraint firstItem="DIT-Hb-hxV" firstAttribute="centerX" secondItem="Vfn-2E-BeS" secondAttribute="centerX" id="sEk-ga-iKq"/>
@@ -91,6 +100,7 @@
                     </view>
                     <connections>
                         <outlet property="confirmPasswordField" destination="Vfn-2E-BeS" id="x1F-3x-G60"/>
+                        <outlet property="emailField" destination="cbv-cy-3fj" id="MP5-Re-8HN"/>
                         <outlet property="fullNameField" destination="DIT-Hb-hxV" id="K0b-vX-qeC"/>
                         <outlet property="passwordField" destination="ehv-71-k6I" id="8d5-kH-yGm"/>
                         <outlet property="userNameField" destination="JyL-Cp-y6E" id="Nl9-vu-RVo"/>

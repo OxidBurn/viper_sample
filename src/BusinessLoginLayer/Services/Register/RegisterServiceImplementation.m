@@ -7,6 +7,8 @@
 //
 
 #import "RegisterServiceImplementation.h"
+#import <MagicalRecord/MagicalRecord.h>
+#import "UserInfoModelObject.h"
 
 @implementation RegisterServiceImplementation
 
@@ -24,6 +26,9 @@
         isSuccess = NO;
     }
     
+    [self saveOrUpdateUserInfoInDB: parameter
+                    withCompletion: completion];
+
     if ( completion )
         completion(isSuccess, registrationCompletionError);
 }
@@ -31,6 +36,25 @@
 
 #pragma mark - Internal methods -
 
+- (void) saveOrUpdateUserInfoInDB: (RegistrationParametersModel*) info
+                   withCompletion: (RegistrationCompletionBlock)   completion
+{
+    [MagicalRecord saveWithBlock: ^(NSManagedObjectContext* localContext) {
+        
+        UserInfoModelObject* localPerson = [UserInfoModelObject MR_createEntityInContext: localContext];
+        
+        localPerson.fullName  = info.fullName;
+        localPerson.email     = info.email;
+        localPerson.username  = info.userName;
+        localPerson.password  = info.confirmPassword;
+    }
+                      completion: ^(BOOL contextDidSave, NSError * _Nullable error) {
+                          
+                          if ( completion )
+                              completion(contextDidSave, error);
+                          
+                      }];
+}
 
 
 @end
