@@ -83,6 +83,7 @@
 		8EEEE613F9F83DCFA1F44B47 /* OSRegisterModuleViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DD83D7E93BAF2849512996E4 /* OSRegisterModuleViewControllerTests.m */; };
 		9EF62764C1E4EDFCBC95099A /* OSAllUsersViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 814A0A00FF23B529CC5545E8 /* OSAllUsersViewControllerTests.m */; };
 		C2193DCD3957593BD502BB80 /* libPods-ViperSampleProject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BE0ED5E1ED2D20FB17F8B9DA /* libPods-ViperSampleProject.a */; };
+		C51174441E8D0B0B00A29F13 /* ROSPonsomizerImplementation.m in Sources */ = {isa = PBXBuildFile; fileRef = C51174431E8D0B0B00A29F13 /* ROSPonsomizerImplementation.m */; };
 		C52110EB1E8BD42900A072BC /* OSAllUsersAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = C52110D71E8BD42900A072BC /* OSAllUsersAssembly.m */; };
 		C52110EC1E8BD42900A072BC /* OSAllUsersInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = C52110DA1E8BD42900A072BC /* OSAllUsersInteractor.m */; };
 		C52110ED1E8BD42A00A072BC /* OSAllUsersPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = C52110E01E8BD42900A072BC /* OSAllUsersPresenter.m */; };
@@ -95,7 +96,6 @@
 		C52111091E8C06A200A072BC /* UserInfoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C52111071E8C06A200A072BC /* UserInfoCell.xib */; };
 		C521110C1E8C0F6500A072BC /* UserInfoCellObject.m in Sources */ = {isa = PBXBuildFile; fileRef = C521110B1E8C0F6500A072BC /* UserInfoCellObject.m */; };
 		C559A0F4C40627334D183F5B /* OSRegisterModulePresenterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E9DA711612E6D02F8B0BC6F7 /* OSRegisterModulePresenterTests.m */; };
-		C598C3311E891535000C2465 /* ROSPonsomizerImplementation.m in Sources */ = {isa = PBXBuildFile; fileRef = C598C3301E891535000C2465 /* ROSPonsomizerImplementation.m */; };
 		C598C3351E891543000C2465 /* PonsomizerAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = C598C3341E891543000C2465 /* PonsomizerAssembly.m */; };
 		C598C3BE1E8A6F42000C2465 /* OSUserInfoAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = C598C3AA1E8A6F42000C2465 /* OSUserInfoAssembly.m */; };
 		C598C3BF1E8A6F42000C2465 /* OSUserInfoInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = C598C3AD1E8A6F42000C2465 /* OSUserInfoInteractor.m */; };
@@ -242,6 +242,9 @@
 		BE0ED5E1ED2D20FB17F8B9DA /* libPods-ViperSampleProject.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ViperSampleProject.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE5141D79125132AC5762AC4 /* Pods-ViperSampleProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ViperSampleProject.debug.xcconfig"; path = "../pod/Pods/Target Support Files/Pods-ViperSampleProject/Pods-ViperSampleProject.debug.xcconfig"; sourceTree = "<group>"; };
 		C265B9BCF34E029E18545949 /* OSUserUpdateInfoAssembly_Testable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = OSUserUpdateInfoAssembly_Testable.h; sourceTree = "<group>"; };
+		C51174411E8D0B0B00A29F13 /* ROSPonsomizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ROSPonsomizer.h; sourceTree = "<group>"; };
+		C51174421E8D0B0B00A29F13 /* ROSPonsomizerImplementation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ROSPonsomizerImplementation.h; sourceTree = "<group>"; };
+		C51174431E8D0B0B00A29F13 /* ROSPonsomizerImplementation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ROSPonsomizerImplementation.m; sourceTree = "<group>"; };
 		C52110D61E8BD42900A072BC /* OSAllUsersAssembly.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSAllUsersAssembly.h; sourceTree = "<group>"; };
 		C52110D71E8BD42900A072BC /* OSAllUsersAssembly.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSAllUsersAssembly.m; sourceTree = "<group>"; };
 		C52110D91E8BD42900A072BC /* OSAllUsersInteractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSAllUsersInteractor.h; sourceTree = "<group>"; };
@@ -269,9 +272,6 @@
 		C52111071E8C06A200A072BC /* UserInfoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserInfoCell.xib; sourceTree = "<group>"; };
 		C521110A1E8C0F6500A072BC /* UserInfoCellObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserInfoCellObject.h; sourceTree = "<group>"; };
 		C521110B1E8C0F6500A072BC /* UserInfoCellObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserInfoCellObject.m; sourceTree = "<group>"; };
-		C598C32E1E891535000C2465 /* ROSPonsomizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ROSPonsomizer.h; sourceTree = "<group>"; };
-		C598C32F1E891535000C2465 /* ROSPonsomizerImplementation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ROSPonsomizerImplementation.h; sourceTree = "<group>"; };
-		C598C3301E891535000C2465 /* ROSPonsomizerImplementation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ROSPonsomizerImplementation.m; sourceTree = "<group>"; };
 		C598C3331E891543000C2465 /* PonsomizerAssembly.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PonsomizerAssembly.h; sourceTree = "<group>"; };
 		C598C3341E891543000C2465 /* PonsomizerAssembly.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PonsomizerAssembly.m; sourceTree = "<group>"; };
 		C598C3A91E8A6F42000C2465 /* OSUserInfoAssembly.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSUserInfoAssembly.h; sourceTree = "<group>"; };
@@ -460,7 +460,6 @@
 		562B85E31E847C0A0075F962 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				C598C32D1E891535000C2465 /* Ponsomizer */,
 				56F69C9B1E859A830099A584 /* GeneratedMO */,
 				56F69C9E1E859A830099A584 /* GeneratedPONSO */,
 				56F69CA11E859A830099A584 /* ManagedObjects */,
@@ -476,6 +475,7 @@
 		562B85E81E848A0D0075F962 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				C51174401E8D0B0B00A29F13 /* Ponsomizer */,
 				562B85E91E848A0D0075F962 /* EXTScope */,
 			);
 			name = Helpers;
@@ -1072,6 +1072,16 @@
 			path = Interactor;
 			sourceTree = "<group>";
 		};
+		C51174401E8D0B0B00A29F13 /* Ponsomizer */ = {
+			isa = PBXGroup;
+			children = (
+				C51174411E8D0B0B00A29F13 /* ROSPonsomizer.h */,
+				C51174421E8D0B0B00A29F13 /* ROSPonsomizerImplementation.h */,
+				C51174431E8D0B0B00A29F13 /* ROSPonsomizerImplementation.m */,
+			);
+			path = Ponsomizer;
+			sourceTree = "<group>";
+		};
 		C52110D21E8BD42900A072BC /* AllUsersStory */ = {
 			isa = PBXGroup;
 			children = (
@@ -1223,16 +1233,6 @@
 				C52111071E8C06A200A072BC /* UserInfoCell.xib */,
 			);
 			path = Cells;
-			sourceTree = "<group>";
-		};
-		C598C32D1E891535000C2465 /* Ponsomizer */ = {
-			isa = PBXGroup;
-			children = (
-				C598C32E1E891535000C2465 /* ROSPonsomizer.h */,
-				C598C32F1E891535000C2465 /* ROSPonsomizerImplementation.h */,
-				C598C3301E891535000C2465 /* ROSPonsomizerImplementation.m */,
-			);
-			path = Ponsomizer;
 			sourceTree = "<group>";
 		};
 		C598C3321E891543000C2465 /* PonsomizerAssembly */ = {
@@ -1582,7 +1582,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C598C3311E891535000C2465 /* ROSPonsomizerImplementation.m in Sources */,
 				56E367F01E85517600F24E61 /* ViperSampleModel.xcdatamodeld in Sources */,
 				56DB4A171E833CF30015C039 /* OSLoginModuleInteractor.m in Sources */,
 				56DB4A181E833CF30015C039 /* OSLoginModulePresenter.m in Sources */,
@@ -1652,6 +1651,7 @@
 				4E6471843BE6DD51CC08D78E /* OSAllUsersAssemblyTests.m in Sources */,
 				C52110EF1E8BD42A00A072BC /* OSAllUsersViewController.m in Sources */,
 				9EF62764C1E4EDFCBC95099A /* OSAllUsersViewControllerTests.m in Sources */,
+				C51174441E8D0B0B00A29F13 /* ROSPonsomizerImplementation.m in Sources */,
 				C52110EB1E8BD42900A072BC /* OSAllUsersAssembly.m in Sources */,
 				C52111081E8C06A200A072BC /* UserInfoCell.m in Sources */,
 				D76C4E8707520B7CCF32C8A1 /* OSAllUsersPresenterTests.m in Sources */,

@@ -15,9 +15,8 @@
 /**
  @author Valeria Mozghova
 
- Method for setup initial state of view
+ Method for setup initial state of view with list of users
  */
-- (void) setupInitialState;
 
 - (void) setupViewStateWithUsersArray: (NSArray*) users;
 

@@ -19,32 +19,23 @@
 // THE SOFTWARE.
 
 #import <Foundation/Foundation.h>
-#import <UIKit/UIKit.h>
 
-@protocol DataDisplayManager <NSObject>
+#import "ROSPonsomizer.h"
 
-/**
- *  @author Valeria Mozgova
- *
- *  Methods that returns dataSource for tableView.
- *
- *  @param tableView controller, that stores tableview
- *
- *  @return (id<UITableViewDataSource>)
- */
-- (id<UITableViewDataSource>) dataSourceForTableView: (UITableView*) tableView;
+NS_ASSUME_NONNULL_BEGIN
 
 /**
- *  @author Valeria Mozgova
- *
- *  Methods that returns delegate for tableView. DDM is not delegate itself.
- *
- *  @param tableView      tableView, whos delegate we want to get
- *  @param baseTableViewDelegate Main delegate of tableView (for example UITableViewController) - this parameter is nessesary for forwarding part of delegate methods
- *
- *  @return Delegate for tableView
- */
-- (id<UITableViewDelegate>) delegateForTableView: (UITableView*)             tableView
-                                withBaseDelegate: (id <UITableViewDelegate>) baseTableViewDelegate;
+ @author Aleksandr Sychev
 
+ Конвертер CoreData-объектов в Plain Old NSObjects.
+ 
+ Предполагается, что в проекте используются следующие правила нейминга модельных объектов.
+    - CoreData-объект называется согласно шаблону $Name$Entity (например, ROSArticleEntity).
+    - Неизменяемый пользователем PONSO (machine-generated) называется согласно шаблону _$Name$PONSO (например, _ROSArticlePONSO),
+      а изменяемый (human-generated) - $Name$PONSO (например, ROSArticlePONSO).
+      Свойства в изменяемом и неизменямом PONSO должны совпадать.
+ */
+@interface ROSPonsomizerImplementation : NSObject <ROSPonsomizer>
 @end
+
+NS_ASSUME_NONNULL_END

@@ -19,32 +19,29 @@
 // THE SOFTWARE.
 
 #import <Foundation/Foundation.h>
-#import <UIKit/UIKit.h>
 
-@protocol DataDisplayManager <NSObject>
-
-/**
- *  @author Valeria Mozgova
- *
- *  Methods that returns dataSource for tableView.
- *
- *  @param tableView controller, that stores tableview
- *
- *  @return (id<UITableViewDataSource>)
- */
-- (id<UITableViewDataSource>) dataSourceForTableView: (UITableView*) tableView;
+NS_ASSUME_NONNULL_BEGIN
 
 /**
- *  @author Valeria Mozgova
- *
- *  Methods that returns delegate for tableView. DDM is not delegate itself.
- *
- *  @param tableView      tableView, whos delegate we want to get
- *  @param baseTableViewDelegate Main delegate of tableView (for example UITableViewController) - this parameter is nessesary for forwarding part of delegate methods
- *
- *  @return Delegate for tableView
+ @author Aleksandr Sychev
+
+ Протокол конвертера CoreData-объектов в Plain Old NSObjects.
  */
-- (id<UITableViewDelegate>) delegateForTableView: (UITableView*)             tableView
-                                withBaseDelegate: (id <UITableViewDelegate>) baseTableViewDelegate;
+@protocol ROSPonsomizer <NSObject>
+
+@required
+
+/**
+ @author Aleksandr Sychev
+
+ Преобразует CoreData-объекты в плоские.
+
+ @param object NSManagedObject (или наследник) или NSArray, NSSet, NSOrderedSet, состоящих из них.
+
+ @return PONSO или NSArray, NSSet, NSOrderedSet, состоящий из PONSO.
+ */
+- (id)convertObject:(id)object;
 
 @end
+
+NS_ASSUME_NONNULL_END

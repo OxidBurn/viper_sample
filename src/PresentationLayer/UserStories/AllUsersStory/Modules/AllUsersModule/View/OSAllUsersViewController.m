@@ -70,7 +70,7 @@
     self.allUsersTableView.dataSource = [self.dataDisplayManager dataSourceForTableView: self.allUsersTableView];
     
     self.allUsersTableView.delegate   = [self.dataDisplayManager delegateForTableView: self.allUsersTableView
-                                                             withBaseDelegate: self.dataDisplayManager];
+                                                                     withBaseDelegate: self.dataDisplayManager];
     
     [self.dataDisplayManager updateTableViewModelWithUsers: users];
 }

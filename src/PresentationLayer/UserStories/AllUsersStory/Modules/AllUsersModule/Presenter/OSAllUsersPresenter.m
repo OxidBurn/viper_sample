@@ -47,6 +47,8 @@
     
     [self.view setupViewStateWithUsersArray: usersArray];
 }
+
+
 #pragma mark - Methods OSAllUsersInteractorOutput -
 
 
