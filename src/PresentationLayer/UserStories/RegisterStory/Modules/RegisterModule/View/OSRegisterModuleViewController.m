@@ -20,10 +20,14 @@
 @property (weak, nonatomic) IBOutlet UITextField* confirmPasswordField;
 @property (weak, nonatomic) IBOutlet UITextField* fullNameField;
 @property (weak, nonatomic) IBOutlet UITextField* emailField;
+@property (weak, nonatomic) IBOutlet UIImageView *avatarImgView;
+
 
 // methods
 
 - (IBAction) didRegisterButtonClicked: (UIButton*) sender;
+
+- (IBAction) didTapSelectAvatar: (UITapGestureRecognizer*) sender;
 
 @end
 
@@ -38,6 +42,8 @@
 	[super viewDidLoad];
 
 	[self.output didTriggerViewReadyEvent];
+    
+    self.avatarImgView.userInteractionEnabled = YES;
 }
 
 
@@ -110,6 +116,11 @@
 - (IBAction) didRegisterButtonClicked: (UIButton*) sender
 {
     [self.output sendRegistrationRequest];
+}
+
+- (IBAction) didTapSelectAvatar: (UITapGestureRecognizer*) sender
+{
+    NSLog(@"lol");
 }
 
 @end
