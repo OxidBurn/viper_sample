@@ -39,6 +39,8 @@
 		561B8B8E1E8BBCBF00238561 /* OSUserUpdateInfoPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 561B8B821E8BBCBF00238561 /* OSUserUpdateInfoPresenter.m */; };
 		561B8B8F1E8BBCBF00238561 /* OSUserUpdateInfoRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 561B8B851E8BBCBF00238561 /* OSUserUpdateInfoRouter.m */; };
 		561B8B901E8BBCBF00238561 /* OSUserUpdateInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 561B8B891E8BBCBF00238561 /* OSUserUpdateInfoViewController.m */; };
+		561B8BC01E8D17EC00238561 /* AsyncOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 561B8BBA1E8D17EC00238561 /* AsyncOperation.m */; };
+		561B8BC11E8D17EC00238561 /* OperationShcedulerImplementation.m in Sources */ = {isa = PBXBuildFile; fileRef = 561B8BBF1E8D17EC00238561 /* OperationShcedulerImplementation.m */; };
 		562B85E21E8467020075F962 /* RegisterServiceImplementation.m in Sources */ = {isa = PBXBuildFile; fileRef = 562B85E11E8467020075F962 /* RegisterServiceImplementation.m */; };
 		562B85ED1E848A0D0075F962 /* EXTScope.m in Sources */ = {isa = PBXBuildFile; fileRef = 562B85EB1E848A0D0075F962 /* EXTScope.m */; };
 		562B85F01E848D110075F962 /* RegistrationInfoValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = 562B85EF1E848D110075F962 /* RegistrationInfoValidator.m */; };
@@ -142,6 +144,11 @@
 		561B8B8B1E8BBCBF00238561 /* OSUserUpdateInfoViewOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSUserUpdateInfoViewOutput.h; sourceTree = "<group>"; };
 		561B8BB31E8D161000238561 /* OSUserUpdateInfoModuleOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSUserUpdateInfoModuleOutput.h; sourceTree = "<group>"; };
 		561B8BB41E8D162900238561 /* UserInfoModuleSegueIdentifiersConstance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserInfoModuleSegueIdentifiersConstance.h; sourceTree = "<group>"; };
+		561B8BB91E8D17EC00238561 /* AsyncOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AsyncOperation.h; sourceTree = "<group>"; };
+		561B8BBA1E8D17EC00238561 /* AsyncOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AsyncOperation.m; sourceTree = "<group>"; };
+		561B8BBD1E8D17EC00238561 /* OperationScheduler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OperationScheduler.h; sourceTree = "<group>"; };
+		561B8BBE1E8D17EC00238561 /* OperationShcedulerImplementation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OperationShcedulerImplementation.h; sourceTree = "<group>"; };
+		561B8BBF1E8D17EC00238561 /* OperationShcedulerImplementation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OperationShcedulerImplementation.m; sourceTree = "<group>"; };
 		562B85DF1E8466C60075F962 /* RegisterService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RegisterService.h; path = Register/RegisterService.h; sourceTree = "<group>"; };
 		562B85E01E8467020075F962 /* RegisterServiceImplementation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RegisterServiceImplementation.h; path = Register/RegisterServiceImplementation.h; sourceTree = "<group>"; };
 		562B85E11E8467020075F962 /* RegisterServiceImplementation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RegisterServiceImplementation.m; path = Register/RegisterServiceImplementation.m; sourceTree = "<group>"; };
@@ -447,6 +454,59 @@
 				561B8B8B1E8BBCBF00238561 /* OSUserUpdateInfoViewOutput.h */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		561B8BB51E8D17EC00238561 /* CoreLayer */ = {
+			isa = PBXGroup;
+			children = (
+				561B8BB61E8D17EC00238561 /* ConcreteOperations */,
+				561B8BB71E8D17EC00238561 /* Operations */,
+				561B8BBC1E8D17EC00238561 /* OperationScheduler */,
+			);
+			name = CoreLayer;
+			path = ../src/CoreLayer;
+			sourceTree = "<group>";
+		};
+		561B8BB61E8D17EC00238561 /* ConcreteOperations */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ConcreteOperations;
+			sourceTree = "<group>";
+		};
+		561B8BB71E8D17EC00238561 /* Operations */ = {
+			isa = PBXGroup;
+			children = (
+				561B8BB81E8D17EC00238561 /* BaseClasses */,
+				561B8BBB1E8D17EC00238561 /* CompoundOperations */,
+			);
+			path = Operations;
+			sourceTree = "<group>";
+		};
+		561B8BB81E8D17EC00238561 /* BaseClasses */ = {
+			isa = PBXGroup;
+			children = (
+				561B8BB91E8D17EC00238561 /* AsyncOperation.h */,
+				561B8BBA1E8D17EC00238561 /* AsyncOperation.m */,
+			);
+			path = BaseClasses;
+			sourceTree = "<group>";
+		};
+		561B8BBB1E8D17EC00238561 /* CompoundOperations */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CompoundOperations;
+			sourceTree = "<group>";
+		};
+		561B8BBC1E8D17EC00238561 /* OperationScheduler */ = {
+			isa = PBXGroup;
+			children = (
+				561B8BBD1E8D17EC00238561 /* OperationScheduler.h */,
+				561B8BBE1E8D17EC00238561 /* OperationShcedulerImplementation.h */,
+				561B8BBF1E8D17EC00238561 /* OperationShcedulerImplementation.m */,
+			);
+			path = OperationScheduler;
 			sourceTree = "<group>";
 		};
 		562B85DD1E84668F0075F962 /* Register */ = {
@@ -932,6 +992,7 @@
 				56DB49851E8335DA0015C039 /* ApplicationLayer */,
 				56DB498E1E8335DA0015C039 /* BusinessLoginLayer */,
 				56DB49961E8335DA0015C039 /* PresentationLayer */,
+				561B8BB51E8D17EC00238561 /* CoreLayer */,
 				562B85E31E847C0A0075F962 /* Models */,
 				562B85E81E848A0D0075F962 /* Helpers */,
 			);
@@ -1624,6 +1685,7 @@
 				56DB49CC1E8335DA0015C039 /* LoginServiceImplementation.m in Sources */,
 				56DB4A1A1E833CF30015C039 /* OSLoginModuleViewController.m in Sources */,
 				56DB4A1D1E833CF30015C039 /* OSRegisterModulePresenter.m in Sources */,
+				561B8BC01E8D17EC00238561 /* AsyncOperation.m in Sources */,
 				562B85E21E8467020075F962 /* RegisterServiceImplementation.m in Sources */,
 				56DB49C91E8335DA0015C039 /* ActivityAppDelegate.m in Sources */,
 				C598C3C21E8A6F42000C2465 /* OSUserInfoViewController.m in Sources */,
@@ -1646,6 +1708,7 @@
 				30D7B0D4FD3F99535E58573F /* OSRegisterModuleInteractorTests.m in Sources */,
 				C598C3351E891543000C2465 /* PonsomizerAssembly.m in Sources */,
 				56E368081E8566CA00F24E61 /* UserDataResponseParserImplementation.m in Sources */,
+				561B8BC11E8D17EC00238561 /* OperationShcedulerImplementation.m in Sources */,
 				561B8B901E8BBCBF00238561 /* OSUserUpdateInfoViewController.m in Sources */,
 				C521110C1E8C0F6500A072BC /* UserInfoCellObject.m in Sources */,
 				D6B6D41C3B0DACE740576EAF /* OSRegisterModuleRouterTests.m in Sources */,
