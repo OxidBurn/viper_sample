@@ -20,4 +20,28 @@ static NSString *const kOperationQueueName = @"com.onsight.ViperExample.Operatio
 
 @implementation OperationShcedulerImplementation
 
+
+#pragma mark - Initialization -
+
+- (instancetype) init
+{
+    if ( self = [super init] )
+    {
+        self.operationQueue = [[NSOperationQueue alloc] init];
+        
+        self.operationQueue.name                        = kOperationQueueName;
+        self.operationQueue.maxConcurrentOperationCount = NSOperationQueueDefaultMaxConcurrentOperationCount;
+    }
+    
+    return self;
+}
+
+
+#pragma mark - Method OperationScheduler Protocol -
+
+- (void) addOperation: (NSOperation*) operation
+{
+    [self.operationQueue addOperation: operation];
+}
+
 @end

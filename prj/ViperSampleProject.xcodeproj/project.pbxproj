@@ -41,6 +41,8 @@
 		561B8B901E8BBCBF00238561 /* OSUserUpdateInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 561B8B891E8BBCBF00238561 /* OSUserUpdateInfoViewController.m */; };
 		561B8BC01E8D17EC00238561 /* AsyncOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 561B8BBA1E8D17EC00238561 /* AsyncOperation.m */; };
 		561B8BC11E8D17EC00238561 /* OperationShcedulerImplementation.m in Sources */ = {isa = PBXBuildFile; fileRef = 561B8BBF1E8D17EC00238561 /* OperationShcedulerImplementation.m */; };
+		561B8BC51E8D18A000238561 /* DownloadAvatarOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 561B8BC41E8D18A000238561 /* DownloadAvatarOperation.m */; };
+		561B8BD11E8D18B300238561 /* CompoundOperationBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 561B8BCD1E8D18B300238561 /* CompoundOperationBase.m */; };
 		562B85E21E8467020075F962 /* RegisterServiceImplementation.m in Sources */ = {isa = PBXBuildFile; fileRef = 562B85E11E8467020075F962 /* RegisterServiceImplementation.m */; };
 		562B85ED1E848A0D0075F962 /* EXTScope.m in Sources */ = {isa = PBXBuildFile; fileRef = 562B85EB1E848A0D0075F962 /* EXTScope.m */; };
 		562B85F01E848D110075F962 /* RegistrationInfoValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = 562B85EF1E848D110075F962 /* RegistrationInfoValidator.m */; };
@@ -149,6 +151,16 @@
 		561B8BBD1E8D17EC00238561 /* OperationScheduler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OperationScheduler.h; sourceTree = "<group>"; };
 		561B8BBE1E8D17EC00238561 /* OperationShcedulerImplementation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OperationShcedulerImplementation.h; sourceTree = "<group>"; };
 		561B8BBF1E8D17EC00238561 /* OperationShcedulerImplementation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OperationShcedulerImplementation.m; sourceTree = "<group>"; };
+		561B8BC31E8D18A000238561 /* DownloadAvatarOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownloadAvatarOperation.h; sourceTree = "<group>"; };
+		561B8BC41E8D18A000238561 /* DownloadAvatarOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownloadAvatarOperation.m; sourceTree = "<group>"; };
+		561B8BC71E8D18AD00238561 /* ChainableOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChainableOperation.h; sourceTree = "<group>"; };
+		561B8BC81E8D18AD00238561 /* ChainableOperationDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChainableOperationDelegate.h; sourceTree = "<group>"; };
+		561B8BC91E8D18AD00238561 /* ChainableOperationInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChainableOperationInput.h; sourceTree = "<group>"; };
+		561B8BCA1E8D18AD00238561 /* ChainableOperationOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChainableOperationOutput.h; sourceTree = "<group>"; };
+		561B8BCC1E8D18B300238561 /* CompoundOperationBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CompoundOperationBase.h; sourceTree = "<group>"; };
+		561B8BCD1E8D18B300238561 /* CompoundOperationBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CompoundOperationBase.m; sourceTree = "<group>"; };
+		561B8BCF1E8D18B300238561 /* CompoundOperationQueueInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CompoundOperationQueueInput.h; sourceTree = "<group>"; };
+		561B8BD01E8D18B300238561 /* CompoundOperationQueueOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CompoundOperationQueueOutput.h; sourceTree = "<group>"; };
 		562B85DF1E8466C60075F962 /* RegisterService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RegisterService.h; path = Register/RegisterService.h; sourceTree = "<group>"; };
 		562B85E01E8467020075F962 /* RegisterServiceImplementation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RegisterServiceImplementation.h; path = Register/RegisterServiceImplementation.h; sourceTree = "<group>"; };
 		562B85E11E8467020075F962 /* RegisterServiceImplementation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RegisterServiceImplementation.m; path = Register/RegisterServiceImplementation.m; sourceTree = "<group>"; };
@@ -470,6 +482,7 @@
 		561B8BB61E8D17EC00238561 /* ConcreteOperations */ = {
 			isa = PBXGroup;
 			children = (
+				561B8BC21E8D18A000238561 /* DownloadingOperation */,
 			);
 			path = ConcreteOperations;
 			sourceTree = "<group>";
@@ -477,6 +490,7 @@
 		561B8BB71E8D17EC00238561 /* Operations */ = {
 			isa = PBXGroup;
 			children = (
+				561B8BC61E8D18AD00238561 /* Protocols */,
 				561B8BB81E8D17EC00238561 /* BaseClasses */,
 				561B8BBB1E8D17EC00238561 /* CompoundOperations */,
 			);
@@ -495,6 +509,8 @@
 		561B8BBB1E8D17EC00238561 /* CompoundOperations */ = {
 			isa = PBXGroup;
 			children = (
+				561B8BCB1E8D18B300238561 /* BaseClasses */,
+				561B8BCE1E8D18B300238561 /* Protocols */,
 			);
 			path = CompoundOperations;
 			sourceTree = "<group>";
@@ -507,6 +523,44 @@
 				561B8BBF1E8D17EC00238561 /* OperationShcedulerImplementation.m */,
 			);
 			path = OperationScheduler;
+			sourceTree = "<group>";
+		};
+		561B8BC21E8D18A000238561 /* DownloadingOperation */ = {
+			isa = PBXGroup;
+			children = (
+				561B8BC31E8D18A000238561 /* DownloadAvatarOperation.h */,
+				561B8BC41E8D18A000238561 /* DownloadAvatarOperation.m */,
+			);
+			path = DownloadingOperation;
+			sourceTree = "<group>";
+		};
+		561B8BC61E8D18AD00238561 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				561B8BC71E8D18AD00238561 /* ChainableOperation.h */,
+				561B8BC81E8D18AD00238561 /* ChainableOperationDelegate.h */,
+				561B8BC91E8D18AD00238561 /* ChainableOperationInput.h */,
+				561B8BCA1E8D18AD00238561 /* ChainableOperationOutput.h */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		561B8BCB1E8D18B300238561 /* BaseClasses */ = {
+			isa = PBXGroup;
+			children = (
+				561B8BCC1E8D18B300238561 /* CompoundOperationBase.h */,
+				561B8BCD1E8D18B300238561 /* CompoundOperationBase.m */,
+			);
+			path = BaseClasses;
+			sourceTree = "<group>";
+		};
+		561B8BCE1E8D18B300238561 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				561B8BCF1E8D18B300238561 /* CompoundOperationQueueInput.h */,
+				561B8BD01E8D18B300238561 /* CompoundOperationQueueOutput.h */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 		562B85DD1E84668F0075F962 /* Register */ = {
@@ -1669,6 +1723,7 @@
 				C52110ED1E8BD42A00A072BC /* OSAllUsersPresenter.m in Sources */,
 				C52110F51E8BFB9A00A072BC /* AllUsersDataDisplayManager.m in Sources */,
 				56DB4A1E1E833CF30015C039 /* OSRegisterModuleRouter.m in Sources */,
+				561B8BC51E8D18A000238561 /* DownloadAvatarOperation.m in Sources */,
 				C52110EC1E8BD42900A072BC /* OSAllUsersInteractor.m in Sources */,
 				56F69CBF1E859CCF0099A584 /* UserInfoModelObject.m in Sources */,
 				56DB49E31E833B140015C039 /* StoryboardAssembly.m in Sources */,
@@ -1724,6 +1779,7 @@
 				F1D878A5D2896A1268B297AF /* OSUserUpdateInfoInteractorTests.m in Sources */,
 				5F64B99A0AEA5AA1184AE61D /* OSUserUpdateInfoRouterTests.m in Sources */,
 				4E6471843BE6DD51CC08D78E /* OSAllUsersAssemblyTests.m in Sources */,
+				561B8BD11E8D18B300238561 /* CompoundOperationBase.m in Sources */,
 				C52110EF1E8BD42A00A072BC /* OSAllUsersViewController.m in Sources */,
 				9EF62764C1E4EDFCBC95099A /* OSAllUsersViewControllerTests.m in Sources */,
 				C511744A1E8D0D3100A29F13 /* ROSPonsomizerImplementation.m in Sources */,
