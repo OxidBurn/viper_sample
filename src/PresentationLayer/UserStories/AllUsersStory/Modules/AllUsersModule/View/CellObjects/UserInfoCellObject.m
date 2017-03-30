@@ -13,15 +13,18 @@
 
 @implementation UserInfoCellObject
 
+
 #pragma mark - Initialization -
 
 - (instancetype) initWithUser: (UserInfoPlainObject*) user
 {
     self = [super init];
+    
     if (self)
     {
         _user = user;
     }
+    
     return self;
 }
 
@@ -30,6 +33,7 @@
 {
     return [[self alloc] initWithUser: user];
 }
+
 
 #pragma mark - NICellObject methods
 

@@ -45,7 +45,6 @@
 }
 
 
-
 #pragma mark - Methods OSAllUsersViewInput -
 
 - (void) setupInitialState 

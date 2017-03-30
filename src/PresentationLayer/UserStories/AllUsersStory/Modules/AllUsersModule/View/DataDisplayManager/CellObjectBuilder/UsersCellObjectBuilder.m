@@ -13,8 +13,6 @@
 
 @implementation UsersCellObjectBuilder
 
-
-
 /**
  @author Valeria Mozghova
  
@@ -30,6 +28,7 @@
     [users enumerateObjectsUsingBlock: ^(UserInfoPlainObject*  _Nonnull user, NSUInteger idx, BOOL * _Nonnull stop) {
         
         UserInfoCellObject* object = [UserInfoCellObject objectWithUser: user];
+        
         [objects addObject: object];
     }];
     

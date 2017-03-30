@@ -52,9 +52,10 @@
 {
     if (self.tableViewModel == nil)
     {
-        self.tableViewModel = [[NIMutableTableViewModel alloc] initWithSectionedArray:@[@""]
-                                                                             delegate:(id)[NICellFactory class]];
+        self.tableViewModel = [[NIMutableTableViewModel alloc] initWithSectionedArray: @[@""]
+                                                                             delegate: (id)[NICellFactory class]];
     }
+    
     return self.tableViewModel;
 }
 
@@ -67,13 +68,14 @@
  @param baseTableViewDelegate - base delegate
  @return dataSource of tableView
  */
-- (id<UITableViewDelegate>) delegateForTableView: (UITableView*) tableView
+- (id<UITableViewDelegate>) delegateForTableView: (UITableView*)            tableView
                                 withBaseDelegate: (id<UITableViewDelegate>) baseTableViewDelegate
 {
     if (!self.tableViewActions)
     {
         [self setupTableViewActions];
     }
+    
     return [self.tableViewActions forwardingTo: baseTableViewDelegate];
 }
 
@@ -90,11 +92,12 @@
     [self updateTableViewModel: users];
 }
 
+
 #pragma mark - Internal -
 
 - (void) updateTableViewModel: (NSArray*) users
 {
-    NSArray *cellObjects = [self.cellObjectBuilder buildCellObjectsWithUsers: users];
+    NSArray* cellObjects = [self.cellObjectBuilder buildCellObjectsWithUsers: users];
     
     [self.tableViewModel addObjectsFromArray: cellObjects];
 }

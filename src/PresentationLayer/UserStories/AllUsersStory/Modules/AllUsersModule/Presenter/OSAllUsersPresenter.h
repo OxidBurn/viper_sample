@@ -18,7 +18,7 @@
 
 @interface OSAllUsersPresenter : NSObject <OSAllUsersModuleInput, OSAllUsersViewOutput, OSAllUsersInteractorOutput>
 
-@property (nonatomic, weak) id<OSAllUsersViewInput> view;
+@property (nonatomic, weak)   id<OSAllUsersViewInput> view;
 @property (nonatomic, strong) id<OSAllUsersInteractorInput> interactor;
 @property (nonatomic, strong) id<OSAllUsersRouterInput> router;
 

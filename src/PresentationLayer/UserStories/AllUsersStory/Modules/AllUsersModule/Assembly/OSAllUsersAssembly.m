@@ -92,15 +92,16 @@
                           }];
 }
 
+
 #pragma mark - Internal module assembly initialization -
 
 - (AllUsersDataDisplayManager*) dataDisplayManager
 {
     return [TyphoonDefinition withClass: [AllUsersDataDisplayManager class]
-                          configuration:^(TyphoonDefinition* definition) {
+                          configuration: ^(TyphoonDefinition* definition) {
                               
-                              [definition injectProperty:@selector(cellObjectBuilder)
-                                                    with:[self cellObjectBuilder]];
+                              [definition injectProperty: @selector(cellObjectBuilder)
+                                                    with: [self cellObjectBuilder]];
                           }];
 }
 
