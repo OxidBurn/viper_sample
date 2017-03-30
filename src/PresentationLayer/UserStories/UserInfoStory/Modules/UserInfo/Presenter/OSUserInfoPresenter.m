@@ -74,7 +74,7 @@
 
 - (void) didUpdateUserInfo
 {
-    self.presenterStateStorage.userInfo = [self.interactor obtainUpdatedUserInfoWithID: self.presenterStateStorage.userInfo.userID];
+    self.presenterStateStorage.userInfo = [self.interactor obtainUpdatedUserInfoWithUserName: self.presenterStateStorage.userInfo.username];
     
     [self.view updateUserInfo: self.presenterStateStorage.userInfo];
 }

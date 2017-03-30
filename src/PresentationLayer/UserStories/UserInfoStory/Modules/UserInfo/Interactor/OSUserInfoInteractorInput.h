@@ -14,6 +14,6 @@
 
 @protocol OSUserInfoInteractorInput <NSObject>
 
-- (UserInfoPlainObject*) obtainUpdatedUserInfoWithID: (NSNumber*) userID;
+- (UserInfoPlainObject*) obtainUpdatedUserInfoWithUserName: (NSString*) username;
 
 @end

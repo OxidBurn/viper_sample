@@ -80,15 +80,4 @@
 }
 
 
-#pragma mark - Methods OSUserUpdateInfoViewOutput -
-
-- (void) didTriggerViewReadyEvent 
-{
-	[self.view setupInitialState];
-}
-
-
-#pragma mark - Methods OSUserUpdateInfoInteractorOutput -
-
-
 @end

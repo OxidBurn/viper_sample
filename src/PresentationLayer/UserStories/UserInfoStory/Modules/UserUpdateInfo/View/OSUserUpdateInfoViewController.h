@@ -19,8 +19,4 @@
 
 @property (nonatomic, strong) id<OSUserUpdateInfoViewOutput> output;
 
-@property (weak, nonatomic) IBOutlet UITextField* userNameField;
-@property (weak, nonatomic) IBOutlet UITextField* fullNameField;
-@property (weak, nonatomic) IBOutlet UITextField* emailField;
-
 @end

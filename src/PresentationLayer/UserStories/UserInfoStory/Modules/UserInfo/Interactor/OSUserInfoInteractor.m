@@ -18,9 +18,9 @@
 
 #pragma mark - Methods OSUserInfoInteractorInput -
 
-- (UserInfoPlainObject*) obtainUpdatedUserInfoWithID: (NSNumber*) userID
+- (UserInfoPlainObject*) obtainUpdatedUserInfoWithUserName: (NSString*) username
 {
-    return [self.ponsomizer convertObject: [self.userInfoService obtainUserInfoMOWithID: userID]];
+    return [self.ponsomizer convertObject: [self.userInfoService obtainUserInfoMOWithUsername: username]];
 }
 
 @end

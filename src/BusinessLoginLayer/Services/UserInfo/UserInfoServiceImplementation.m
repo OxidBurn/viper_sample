@@ -46,7 +46,7 @@
 {
     [MagicalRecord saveWithBlock: ^(NSManagedObjectContext * _Nonnull localContext) {
         
-        UserInfoModelObject* localPerson = [[self obtainUserInfoMOWithID: info.userID] MR_inContext: localContext];
+        UserInfoModelObject* localPerson = [[self obtainUserInfoMOWithUsername: info.username] MR_inContext: localContext];
         
         localPerson.username = info.username;
         localPerson.fullName = info.fullName;
