@@ -17,6 +17,7 @@
 @protocol OSUserUpdateInfoInteractorInput;
 @protocol OSUserUpdateInfoRouterInput;
 
+
 @interface OSUserUpdateInfoPresenter : NSObject <OSUserUpdateInfoViewOutput, OSUserUpdateInfoInteractorOutput, OSUserUpdateInfoModuleInput>
 
 @property (nonatomic, weak) id<OSUserUpdateInfoViewInput> view;

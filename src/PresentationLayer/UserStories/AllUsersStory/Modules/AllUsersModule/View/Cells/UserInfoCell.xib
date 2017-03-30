@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="UserInfoCellObject" id="cKA-6U-djg" customClass="UserInfoCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="cKA-6U-djg" id="CpZ-4F-1on">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="79"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="username" textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vfO-9t-ZGo">
+                        <rect key="frame" x="26" y="50" width="91" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="X3E-RT-W1A"/>
+                            <constraint firstAttribute="width" constant="91" id="hAD-kA-qyG"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.31385605569948183" green="0.31385605569948183" blue="0.31385605569948183" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Full name label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d3w-Rc-opl">
+                        <rect key="frame" x="28" y="15" width="318" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="318" id="Ma0-ww-fQO"/>
+                            <constraint firstAttribute="height" constant="21" id="TKD-MI-PET"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="email@gmail.com" textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ei9-Q3-u37">
+                        <rect key="frame" x="194" y="50" width="173" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="173" id="NfH-Th-s4n"/>
+                            <constraint firstAttribute="height" constant="21" id="mW1-V5-VyH"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.31385605569948183" green="0.31385605569948183" blue="0.31385605569948183" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailingMargin" secondItem="ei9-Q3-u37" secondAttribute="trailing" id="CAH-kc-1ZE"/>
+                    <constraint firstItem="ei9-Q3-u37" firstAttribute="top" secondItem="d3w-Rc-opl" secondAttribute="bottom" constant="14" id="EDo-O0-C6b"/>
+                    <constraint firstItem="vfO-9t-ZGo" firstAttribute="leading" secondItem="CpZ-4F-1on" secondAttribute="leadingMargin" constant="18" id="KDQ-tj-I2p"/>
+                    <constraint firstItem="d3w-Rc-opl" firstAttribute="leading" secondItem="CpZ-4F-1on" secondAttribute="leadingMargin" constant="20" id="MCj-L1-c7s"/>
+                    <constraint firstItem="d3w-Rc-opl" firstAttribute="top" secondItem="CpZ-4F-1on" secondAttribute="topMargin" constant="7" id="Vgc-3P-F6C"/>
+                    <constraint firstItem="vfO-9t-ZGo" firstAttribute="top" secondItem="d3w-Rc-opl" secondAttribute="bottom" constant="14" id="yAt-D6-h4V"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="emailLabel" destination="ei9-Q3-u37" id="RVy-Cd-X2o"/>
+                <outlet property="fullnameLabel" destination="d3w-Rc-opl" id="bP9-HX-vnE"/>
+                <outlet property="usernameLabel" destination="vfO-9t-ZGo" id="2QZ-DM-ji4"/>
+            </connections>
+            <point key="canvasLocation" x="56.5" y="36"/>
+        </tableViewCell>
+    </objects>
+</document>

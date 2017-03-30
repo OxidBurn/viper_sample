@@ -22,7 +22,6 @@
  */
 - (void) didTriggerViewReadyEvent;
 
-
 /**
  @author Nikolay Chaban
  

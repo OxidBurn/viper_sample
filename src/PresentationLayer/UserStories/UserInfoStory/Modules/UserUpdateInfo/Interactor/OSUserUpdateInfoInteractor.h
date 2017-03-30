@@ -14,6 +14,7 @@
 @protocol OSUserUpdateInfoInteractorOutput;
 @protocol UserInfoService;
 
+// Protocols
 @interface OSUserUpdateInfoInteractor : NSObject <OSUserUpdateInfoInteractorInput>
 
 @property (nonatomic, weak) id<OSUserUpdateInfoInteractorOutput> output;

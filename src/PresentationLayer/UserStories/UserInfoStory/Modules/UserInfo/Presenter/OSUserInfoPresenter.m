@@ -41,6 +41,7 @@
     self.presenterStateStorage.userInfo = user;
 }
 
+
 #pragma mark - Methods OSUserInfoViewOutput -
 
 - (void) didTriggerViewReadyEvent 

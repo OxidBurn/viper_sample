@@ -71,4 +71,24 @@
     self.userInfo.username = [self.view obtainNewUserName];
 }
 
+
+#pragma mark - Methods OSUserUpdateInfoModuleInput -
+
+- (void) configureModule 
+{
+	// Starting configuration of the module, which dependent to the view state
+}
+
+
+#pragma mark - Methods OSUserUpdateInfoViewOutput -
+
+- (void) didTriggerViewReadyEvent 
+{
+	[self.view setupInitialState];
+}
+
+
+#pragma mark - Methods OSUserUpdateInfoInteractorOutput -
+
+
 @end

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -45,7 +45,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KkT-B4-nQ7">
-                                <rect key="frame" x="145.5" y="582" width="83" height="30"/>
+                                <rect key="frame" x="136" y="579" width="83" height="30"/>
                                 <state key="normal" title="Registration">
                                     <color key="titleColor" red="0.28320129286703333" green="0.64669689119170992" blue="0.28134237017712871" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
@@ -63,19 +63,29 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Scr-Yt-URl">
+                                <rect key="frame" x="101" y="617" width="172" height="30"/>
+                                <state key="normal" title="Show all registered users"/>
+                                <connections>
+                                    <action selector="didClickAllUsers:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1Ro-Gm-tcm"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.91213270243026823" green="1" blue="0.68912540722836013" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="laa-0K-aBf" firstAttribute="top" secondItem="lxL-cq-Qyg" secondAttribute="bottom" constant="35" id="457-pd-6q2"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Scr-Yt-URl" secondAttribute="bottom" constant="20" id="4pJ-Mz-bIO"/>
                             <constraint firstItem="0ii-hl-gwX" firstAttribute="top" secondItem="N6o-bN-mHR" secondAttribute="bottom" constant="86" id="HCK-Tk-LhK"/>
+                            <constraint firstItem="Scr-Yt-URl" firstAttribute="top" secondItem="KkT-B4-nQ7" secondAttribute="bottom" constant="8" id="Heg-jA-C09"/>
                             <constraint firstItem="0ii-hl-gwX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="IFR-FH-38S"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="KkT-B4-nQ7" secondAttribute="bottom" constant="55" id="MJ5-Js-NvH"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="KkT-B4-nQ7" secondAttribute="bottom" constant="58" id="MJ5-Js-NvH"/>
                             <constraint firstItem="N6o-bN-mHR" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="111" id="NTG-4O-U6e"/>
                             <constraint firstItem="lxL-cq-Qyg" firstAttribute="width" secondItem="0ii-hl-gwX" secondAttribute="width" id="RId-Do-MCg"/>
                             <constraint firstItem="N6o-bN-mHR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="WfF-TS-nlF"/>
+                            <constraint firstItem="Scr-Yt-URl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="b8e-sA-ECb"/>
                             <constraint firstItem="0ii-hl-gwX" firstAttribute="centerX" secondItem="N6o-bN-mHR" secondAttribute="centerX" id="bRn-jC-z5s"/>
                             <constraint firstItem="lxL-cq-Qyg" firstAttribute="top" secondItem="0ii-hl-gwX" secondAttribute="bottom" constant="33" id="ep0-9I-v11"/>
-                            <constraint firstItem="KkT-B4-nQ7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hTj-F7-s8n"/>
+                            <constraint firstItem="KkT-B4-nQ7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-10" id="hTj-F7-s8n"/>
                             <constraint firstItem="laa-0K-aBf" firstAttribute="centerX" secondItem="lxL-cq-Qyg" secondAttribute="centerX" id="rQS-pN-HmS"/>
                             <constraint firstItem="lxL-cq-Qyg" firstAttribute="centerX" secondItem="0ii-hl-gwX" secondAttribute="centerX" id="sCQ-BG-lty"/>
                             <constraint firstItem="lxL-cq-Qyg" firstAttribute="height" secondItem="0ii-hl-gwX" secondAttribute="height" id="tub-sj-9Vy"/>
@@ -87,11 +97,12 @@
                         <outlet property="passTextField" destination="lxL-cq-Qyg" id="HER-KW-7m3"/>
                         <segue destination="M25-52-kcQ" kind="show" identifier="ShowRegistrationScreenSegue" id="Mry-Gm-YZL"/>
                         <segue destination="9Ff-PV-7l5" kind="show" identifier="ShowUserInfoScreenSegue" id="enb-iO-IIb"/>
+                        <segue destination="WS1-hp-nXd" kind="show" identifier="ShowAllUsers" id="fdc-GP-LH4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-33" y="146"/>
+            <point key="canvasLocation" x="-34.399999999999999" y="145.27736131934034"/>
         </scene>
         <!--OSUserInfoModuleStoryboardID-->
         <scene sceneID="cSa-W3-iWa">
@@ -99,7 +110,15 @@
                 <viewControllerPlaceholder storyboardIdentifier="UIViewController-Jgu-BV-V9g" storyboardName="UserInfo" referencedIdentifier="OSUserInfoModuleStoryboardID" id="9Ff-PV-7l5" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rQJ-sD-4b6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1103" y="316"/>
+            <point key="canvasLocation" x="1102" y="94"/>
+        </scene>
+        <!--AllUsersViewController-->
+        <scene sceneID="Sg2-ly-daV">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="AllUsersViewController" storyboardName="AllUsersScreen" referencedIdentifier="AllUsersViewController" id="WS1-hp-nXd" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Wc2-RX-8mh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1073" y="218"/>
         </scene>
         <!--OSRegisterModuleViewController-->
         <scene sceneID="qBJ-y9-AMG">

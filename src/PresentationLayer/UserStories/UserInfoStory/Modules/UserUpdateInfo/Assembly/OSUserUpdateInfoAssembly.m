@@ -45,7 +45,7 @@
                           
                               [definition injectProperty: @selector(output)
                                                     with: [self presenterUserUpdateInfo]];
-                              
+
                               /**
                                @author Nikolay Chaban
                                

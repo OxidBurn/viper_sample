@@ -14,3 +14,5 @@
 static NSString* const LoginToRegisterSegue = @"ShowRegistrationScreenSegue";
 
 static NSString* const LoginToUserInfoSegue = @"ShowUserInfoScreenSegue";
+
+static NSString* const LoginToAllUsersSegue = @"ShowAllUsers";

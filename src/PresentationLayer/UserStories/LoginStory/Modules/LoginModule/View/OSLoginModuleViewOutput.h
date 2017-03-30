@@ -43,4 +43,12 @@
  */
 - (void) instantiateRegisterButtonClicked;
 
+
+/**
+ @author Valeria Mozghova
+ 
+  Show AllUsers screen
+ */
+- (void) didTapShowAllUsers;
+
 @end

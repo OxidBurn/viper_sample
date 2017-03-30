@@ -16,6 +16,10 @@
 
 // properties
 
+@property (weak, nonatomic) IBOutlet UITextField* userNameField;
+@property (weak, nonatomic) IBOutlet UITextField* fullNameField;
+@property (weak, nonatomic) IBOutlet UITextField* emailField;
+
 // methods
 
 - (IBAction) clickUpdateBtn: (UIButton*) sender;

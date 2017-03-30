@@ -49,6 +49,10 @@
     }];
 }
 
+- (void) didTapShowAllUsers
+{
+    [self.router openAllUsersModule];
+}
 
 #pragma mark - Methods OSLoginModuleInteractorOutput -
 

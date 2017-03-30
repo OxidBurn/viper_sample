@@ -79,4 +79,9 @@
     return user;
 }
 
+- (NSArray*) obtainAllRegisteredUsers
+{
+    return [UserInfoModelObject MR_findAll];
+}
+
 @end
