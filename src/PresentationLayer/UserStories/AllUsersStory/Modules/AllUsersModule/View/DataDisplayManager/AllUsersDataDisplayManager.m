@@ -104,7 +104,21 @@
 
 - (void) setupTableViewActions
 {
-   // обработка метода делагата ддм и все такое
+    self.tableViewActions = [[NITableViewActions alloc] initWithTarget:self];
+    
+    @weakify(self);
+    
+    NIActionBlock userListTapActionBlock = ^BOOL(UserInfoCellObject* object, id target, NSIndexPath* indexPath) {
+        
+        @strongify(self);
+        
+        [self.delegate didTapCellWithUser: object.user];
+        
+        return YES;
+    };
+    
+    [self.tableViewActions attachToClass: [UserInfoCellObject class]
+                                tapBlock: userListTapActionBlock];
 }
 
 @end

@@ -16,7 +16,7 @@
 // Protocols
 @protocol OSAllUsersViewOutput;
 
-@interface OSAllUsersViewController : UIViewController <OSAllUsersViewInput>
+@interface OSAllUsersViewController : UIViewController <OSAllUsersViewInput, AllUsersDataDisplayManagerDelegate>
 
 @property (nonatomic, strong) id<OSAllUsersViewOutput> output;
 

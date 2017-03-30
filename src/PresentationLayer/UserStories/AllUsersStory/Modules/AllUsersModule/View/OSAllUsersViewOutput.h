@@ -9,6 +9,9 @@
 // Frameworks
 @import Foundation;
 
+// Classes
+@class UserInfoPlainObject;
+
 // Protocols
 @protocol OSAllUsersViewOutput <NSObject>
 
@@ -20,5 +23,7 @@
 - (void) didTriggerViewReadyEvent;
 
 - (void) setupView;
+
+- (void) didSelectUser: (UserInfoPlainObject*) user;
 
 @end
