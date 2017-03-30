@@ -32,7 +32,7 @@
 
 - (void) didTriggerViewReadyEvent 
 {
-	[self.view setupInitialState];
+
 }
 
 
