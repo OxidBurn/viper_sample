@@ -12,7 +12,7 @@
 #import "OSAvatarsGalleryViewOutput.h"
 #import "AvatarsDataDisplayManager.h"
 
-@interface OSAvatarsGalleryViewController()
+@interface OSAvatarsGalleryViewController() <AvatarsDataDisplayManagerDelegate>
 
 // properties
 @property (weak, nonatomic) IBOutlet UICollectionView* avatarsCollectionView;
@@ -37,6 +37,14 @@
     
     [self.output setupView];
     
+    __weak typeof(self) blockSelf = self;
+    self.displayDataManager.dismiss = ^(){
+        
+        [blockSelf dismissViewControllerAnimated: YES
+                                      completion: nil];
+        
+    };
+    
 }
 
 
@@ -55,8 +63,13 @@
 
 - (void) setupInitialStateWithAvatars: (NSArray*) avatarsArray
 {
-    self.avatarsCollectionView.dataSource = [self.displayDataManager dataSourceForCollectionView:self.avatarsCollectionView];
-    self.avatarsCollectionView.delegate = [self.displayDataManager delegateForCollectionView:self.avatarsCollectionView];
+    self.displayDataManager.delegate = self;
+    
+   
+    
+    self.avatarsCollectionView.dataSource = [self.displayDataManager dataSourceForCollectionView: self.avatarsCollectionView];
+    
+    self.avatarsCollectionView.delegate = [self.displayDataManager delegateForCollectionView: self.avatarsCollectionView];
     
     [self.displayDataManager updateDataSourceWithAvatars: avatarsArray];
 	/**
@@ -65,6 +78,16 @@
 	In this method there is setup of the initial view parameter, 
 	which depend from controller life cycle (creation of elements, animation, etc.)
 	*/
+}
+
+#pragma mark - Methods AvatarsDataDisplayManagerDelegate -
+
+- (void) didTapCellWithObject: (NSString*) object
+{
+    [self.output didSelectAvatar: object];
+    
+    [self dismissViewControllerAnimated: YES
+                             completion: nil];
 }
 
 @end

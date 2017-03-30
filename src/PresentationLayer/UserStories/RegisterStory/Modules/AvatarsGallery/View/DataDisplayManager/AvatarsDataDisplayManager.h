@@ -9,10 +9,17 @@
 #import <Foundation/Foundation.h>
 
 #import "AvatarsCellObjectBuilder.h"
+#import "AvatarCellObject.h"
+
+@protocol AvatarsDataDisplayManagerDelegate;
 
 @interface AvatarsDataDisplayManager : NSObject
 
 @property (nonatomic, strong) AvatarsCellObjectBuilder* cellObjectBuilder;
+
+@property (nonatomic, weak) id<AvatarsDataDisplayManagerDelegate> delegate;
+
+@property (nonatomic, copy) void(^dismiss)();
 
 /**
  @author Egor Tolstoy
@@ -44,5 +51,11 @@
  @param avatars Avatars array
  */
 - (void) updateDataSourceWithAvatars: (NSArray*) avatars;
+
+@end
+
+@protocol AvatarsDataDisplayManagerDelegate <NSObject>
+
+- (void) didTapCellWithObject: (NSString*) object;
 
 @end

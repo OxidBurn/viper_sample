@@ -110,6 +110,11 @@
                                        fromController: self];
 }
 
+- (void) updateAvatarPath: (NSString*) avatarPath
+{
+    self.avatarImgView.image = [UIImage imageNamed: avatarPath];
+}
+
 
 #pragma mark - Actions -
 
@@ -120,7 +125,7 @@
 
 - (IBAction) didTapSelectAvatar: (UITapGestureRecognizer*) sender
 {
-    NSLog(@"lol");
+    [self.output didTapAvatarImage];
 }
 
 @end

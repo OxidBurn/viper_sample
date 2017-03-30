@@ -35,4 +35,6 @@
 
 - (void) didFinishRegistrationWithSuccessOrError: (NSError*) error;
 
+- (void) updateAvatarPath: (NSString*) avatarPath;
+
 @end

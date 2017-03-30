@@ -12,9 +12,9 @@
 @interface AvatarCellObject : NSObject <NICollectionViewNibCellObject>
 
 // properties
-@property (nonatomic, strong) UIImage* avatar;
+@property (nonatomic, strong) NSString* avatar;
 
 // methods
-+ (instancetype) objectWithAvatar: (UIImage*) avatar;
++ (instancetype) objectWithAvatar: (NSString*) avatar;
 
 @end

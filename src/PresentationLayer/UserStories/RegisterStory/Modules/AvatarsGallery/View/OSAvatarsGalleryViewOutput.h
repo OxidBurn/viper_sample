@@ -21,4 +21,6 @@
 
 - (void) setupView;
 
+- (void) didSelectAvatar: (NSString*) avatar;
+
 @end

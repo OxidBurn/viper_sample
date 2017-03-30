@@ -15,7 +15,7 @@
 {
     NSMutableArray* objects = [NSMutableArray new];
     
-    [avatars enumerateObjectsUsingBlock: ^(UIImage*  _Nonnull avatar, NSUInteger idx, BOOL * _Nonnull stop) {
+    [avatars enumerateObjectsUsingBlock: ^(NSString*  _Nonnull avatar, NSUInteger idx, BOOL * _Nonnull stop) {
         
         AvatarCellObject* object = [AvatarCellObject objectWithAvatar: avatar];
         

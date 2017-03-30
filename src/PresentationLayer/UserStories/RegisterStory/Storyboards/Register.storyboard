@@ -122,13 +122,13 @@
                         <outlet property="fullNameField" destination="DIT-Hb-hxV" id="K0b-vX-qeC"/>
                         <outlet property="passwordField" destination="ehv-71-k6I" id="8d5-kH-yGm"/>
                         <outlet property="userNameField" destination="JyL-Cp-y6E" id="Nl9-vu-RVo"/>
+                        <segue destination="8x5-Sy-0QW" kind="presentation" identifier="ShowAvatarsGallery" id="o76-oM-rju"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZKg-hb-SNT" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tapGestureRecognizer id="7GA-IW-lGw">
                     <connections>
                         <action selector="didTapSelectAvatar:" destination="6v7-5D-QpE" id="wP3-oN-KLj"/>
-                        <segue destination="8x5-Sy-0QW" kind="presentation" identifier="ShowAvatarsGallery" id="BK7-De-qWj"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>

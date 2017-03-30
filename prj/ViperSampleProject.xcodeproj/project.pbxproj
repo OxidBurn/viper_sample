@@ -340,6 +340,7 @@
 		C52111071E8C06A200A072BC /* UserInfoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserInfoCell.xib; sourceTree = "<group>"; };
 		C521110A1E8C0F6500A072BC /* UserInfoCellObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserInfoCellObject.h; sourceTree = "<group>"; };
 		C521110B1E8C0F6500A072BC /* UserInfoCellObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserInfoCellObject.m; sourceTree = "<group>"; };
+		C5924DC91E8D646300790D01 /* OSAvatarsGalleryModuleOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSAvatarsGalleryModuleOutput.h; sourceTree = "<group>"; };
 		C598C3331E891543000C2465 /* PonsomizerAssembly.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PonsomizerAssembly.h; sourceTree = "<group>"; };
 		C598C3341E891543000C2465 /* PonsomizerAssembly.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PonsomizerAssembly.m; sourceTree = "<group>"; };
 		C598C3A91E8A6F42000C2465 /* OSUserInfoAssembly.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSUserInfoAssembly.h; sourceTree = "<group>"; };
@@ -1333,6 +1334,7 @@
 		C51174541E8D3C2F00A29F13 /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
+				C5924DC91E8D646300790D01 /* OSAvatarsGalleryModuleOutput.h */,
 				C51174551E8D3C2F00A29F13 /* OSAvatarsGalleryModuleInput.h */,
 				C51174561E8D3C2F00A29F13 /* OSAvatarsGalleryPresenter.h */,
 				C51174571E8D3C2F00A29F13 /* OSAvatarsGalleryPresenter.m */,

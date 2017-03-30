@@ -17,7 +17,7 @@
 
 #pragma mark - Initialization
 
-- (instancetype) initWithAvatar: (UIImage*) avatar
+- (instancetype) initWithAvatar: (NSString*) avatar
 {
     self = [super init];
     
@@ -29,7 +29,7 @@
     return self;
 }
 
-+ (instancetype) objectWithAvatar: (UIImage*) avatar
++ (instancetype) objectWithAvatar: (NSString*) avatar
 {
     return [[self alloc] initWithAvatar: avatar];
 }

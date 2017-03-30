@@ -11,6 +11,9 @@
 // Frameworks
 #import <Nimbus/NimbusCollections.h>
 
+//Classes
+#import "AvatarCellObject.h"
+
 @interface AvatarsDataDisplayManager() <UICollectionViewDelegate>
 
 // properties
@@ -52,6 +55,30 @@
 
 - (void) setupCollectionActions
 {
+    self.collectionActions = [[NICollectionViewActions alloc] initWithTarget: self];
+    
+    @weakify(self);
+    NIActionBlock announcementTapActionBlock = ^BOOL(AvatarCellObject *object, id target, NSIndexPath *indexPath) {
+        @strongify(self);
+        [self.delegate didTapCellWithObject: object.avatar];
+        return YES;
+    };
+    
+    [self.collectionActions attachToClass: [AvatarCellObject class]
+                                 tapBlock: announcementTapActionBlock];
+    
+    if (self.dismiss) {
+        self.dismiss();
+    }
+}
+
+#pragma mark - <UICollectionViewDelegate>
+
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
+    
+    return [self.collectionActions collectionView: collectionView
+                         didSelectItemAtIndexPath: indexPath];
+   
     
 }
 

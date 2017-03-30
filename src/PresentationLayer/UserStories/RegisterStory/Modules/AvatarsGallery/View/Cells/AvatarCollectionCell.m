@@ -26,7 +26,9 @@
 
 - (BOOL) shouldUpdateCellWithObject: (AvatarCellObject*) object
 {
-    self.avatrImgView.image = object.avatar;
+    NSLog(@"dfdf %@", object.avatar);
+    
+    self.avatrImgView.image = [UIImage imageNamed: object.avatar];
     
     return YES;
 }

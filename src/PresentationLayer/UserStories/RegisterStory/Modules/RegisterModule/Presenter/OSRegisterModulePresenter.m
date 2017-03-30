@@ -14,7 +14,7 @@
 #import "OSRegisterModuleRouterInput.h"
 #import "RegistrationParametersModel.h"
 
-@implementation OSRegisterModulePresenter
+@implementation OSRegisterModulePresenter 
 
 
 #pragma mark - Methods OSRegisterModuleModuleInput -
@@ -37,6 +37,10 @@
     [self.interactor sendRegistrationRequestWithParameters: [self obtainUserInfoFromView]];
 }
 
+- (void) didTapAvatarImage
+{
+    [self.router openSelectAvatarModuleWithModuleOutput: self];
+}
 
 #pragma mark - Methods OSRegisterModuleInteractorOutput -
 
@@ -49,6 +53,14 @@
 - (void) didSendRequestWithError: (NSError*) error
 {
     [self.view didFinishRegistrationWithSuccessOrError: error];
+}
+
+
+#pragma mark - Methods OSAvatarGalleryModuleOutput -
+
+- (void) didSelectCellWithAvatar: (NSString*) avatarName
+{
+    [self.view updateAvatarPath: avatarName];
 }
 
 

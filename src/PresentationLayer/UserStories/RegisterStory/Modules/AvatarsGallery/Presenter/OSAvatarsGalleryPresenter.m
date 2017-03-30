@@ -42,6 +42,11 @@
    [self.view setupInitialStateWithAvatars: avatars];
 }
 
+- (void) didSelectAvatar: (NSString*) avatar
+{
+    [self.moduleOutput didSelectCellWithAvatar: avatar];
+}
+
 #pragma mark - Methods OSAvatarsGalleryInteractorOutput -
 
 

@@ -25,17 +25,17 @@
                              @"avatar_panda",
                              @"avatar_raccoon"];
     
-    NSMutableArray* avatarImages = [NSMutableArray array];
+//    NSMutableArray* avatarImages = [NSMutableArray array];
+//    
+//    [avatarNames enumerateObjectsUsingBlock: ^(NSString*  _Nonnull avatarName, NSUInteger idx, BOOL * _Nonnull stop) {
+//        
+//        UIImage* avatar = [UIImage imageNamed: avatarName];
+//        
+//        [avatarImages addObject: avatar];
+//        
+//    }];
     
-    [avatarNames enumerateObjectsUsingBlock: ^(NSString*  _Nonnull avatarName, NSUInteger idx, BOOL * _Nonnull stop) {
-        
-        UIImage* avatar = [UIImage imageNamed: avatarName];
-        
-        [avatarImages addObject: avatar];
-        
-    }];
-    
-    return avatarImages.copy;
+    return avatarNames;
 }
 
 @end

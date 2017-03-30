@@ -10,13 +10,14 @@
 #import "OSRegisterModuleViewOutput.h"
 #import "OSRegisterModuleInteractorOutput.h"
 #import "OSRegisterModuleModuleInput.h"
+#import "OSAvatarsGalleryModuleOutput.h"
 
 // Protocols
 @protocol OSRegisterModuleViewInput;
 @protocol OSRegisterModuleInteractorInput;
 @protocol OSRegisterModuleRouterInput;
 
-@interface OSRegisterModulePresenter : NSObject <OSRegisterModuleModuleInput, OSRegisterModuleViewOutput, OSRegisterModuleInteractorOutput>
+@interface OSRegisterModulePresenter : NSObject <OSRegisterModuleModuleInput, OSRegisterModuleViewOutput, OSRegisterModuleInteractorOutput, OSAvatarsGalleryModuleOutput>
 
 @property (nonatomic, weak) id<OSRegisterModuleViewInput> view;
 @property (nonatomic, strong) id<OSRegisterModuleInteractorInput> interactor;

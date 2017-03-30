@@ -91,4 +91,6 @@
 {
     return [TyphoonDefinition withClass: [AvatarsCellObjectBuilder class]];
 }
+
+
 @end
