@@ -10,14 +10,19 @@
 @import Foundation;
 
 // Classes
-#import "UserInfoResponseObject.h"
-#import "UserInfoModelObject.h"
-#import "UserInfoPlainObject.h"
+@class UserInfoResponseObject;
+@class UserInfoModelObject;
+@class UserInfoPlainObject;
 
 ///-------------------------------------------------
 /// @name Completion block definition
 ///-------------------------------------------------
 typedef void(^CompletionUpdateBlock)(BOOL isUpdate);
+
+///-------------------------------------------------
+/// @name Load user avatar completion block
+///-------------------------------------------------
+typedef void(^LoadAvatarCompletionBlock)(NSURL* filePath, NSError* error);
 
 /**
  @author Nikolay Chaban
@@ -65,6 +70,27 @@ typedef void(^CompletionUpdateBlock)(BOOL isUpdate);
  */
 - (UserInfoModelObject*) obtainUserInfoMOWithUsername: (NSString*) username;
 
+
+/**
+ @author Nikolay Chaban
+ 
+ Obtain all users from database
+
+ @return array with user MO
+ */
 - (NSArray*) obtainAllRegisteredUsers;
+
+
+/**
+ @author Nikolay Chaban
+ 
+ Method for loading user avatar from server
+ #In future need to cache loaded image and get it from cache if exist#
+
+ @param user info for getting image url and destination path
+ @param completion callback with destination image path or error if exist
+ */
+- (void) loadAvatarForUser: (UserInfoPlainObject*)      user
+       withCompletionBlock: (LoadAvatarCompletionBlock) completion;
 
 @end

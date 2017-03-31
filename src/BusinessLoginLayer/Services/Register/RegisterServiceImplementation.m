@@ -37,7 +37,7 @@
 #pragma mark - Internal methods -
 
 - (void) saveOrUpdateUserInfoInDB: (RegistrationParametersModel*) info
-                   withCompletion: (RegistrationCompletionBlock)   completion
+                   withCompletion: (RegistrationCompletionBlock)  completion
 {
     [MagicalRecord saveWithBlock: ^(NSManagedObjectContext* localContext) {
         
@@ -47,6 +47,8 @@
         localPerson.email     = info.email;
         localPerson.username  = info.userName;
         localPerson.password  = info.confirmPassword;
+        localPerson.imagePath = info.imagePath;
+        localPerson.imageURL  = info.imageURL;
     }
                       completion: ^(BOOL contextDidSave, NSError * _Nullable error) {
                           

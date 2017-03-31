@@ -7,15 +7,16 @@
 //
 
 #import "DownloadAvatarOperation.h"
-#import <AFURLSessionManager.h>
+
+// Classes
+#import "ImageDownloaderImplementation.h"
+#import "FileLoaderModel.h"
 
 @interface DownloadAvatarOperation()
 
 // properties
 
-@property (strong, nonatomic) NSURLRequest* downloadRequest;
-
-@property (strong, nonatomic) NSURL* destinationURL;
+@property (strong, nonatomic) id<ImageDownloader> imageDownloader;
 
 @end
 
@@ -27,13 +28,11 @@
 
 #pragma mark - Initialization -
 
-- (instancetype) initWithAvatarLink: (NSString*) link
-                withDestinationPath: (NSString*) path
+- (instancetype) initWithImageDownloader: (id<ImageDownloader>) downloader
 {
     if ( self = [super init] )
     {
-        self.downloadRequest = [NSURLRequest requestWithURL: [NSURL URLWithString: link]];
-        self.destinationURL  = [NSURL fileURLWithPath: path];
+        self.imageDownloader = downloader;
     }
     
     return self;
@@ -42,11 +41,9 @@
 
 #pragma mark - Public methods -
 
-+ (instancetype) operationWithAvatarLink: (NSString*) link
-                     withDestinationPath: (NSString*) path
++ (instancetype) operationWithImageDownloader: (id<ImageDownloader>) downloader
 {
-    return [[[self class] alloc] initWithAvatarLink: link
-                                withDestinationPath: path];
+    return [[[self class] alloc] initWithImageDownloader: downloader];
 }
 
 
@@ -54,32 +51,28 @@
 
 - (void) main
 {
-    NSURLSessionConfiguration* sessionConfig = [NSURLSessionConfiguration defaultSessionConfiguration];
+    // Fetch data from buffer
+    FileLoaderModel* loaderModel = [self.input obtainInputDataWithTypeValidationBlock: ^BOOL(id data) {
+        
+        if ( data )
+        {
+            return YES;
+        }
+        
+        return NO;
+    }];
     
-    AFURLSessionManager* sessionManager = [[AFURLSessionManager alloc] initWithSessionConfiguration: sessionConfig];
-    
-    @weakify(self);
-    
-    NSURLSessionDownloadTask* downloadTask = [sessionManager downloadTaskWithRequest: self.downloadRequest
-                                                                            progress: ^(NSProgress * _Nonnull downloadProgress) {
-                                                                                
-                                                                                
-                                                                                
-                                                                            }
-                                                                         destination: ^NSURL * _Nonnull(NSURL * _Nonnull targetPath, NSURLResponse * _Nonnull response) {
-                                                                             
-                                                                             return self.destinationURL;
-                                                                         }
-                                                                   completionHandler: ^(NSURLResponse * _Nonnull response, NSURL * _Nullable filePath, NSError * _Nullable error) {
-                                                                       
-                                                                       @strongify(self)
-                                                                       
-                                                                       [self completeOperationWithData: filePath
-                                                                                                 error: error];
-                                                                       
-                                                                   }];
-    
-    [downloadTask resume];
+    @weakify(self)
+    // Start loading avatar from server
+    [self.imageDownloader downloadImageWithInfo: loaderModel
+                                 withCompletion: ^(NSURL* imagePath, NSError* error) {
+                                     
+                                     @strongify(self)
+                                     
+                                     [self completeOperationWithData: imagePath
+                                                               error: error];
+                                     
+                                 }];
 }
 
 - (void) completeOperationWithData: (id)       data

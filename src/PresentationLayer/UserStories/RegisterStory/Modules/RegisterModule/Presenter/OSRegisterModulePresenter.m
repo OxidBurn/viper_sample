@@ -63,6 +63,8 @@
     registerModel.confirmPassword = [self.view obtainUserConfirmPassword];
     registerModel.fullName        = [self.view obtainFullName];
     registerModel.email           = [self.view obtainEmail];
+    registerModel.imageURL        = @"https://www.hit4hit.org/img/login/user-icon-6.png";
+    registerModel.imagePath       = [NSTemporaryDirectory() stringByAppendingString: @"standartAvatar.png"];
     
     return registerModel;
 }

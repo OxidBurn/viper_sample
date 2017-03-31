@@ -38,9 +38,16 @@
  @author Nikolay Chaban
  
  Path to the local image
- #In real world it can be path to the image on the server#
  */
 @property (strong, nonatomic) NSString* imagePath;
+
+
+/**
+ @author Nikolay Chaban
+ 
+ Url to the image on server
+ */
+@property (strong, nonatomic) NSString* imageURL;
 
 
 /**

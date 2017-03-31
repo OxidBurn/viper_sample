@@ -16,6 +16,7 @@
     [aCoder encodeObject:self.email forKey:@"email"];
     [aCoder encodeObject:self.fullName forKey:@"fullName"];
     [aCoder encodeObject:self.imagePath forKey:@"imagePath"];
+    [aCoder encodeObject:self.imageURL forKey:@"imageURL"];
     [aCoder encodeObject:self.password forKey:@"password"];
     [aCoder encodeObject:self.userID forKey:@"userID"];
     [aCoder encodeObject:self.username forKey:@"username"];
@@ -28,6 +29,7 @@
         _email = [[aDecoder decodeObjectForKey:@"email"] copy];
         _fullName = [[aDecoder decodeObjectForKey:@"fullName"] copy];
         _imagePath = [[aDecoder decodeObjectForKey:@"imagePath"] copy];
+        _imageURL = [[aDecoder decodeObjectForKey:@"imageURL"] copy];
         _password = [[aDecoder decodeObjectForKey:@"password"] copy];
         _userID = [[aDecoder decodeObjectForKey:@"userID"] copy];
         _username = [[aDecoder decodeObjectForKey:@"username"] copy];
@@ -44,6 +46,7 @@
     replica.email = self.email;
     replica.fullName = self.fullName;
     replica.imagePath = self.imagePath;
+    replica.imageURL = self.imageURL;
     replica.password = self.password;
     replica.userID = self.userID;
     replica.username = self.username;

@@ -11,6 +11,7 @@
 static NSString* fullName  = @"UserFullNameKey";
 static NSString* email     = @"UserEmailKey";
 static NSString* imagePath = @"UserImagePathKey";
+static NSString* imageURL  = @"UserImageURLKey";
 static NSString* login     = @"UserLoginKey";
 static NSString* userID    = @"UserIdentifier";
 
@@ -18,13 +19,15 @@ static NSString* userID    = @"UserIdentifier";
 
 + (NSDictionary*) generateFakeLoginResponseWithLogin: (NSString*) value
 {
-    NSNumber* userIDValue = @(arc4random()*100000);
+    NSNumber* userIDValue          = @(arc4random()*100000);
+    NSString* imageDestinationPath = [NSTemporaryDirectory() stringByAppendingString: @"AHopkinsAvatar.jpg"];
     
     NSDictionary* responseDic = @{email     : @"a.hopkins@gmail.com",
                                   fullName  : @"Hopkins Anthony",
-                                  imagePath : @"HopkinsAvatar",
+                                  imagePath : imageDestinationPath,
                                   login     : value,
-                                  userID    : userIDValue};
+                                  userID    : userIDValue,
+                                  imageURL  : @"http://kingofwallpapers.com/anthony-hopkins/anthony-hopkins-012.jpg"};
     
     return responseDic;
 }

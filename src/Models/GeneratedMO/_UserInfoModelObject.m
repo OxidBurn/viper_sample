@@ -44,6 +44,8 @@
 
 @dynamic imagePath;
 
+@dynamic imageURL;
+
 @dynamic password;
 
 @dynamic userID;
@@ -79,6 +81,9 @@
 }
 + (NSString *)imagePath {
 	return @"imagePath";
+}
++ (NSString *)imageURL {
+	return @"imageURL";
 }
 + (NSString *)password {
 	return @"password";

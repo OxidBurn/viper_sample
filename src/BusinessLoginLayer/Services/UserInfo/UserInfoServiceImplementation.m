@@ -13,6 +13,12 @@
 
 // Classes
 #import "UserInfoModelObject.h"
+#import "DownloadOperationFactory.h"
+#import "CompoundOperationBase.h"
+#import "OperationScheduler.h"
+#import "UserInfoModelObject.h"
+#import "UserInfoResponseObject.h"
+#import "UserInfoPlainObject.h"
 
 @implementation UserInfoServiceImplementation
 
@@ -22,7 +28,7 @@
 
 - (void) saveOrUpdateUserInfoInDB: (UserInfoResponseObject*) info
                    withCompletion: (CompletionUpdateBlock)   completion
-{
+{    
     [MagicalRecord saveWithBlock: ^(NSManagedObjectContext* localContext) {
         
         UserInfoModelObject* localPerson = [UserInfoModelObject MR_createEntityInContext: localContext];
@@ -32,6 +38,7 @@
         localPerson.imagePath = info.imagePath;
         localPerson.userID    = info.userID;
         localPerson.username  = info.username;
+        localPerson.imageURL  = info.imageURL;
     }
                       completion: ^(BOOL contextDidSave, NSError * _Nullable error) {
         
@@ -82,6 +89,26 @@
 - (NSArray*) obtainAllRegisteredUsers
 {
     return [UserInfoModelObject MR_findAll];
+}
+
+- (void) loadAvatarForUser: (UserInfoPlainObject*)      user
+       withCompletionBlock: (LoadAvatarCompletionBlock) completion
+{
+    CompoundOperationBase* downloadOperation = [self.downloadFactory getDownloadOperationWithFileURL: user.imageURL
+                                                                                 withDestinationPath: user.imagePath];
+    
+    downloadOperation.resultBlock = ^(NSURL* imagePath, NSError *error) {
+        
+        dispatch_async(dispatch_get_main_queue(), ^{
+           
+            if ( completion )
+                completion(imagePath, error);
+            
+        });
+        
+    };
+    
+    [self.operationScheduler addOperation: downloadOperation];
 }
 
 @end

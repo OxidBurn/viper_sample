@@ -12,6 +12,7 @@
 @property (nonatomic, copy, readwrite) NSString *email;
 @property (nonatomic, copy, readwrite) NSString *fullName;
 @property (nonatomic, copy, readwrite) NSString *imagePath;
+@property (nonatomic, copy, readwrite) NSString *imageURL;
 @property (nonatomic, copy, readwrite) NSString *password;
 @property (nonatomic, copy, readwrite) NSNumber *userID;
 @property (nonatomic, copy, readwrite) NSString *username;

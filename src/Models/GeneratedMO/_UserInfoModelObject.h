@@ -26,6 +26,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, strong, nullable) NSString* imagePath;
 
+@property (nonatomic, strong, nullable) NSString* imageURL;
+
 @property (nonatomic, strong, nullable) NSString* password;
 
 @property (nonatomic, strong, nullable) NSNumber* userID;
@@ -49,6 +51,9 @@ NS_ASSUME_NONNULL_BEGIN
 - (nullable NSString*)primitiveImagePath;
 - (void)setPrimitiveImagePath:(nullable NSString*)value;
 
+- (nullable NSString*)primitiveImageURL;
+- (void)setPrimitiveImageURL:(nullable NSString*)value;
+
 - (nullable NSString*)primitivePassword;
 - (void)setPrimitivePassword:(nullable NSString*)value;
 
@@ -67,6 +72,7 @@ NS_ASSUME_NONNULL_BEGIN
 + (NSString *)email;
 + (NSString *)fullName;
 + (NSString *)imagePath;
++ (NSString *)imageURL;
 + (NSString *)password;
 + (NSString *)userID;
 + (NSString *)username;

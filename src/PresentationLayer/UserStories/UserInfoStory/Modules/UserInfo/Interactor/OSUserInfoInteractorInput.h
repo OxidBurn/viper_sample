@@ -16,4 +16,6 @@
 
 - (UserInfoPlainObject*) obtainUpdatedUserInfoWithUserName: (NSString*) username;
 
+- (void) obtainAvatarForUser: (UserInfoPlainObject*) user;
+
 @end

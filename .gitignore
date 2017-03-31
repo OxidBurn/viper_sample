@@ -1,10 +1,10 @@
 #Cocoapods
 pod/Pods
 pod/Podfile.lock
+pod/ViperSampleProject.xcworkspace
 
 #Generamba
 pod/Templates
-pod/ViperSampleProject.xcworkspace
 
 #Project files
 .xcscheme
