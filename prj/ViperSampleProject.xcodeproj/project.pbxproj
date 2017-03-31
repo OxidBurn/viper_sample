@@ -112,10 +112,13 @@
 		C52110F11E8BD4E200A072BC /* AllUsersScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C52110F01E8BD4E200A072BC /* AllUsersScreen.storyboard */; };
 		C52110F51E8BFB9A00A072BC /* AllUsersDataDisplayManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C52110F41E8BFB9A00A072BC /* AllUsersDataDisplayManager.m */; };
 		C52110FD1E8C035300A072BC /* UsersCellObjectBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = C52110FC1E8C035300A072BC /* UsersCellObjectBuilder.m */; };
-		C52111081E8C06A200A072BC /* UserInfoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C52111061E8C06A200A072BC /* UserInfoCell.m */; };
-		C52111091E8C06A200A072BC /* UserInfoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C52111071E8C06A200A072BC /* UserInfoCell.xib */; };
-		C521110C1E8C0F6500A072BC /* UserInfoCellObject.m in Sources */ = {isa = PBXBuildFile; fileRef = C521110B1E8C0F6500A072BC /* UserInfoCellObject.m */; };
 		C559A0F4C40627334D183F5B /* OSRegisterModulePresenterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E9DA711612E6D02F8B0BC6F7 /* OSRegisterModulePresenterTests.m */; };
+		C5924DD01E8E562100790D01 /* UserInfoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C5924DCD1E8E562100790D01 /* UserInfoCell.m */; };
+		C5924DD11E8E562100790D01 /* UserInfoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C5924DCE1E8E562100790D01 /* UserInfoCell.xib */; };
+		C5924DD51E8E564C00790D01 /* UserWithAvatarCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C5924DD31E8E564C00790D01 /* UserWithAvatarCell.m */; };
+		C5924DD61E8E564C00790D01 /* UserWithAvatarCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C5924DD41E8E564C00790D01 /* UserWithAvatarCell.xib */; };
+		C5924DDB1E8E5EB500790D01 /* UserInfoCellObject.m in Sources */ = {isa = PBXBuildFile; fileRef = C5924DD91E8E5EB500790D01 /* UserInfoCellObject.m */; };
+		C5924DDE1E8E5EE200790D01 /* UserWithAvatarCellObject.m in Sources */ = {isa = PBXBuildFile; fileRef = C5924DDD1E8E5EE200790D01 /* UserWithAvatarCellObject.m */; };
 		C598C3351E891543000C2465 /* PonsomizerAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = C598C3341E891543000C2465 /* PonsomizerAssembly.m */; };
 		C598C3BE1E8A6F42000C2465 /* OSUserInfoAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = C598C3AA1E8A6F42000C2465 /* OSUserInfoAssembly.m */; };
 		C598C3BF1E8A6F42000C2465 /* OSUserInfoInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = C598C3AD1E8A6F42000C2465 /* OSUserInfoInteractor.m */; };
@@ -335,12 +338,17 @@
 		C52110F91E8BFFA900A072BC /* DataDisplayManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataDisplayManager.h; sourceTree = "<group>"; };
 		C52110FB1E8C035300A072BC /* UsersCellObjectBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UsersCellObjectBuilder.h; sourceTree = "<group>"; };
 		C52110FC1E8C035300A072BC /* UsersCellObjectBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UsersCellObjectBuilder.m; sourceTree = "<group>"; };
-		C52111051E8C06A200A072BC /* UserInfoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserInfoCell.h; sourceTree = "<group>"; };
-		C52111061E8C06A200A072BC /* UserInfoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserInfoCell.m; sourceTree = "<group>"; };
-		C52111071E8C06A200A072BC /* UserInfoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserInfoCell.xib; sourceTree = "<group>"; };
-		C521110A1E8C0F6500A072BC /* UserInfoCellObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserInfoCellObject.h; sourceTree = "<group>"; };
-		C521110B1E8C0F6500A072BC /* UserInfoCellObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserInfoCellObject.m; sourceTree = "<group>"; };
 		C5924DC91E8D646300790D01 /* OSAvatarsGalleryModuleOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSAvatarsGalleryModuleOutput.h; sourceTree = "<group>"; };
+		C5924DCC1E8E562100790D01 /* UserInfoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserInfoCell.h; sourceTree = "<group>"; };
+		C5924DCD1E8E562100790D01 /* UserInfoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserInfoCell.m; sourceTree = "<group>"; };
+		C5924DCE1E8E562100790D01 /* UserInfoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserInfoCell.xib; sourceTree = "<group>"; };
+		C5924DD21E8E564C00790D01 /* UserWithAvatarCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserWithAvatarCell.h; sourceTree = "<group>"; };
+		C5924DD31E8E564C00790D01 /* UserWithAvatarCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserWithAvatarCell.m; sourceTree = "<group>"; };
+		C5924DD41E8E564C00790D01 /* UserWithAvatarCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserWithAvatarCell.xib; sourceTree = "<group>"; };
+		C5924DD81E8E5EB500790D01 /* UserInfoCellObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserInfoCellObject.h; sourceTree = "<group>"; };
+		C5924DD91E8E5EB500790D01 /* UserInfoCellObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserInfoCellObject.m; sourceTree = "<group>"; };
+		C5924DDC1E8E5EE200790D01 /* UserWithAvatarCellObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserWithAvatarCellObject.h; sourceTree = "<group>"; };
+		C5924DDD1E8E5EE200790D01 /* UserWithAvatarCellObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserWithAvatarCellObject.m; sourceTree = "<group>"; };
 		C598C3331E891543000C2465 /* PonsomizerAssembly.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PonsomizerAssembly.h; sourceTree = "<group>"; };
 		C598C3341E891543000C2465 /* PonsomizerAssembly.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PonsomizerAssembly.m; sourceTree = "<group>"; };
 		C598C3A91E8A6F42000C2465 /* OSUserInfoAssembly.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSUserInfoAssembly.h; sourceTree = "<group>"; };
@@ -1541,8 +1549,8 @@
 		C52111001E8C04FE00A072BC /* CellObjects */ = {
 			isa = PBXGroup;
 			children = (
-				C521110A1E8C0F6500A072BC /* UserInfoCellObject.h */,
-				C521110B1E8C0F6500A072BC /* UserInfoCellObject.m */,
+				C5924DD71E8E5EB500790D01 /* UserInfoCellObject */,
+				C5924DDA1E8E5EB500790D01 /* UserInfoWithAvatarObject */,
 			);
 			path = CellObjects;
 			sourceTree = "<group>";
@@ -1550,11 +1558,48 @@
 		C52111011E8C04FE00A072BC /* Cells */ = {
 			isa = PBXGroup;
 			children = (
-				C52111051E8C06A200A072BC /* UserInfoCell.h */,
-				C52111061E8C06A200A072BC /* UserInfoCell.m */,
-				C52111071E8C06A200A072BC /* UserInfoCell.xib */,
+				C5924DCB1E8E562100790D01 /* UserInfoCell */,
+				C5924DCF1E8E562100790D01 /* UserWithAvatarCell */,
 			);
 			path = Cells;
+			sourceTree = "<group>";
+		};
+		C5924DCB1E8E562100790D01 /* UserInfoCell */ = {
+			isa = PBXGroup;
+			children = (
+				C5924DCC1E8E562100790D01 /* UserInfoCell.h */,
+				C5924DCD1E8E562100790D01 /* UserInfoCell.m */,
+				C5924DCE1E8E562100790D01 /* UserInfoCell.xib */,
+			);
+			path = UserInfoCell;
+			sourceTree = "<group>";
+		};
+		C5924DCF1E8E562100790D01 /* UserWithAvatarCell */ = {
+			isa = PBXGroup;
+			children = (
+				C5924DD21E8E564C00790D01 /* UserWithAvatarCell.h */,
+				C5924DD31E8E564C00790D01 /* UserWithAvatarCell.m */,
+				C5924DD41E8E564C00790D01 /* UserWithAvatarCell.xib */,
+			);
+			path = UserWithAvatarCell;
+			sourceTree = "<group>";
+		};
+		C5924DD71E8E5EB500790D01 /* UserInfoCellObject */ = {
+			isa = PBXGroup;
+			children = (
+				C5924DD81E8E5EB500790D01 /* UserInfoCellObject.h */,
+				C5924DD91E8E5EB500790D01 /* UserInfoCellObject.m */,
+			);
+			path = UserInfoCellObject;
+			sourceTree = "<group>";
+		};
+		C5924DDA1E8E5EB500790D01 /* UserInfoWithAvatarObject */ = {
+			isa = PBXGroup;
+			children = (
+				C5924DDC1E8E5EE200790D01 /* UserWithAvatarCellObject.h */,
+				C5924DDD1E8E5EE200790D01 /* UserWithAvatarCellObject.m */,
+			);
+			path = UserInfoWithAvatarObject;
 			sourceTree = "<group>";
 		};
 		C598C3321E891543000C2465 /* PonsomizerAssembly */ = {
@@ -1845,10 +1890,11 @@
 				56DB49CD1E8335DA0015C039 /* LaunchScreen.storyboard in Resources */,
 				C52110F11E8BD4E200A072BC /* AllUsersScreen.storyboard in Resources */,
 				C51174671E8D3EC300A29F13 /* AvatarsGallery.storyboard in Resources */,
+				C5924DD61E8E564C00790D01 /* UserWithAvatarCell.xib in Resources */,
 				560458E11E84318E00CFFED1 /* Login.storyboard in Resources */,
-				C52111091E8C06A200A072BC /* UserInfoCell.xib in Resources */,
 				560458DF1E84316D00CFFED1 /* Register.storyboard in Resources */,
 				C511746F1E8D423C00A29F13 /* AvatarCollectionCell.xib in Resources */,
+				C5924DD11E8E562100790D01 /* UserInfoCell.xib in Resources */,
 				561B8B6E1E8AA38C00238561 /* UserInfo.storyboard in Resources */,
 				561B8B751E8AADD400238561 /* HopkinsAvatar.png in Resources */,
 			);
@@ -1945,6 +1991,7 @@
 				C52110FD1E8C035300A072BC /* UsersCellObjectBuilder.m in Sources */,
 				C52110EE1E8BD42A00A072BC /* OSAllUsersRouter.m in Sources */,
 				C51174761E8D456400A29F13 /* AvatarCellObject.m in Sources */,
+				C5924DD51E8E564C00790D01 /* UserWithAvatarCell.m in Sources */,
 				56F69CC51E859CD80099A584 /* _UserInfoModelObject.m in Sources */,
 				56DB4A1B1E833CF30015C039 /* OSRegisterModuleAssembly.m in Sources */,
 				56DB4A161E833CF30015C039 /* OSLoginModuleAssembly.m in Sources */,
@@ -1961,12 +2008,15 @@
 				56DB49C91E8335DA0015C039 /* ActivityAppDelegate.m in Sources */,
 				C598C3C21E8A6F42000C2465 /* OSUserInfoViewController.m in Sources */,
 				C598C3C11E8A6F42000C2465 /* OSUserInfoRouter.m in Sources */,
+				C5924DD01E8E562100790D01 /* UserInfoCell.m in Sources */,
 				561B8B8E1E8BBCBF00238561 /* OSUserUpdateInfoPresenter.m in Sources */,
 				56DB49DD1E8339590015C039 /* ServiceComponentsAssembly.m in Sources */,
 				56DB4A191E833CF30015C039 /* OSLoginModuleRouter.m in Sources */,
 				56E3680F1E85730D00F24E61 /* UserInfoServiceImplementation.m in Sources */,
+				C5924DDE1E8E5EE200790D01 /* UserWithAvatarCellObject.m in Sources */,
 				562B85F01E848D110075F962 /* RegistrationInfoValidator.m in Sources */,
 				56DB49E01E833A980015C039 /* ModuleAssemblyBase.m in Sources */,
+				C5924DDB1E8E5EB500790D01 /* UserInfoCellObject.m in Sources */,
 				562B85ED1E848A0D0075F962 /* EXTScope.m in Sources */,
 				C598C3BF1E8A6F42000C2465 /* OSUserInfoInteractor.m in Sources */,
 				417DCD191BFF5A945E4D6532 /* OSRegisterModuleAssemblyTests.m in Sources */,
@@ -1983,7 +2033,6 @@
 				56E368081E8566CA00F24E61 /* UserDataResponseParserImplementation.m in Sources */,
 				561B8BC11E8D17EC00238561 /* OperationShcedulerImplementation.m in Sources */,
 				561B8B901E8BBCBF00238561 /* OSUserUpdateInfoViewController.m in Sources */,
-				C521110C1E8C0F6500A072BC /* UserInfoCellObject.m in Sources */,
 				D6B6D41C3B0DACE740576EAF /* OSRegisterModuleRouterTests.m in Sources */,
 				58FEE1B2A635EF7652C0AF39 /* OSUserInfoAssemblyTests.m in Sources */,
 				C51174611E8D3C2F00A29F13 /* OSAvatarsGalleryAssembly.m in Sources */,
@@ -2005,7 +2054,6 @@
 				9EF62764C1E4EDFCBC95099A /* OSAllUsersViewControllerTests.m in Sources */,
 				C511744A1E8D0D3100A29F13 /* ROSPonsomizerImplementation.m in Sources */,
 				C52110EB1E8BD42900A072BC /* OSAllUsersAssembly.m in Sources */,
-				C52111081E8C06A200A072BC /* UserInfoCell.m in Sources */,
 				D76C4E8707520B7CCF32C8A1 /* OSAllUsersPresenterTests.m in Sources */,
 				C51174721E8D43A200A29F13 /* AvatarsDataDisplayManager.m in Sources */,
 				1BE257251265690B0B7AF937 /* OSAllUsersInteractorTests.m in Sources */,

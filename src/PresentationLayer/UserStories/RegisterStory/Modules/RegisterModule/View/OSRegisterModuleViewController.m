@@ -21,6 +21,7 @@
 @property (weak, nonatomic) IBOutlet UITextField* fullNameField;
 @property (weak, nonatomic) IBOutlet UITextField* emailField;
 @property (weak, nonatomic) IBOutlet UIImageView *avatarImgView;
+@property (nonatomic, strong) NSString* avatarPath;
 
 
 // methods
@@ -89,6 +90,11 @@
     return self.emailField.text;
 }
 
+- (NSString*) obtainAvatar
+{
+    return self.avatarPath;
+}
+
 - (void) didFinishRegistrationWithSuccessOrError: (NSError*) error
 {
     NSString* title   = @"";
@@ -113,6 +119,7 @@
 - (void) updateAvatarPath: (NSString*) avatarPath
 {
     self.avatarImgView.image = [UIImage imageNamed: avatarPath];
+    self.avatarPath = avatarPath;
 }
 
 

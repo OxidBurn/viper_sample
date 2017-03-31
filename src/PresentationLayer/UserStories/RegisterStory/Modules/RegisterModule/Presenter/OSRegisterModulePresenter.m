@@ -75,6 +75,7 @@
     registerModel.confirmPassword = [self.view obtainUserConfirmPassword];
     registerModel.fullName        = [self.view obtainFullName];
     registerModel.email           = [self.view obtainEmail];
+    registerModel.avatar          = [self.view obtainAvatar];
     
     return registerModel;
 }

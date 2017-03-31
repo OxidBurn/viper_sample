@@ -79,7 +79,6 @@
     return [self.tableViewActions forwardingTo: baseTableViewDelegate];
 }
 
-
 /**
  @author Valeria Mozghova
  
@@ -90,6 +89,17 @@
 - (void) updateTableViewModelWithUsers: (NSArray*) users
 {
     [self updateTableViewModel: users];
+}
+
+
+#pragma mark - UITableViewDelegate methods -
+
+- (CGFloat)     tableView: (UITableView*) tableView
+  heightForRowAtIndexPath: (NSIndexPath*) indexPath
+{
+    return [NICellFactory tableView: tableView
+            heightForRowAtIndexPath: indexPath
+                              model: self.tableViewModel];
 }
 
 
