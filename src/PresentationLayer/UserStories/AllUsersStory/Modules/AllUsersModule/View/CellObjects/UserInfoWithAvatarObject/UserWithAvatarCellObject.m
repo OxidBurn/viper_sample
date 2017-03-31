@@ -13,6 +13,7 @@
 
 @implementation UserWithAvatarCellObject
 
+
 #pragma mark - Initialization -
 
 - (instancetype) initWithUser: (UserInfoPlainObject*) user
