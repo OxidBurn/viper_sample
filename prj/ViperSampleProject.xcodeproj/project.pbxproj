@@ -350,6 +350,7 @@
 		C5924DD91E8E5EB500790D01 /* UserInfoCellObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserInfoCellObject.m; sourceTree = "<group>"; };
 		C5924DDC1E8E5EE200790D01 /* UserWithAvatarCellObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserWithAvatarCellObject.h; sourceTree = "<group>"; };
 		C5924DDD1E8E5EE200790D01 /* UserWithAvatarCellObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserWithAvatarCellObject.m; sourceTree = "<group>"; };
+		C5924DE01E8EA3D700790D01 /* AvatarsDataDisplayManagerOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AvatarsDataDisplayManagerOutput.h; sourceTree = "<group>"; };
 		C598C3331E891543000C2465 /* PonsomizerAssembly.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PonsomizerAssembly.h; sourceTree = "<group>"; };
 		C598C3341E891543000C2465 /* PonsomizerAssembly.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PonsomizerAssembly.m; sourceTree = "<group>"; };
 		C598C3A91E8A6F42000C2465 /* OSUserInfoAssembly.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSUserInfoAssembly.h; sourceTree = "<group>"; };
@@ -1388,6 +1389,7 @@
 		C511746A1E8D421000A29F13 /* DataDisplayManager */ = {
 			isa = PBXGroup;
 			children = (
+				C5924DE01E8EA3D700790D01 /* AvatarsDataDisplayManagerOutput.h */,
 				C51174891E8D55E400A29F13 /* CellObjectBuilder */,
 				C51174701E8D43A200A29F13 /* AvatarsDataDisplayManager.h */,
 				C51174711E8D43A200A29F13 /* AvatarsDataDisplayManager.m */,

@@ -16,7 +16,7 @@
 
 @property (weak, nonatomic) IBOutlet UILabel* fullNameLabel;
 
-@property (weak, nonatomic) IBOutlet UILabel* username;
+@property (weak, nonatomic) IBOutlet UILabel* usernameLabel;
 
 @property (weak, nonatomic) IBOutlet UILabel* emailLabel;
 
@@ -31,7 +31,7 @@
     self.avatarImgView.image = [UIImage imageNamed: object.user.imagePath];
     
     self.fullNameLabel.text  = object.user.fullName;
-    self.username.text       = object.user.username;
+    self.usernameLabel.text  = object.user.username;
     self.emailLabel.text     = object.user.email;
     
     return YES;

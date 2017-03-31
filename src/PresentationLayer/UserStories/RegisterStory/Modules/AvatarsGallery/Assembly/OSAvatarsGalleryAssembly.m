@@ -88,6 +88,9 @@
                 
                               [definition injectProperty: @selector(cellObjectBuilder)
                                                     with: [self avatarCellObjBuilder]];
+                              [definition injectProperty: @selector(output)
+                                                    with: [self viewAvatarsGallery]];
+                              
             }];
 }
 

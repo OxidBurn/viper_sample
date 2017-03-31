@@ -72,7 +72,7 @@
                 <outlet property="avatarImgView" destination="2Hu-5T-IMh" id="V2l-Kn-C9z"/>
                 <outlet property="emailLabel" destination="Kq9-Uf-y7f" id="VHK-te-Rh4"/>
                 <outlet property="fullNameLabel" destination="lPI-NI-AVR" id="FeU-F5-YAr"/>
-                <outlet property="username" destination="Qvn-Y0-8re" id="PZq-aC-lQ6"/>
+                <outlet property="usernameLabel" destination="Qvn-Y0-8re" id="cJT-Ad-vS0"/>
             </connections>
             <point key="canvasLocation" x="25" y="68"/>
         </tableViewCell>

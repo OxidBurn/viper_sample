@@ -10,14 +10,13 @@
 
 #import "AvatarsCellObjectBuilder.h"
 #import "AvatarCellObject.h"
-
-@protocol AvatarsDataDisplayManagerDelegate;
+#import "AvatarsDataDisplayManagerOutput.h"
 
 @interface AvatarsDataDisplayManager : NSObject
 
 @property (nonatomic, strong) AvatarsCellObjectBuilder* cellObjectBuilder;
 
-@property (nonatomic, weak) id<AvatarsDataDisplayManagerDelegate> delegate;
+@property (nonatomic, weak) id<AvatarsDataDisplayManagerOutput> output;
 
 /**
  @author Valeria Mozghova
@@ -52,8 +51,3 @@
 
 @end
 
-@protocol AvatarsDataDisplayManagerDelegate <NSObject>
-
-- (void) didTapCellWithObject: (NSString*) object;
-
-@end

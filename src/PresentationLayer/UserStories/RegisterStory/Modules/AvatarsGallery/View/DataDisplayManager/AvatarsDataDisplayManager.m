@@ -65,7 +65,7 @@
         
         @strongify(self);
         
-        [self.delegate didTapCellWithObject: object.avatar];
+        [self.output didTapCellWithObject: object.avatar];
         
         return YES;
     };

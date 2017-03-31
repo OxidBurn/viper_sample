@@ -12,7 +12,7 @@
 #import "OSAvatarsGalleryViewOutput.h"
 #import "AvatarsDataDisplayManager.h"
 
-@interface OSAvatarsGalleryViewController() <AvatarsDataDisplayManagerDelegate>
+@interface OSAvatarsGalleryViewController() <AvatarsDataDisplayManagerOutput>
 
 // properties
 @property (weak, nonatomic) IBOutlet UICollectionView* avatarsCollectionView;
@@ -59,8 +59,6 @@
  */
 - (void) setupInitialStateWithAvatars: (NSArray*) avatarsArray
 {
-    self.displayDataManager.delegate = self;
-    
     self.avatarsCollectionView.dataSource = [self.displayDataManager dataSourceForCollectionView: self.avatarsCollectionView];
     
     self.avatarsCollectionView.delegate = [self.displayDataManager delegateForCollectionView: self.avatarsCollectionView];
@@ -69,7 +67,7 @@
 }
 
 
-#pragma mark - Methods AvatarsDataDisplayManagerDelegate -
+#pragma mark - Methods AvatarsDataDisplayManagerOutput methods -
 
 
 /**

@@ -23,7 +23,7 @@
     
     [users enumerateObjectsUsingBlock: ^(UserInfoPlainObject*  _Nonnull user, NSUInteger idx, BOOL * _Nonnull stop) {
         
-        id userObject = nil;
+        NSObject* userObject = nil;
         
         if (user.imagePath > 0)
         {
