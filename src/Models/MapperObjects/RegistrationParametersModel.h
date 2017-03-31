@@ -18,4 +18,8 @@
 
 @property (nonatomic, strong) NSString* email;
 
+@property (strong, nonatomic) NSString* imageURL;
+
+@property (strong, nonatomic) NSString* imagePath;
+
 @end

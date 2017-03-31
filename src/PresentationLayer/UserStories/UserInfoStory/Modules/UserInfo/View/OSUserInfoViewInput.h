@@ -27,4 +27,8 @@
 
 - (void) updateUserInfo: (UserInfoPlainObject*) user;
 
+- (void) setUserAvatar: (UIImage*) image;
+
+- (void) showErrorWithLoadingAvatar: (NSError*) error;
+
 @end

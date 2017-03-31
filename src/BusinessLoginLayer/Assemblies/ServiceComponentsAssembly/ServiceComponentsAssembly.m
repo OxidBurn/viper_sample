@@ -13,6 +13,9 @@
 #import "RegisterServiceImplementation.h"
 #import "UserDataResponseParserImplementation.h"
 #import "UserInfoServiceImplementation.h"
+#import "OperationShcedulerImplementation.h"
+#import "OperationScheduler.h"
+#import "DownloadOperationFactory.h"
 
 @implementation ServiceComponentsAssembly
 
@@ -37,7 +40,15 @@
 
 - (id<UserInfoService>) userInfoService
 {
-    return [TyphoonDefinition withClass: [UserInfoServiceImplementation class]];
+    return [TyphoonDefinition withClass: [UserInfoServiceImplementation class]
+                          configuration: ^(TyphoonDefinition *definition) {
+                              
+                              [definition injectProperty: @selector(downloadFactory)
+                                                    with: [self.operationFactoriesAssembly downloadOperationFactory]];
+                              [definition injectProperty: @selector(operationScheduler)
+                                                    with: [self operationScheduler]];
+                              
+                          }];
 }
 
 
@@ -46,6 +57,11 @@
 - (id<UserDataResponseParser>) responseParser
 {
     return [TyphoonDefinition withClass: [UserDataResponseParserImplementation class]];
+}
+
+- (id<OperationScheduler>) operationScheduler
+{
+    return [TyphoonDefinition withClass: [OperationShcedulerImplementation class]];
 }
 
 @end

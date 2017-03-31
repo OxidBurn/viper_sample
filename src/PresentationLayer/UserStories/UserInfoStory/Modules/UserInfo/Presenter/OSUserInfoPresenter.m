@@ -62,12 +62,30 @@
      */
     [self.router configureUpdateUserInfoModuleWithInfo: self.presenterStateStorage.userInfo
                                       withModuleOutput: self];
+    
+    /**
+     @author Nikolay Chaban
+     
+     Load user avatar from server or get from disk cache
+     */
+    [self.interactor obtainAvatarForUser: self.presenterStateStorage.userInfo];
 }
 
 
 #pragma mark - Methods OSUserInfoInteractorOutput -
 
-
+- (void) didLoadUserAvatar: (UIImage*) image
+                 withError: (NSError*) error
+{
+    if ( error )
+    {
+        [self.view showErrorWithLoadingAvatar: error];
+    }
+    else
+    {
+        [self.view setUserAvatar: image];
+    }
+}
 
 
 #pragma mark - Methods OSUserUpdateInfoModuleOutput -

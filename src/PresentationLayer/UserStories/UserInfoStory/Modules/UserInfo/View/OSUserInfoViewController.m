@@ -77,7 +77,6 @@
 - (void) setupInitialStateWithUser: (UserInfoPlainObject*) user
 {
     self.fullnameLabel.text = user.fullName;
-    self.userImgView.image  = [UIImage imageNamed : user.imagePath];
     self.emailLabel.text    = user.email;
     self.userNameLabel.text = user.username;
 }
@@ -87,6 +86,16 @@
     self.fullnameLabel.text = user.fullName;
     self.emailLabel.text    = user.email;
     self.userNameLabel.text = user.username;
+}
+
+- (void) showErrorWithLoadingAvatar: (NSError*) error
+{
+    NSLog(@"Error with loading user avatar: %@", error.localizedDescription);
+}
+
+- (void) setUserAvatar: (UIImage*) image
+{
+    self.userImgView.image = image;
 }
 
 

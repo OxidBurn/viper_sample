@@ -45,6 +45,7 @@
                                        */
 
                                       UserInfoPlainObject* user = [self obtainUserPlainObjectWithUsername: name];
+                                      
                                       if (user)
                                       {
                                           [self.output didLoggingUser: user];

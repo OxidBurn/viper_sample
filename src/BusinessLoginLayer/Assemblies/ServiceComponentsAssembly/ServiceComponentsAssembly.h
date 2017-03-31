@@ -13,6 +13,11 @@
 // Protocols
 #import "ServiceComponents.h"
 
+// Classes
+#import "OperationsFactoryAssebmly.h"
+
 @interface ServiceComponentsAssembly : TyphoonAssembly <ServiceComponents, RamblerInitialAssembly>
+
+@property (strong, nonatomic) OperationsFactoryAssebmly* operationFactoriesAssembly;
 
 @end

@@ -10,6 +10,9 @@
 #import "AsyncOperation.h"
 #import "ChainableOperation.h"
 
+// Protocol
+@protocol ImageDownloader;
+
 /**
  @author Nikolay Chaban
  
@@ -17,7 +20,6 @@
  */
 @interface DownloadAvatarOperation : AsyncOperation <ChainableOperation>
 
-+ (instancetype) operationWithAvatarLink: (NSString*) link
-                     withDestinationPath: (NSString*) path;
++ (instancetype) operationWithImageDownloader: (id<ImageDownloader>) downloader;
 
 @end

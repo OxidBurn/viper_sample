@@ -19,7 +19,7 @@
  didFinishLaunchingWithOptions: (NSDictionary*)  launchOptions
 {
     // Override point for customization after application launch.
-    [MagicalRecord setupCoreDataStackWithStoreNamed: @"ViperSampleModel"];
+    [MagicalRecord setupCoreDataStackWithStoreNamed: @"ViperSampleModel.sqlite"];
     
     return YES;
 }

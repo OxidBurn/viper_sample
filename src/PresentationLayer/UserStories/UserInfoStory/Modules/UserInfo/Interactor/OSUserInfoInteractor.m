@@ -23,4 +23,18 @@
     return [self.ponsomizer convertObject: [self.userInfoService obtainUserInfoMOWithUsername: username]];
 }
 
+- (void) obtainAvatarForUser: (UserInfoPlainObject*) user
+{
+    [self.userInfoService loadAvatarForUser: user
+                        withCompletionBlock: ^(NSURL* filePath, NSError *error) {
+                            
+                            NSData* imageData = [NSData dataWithContentsOfURL: filePath];
+                            UIImage* avatar   = [UIImage imageWithData: imageData];
+                            
+                            [self.output didLoadUserAvatar: avatar
+                                                 withError: error];
+                            
+                        }];
+}
+
 @end
