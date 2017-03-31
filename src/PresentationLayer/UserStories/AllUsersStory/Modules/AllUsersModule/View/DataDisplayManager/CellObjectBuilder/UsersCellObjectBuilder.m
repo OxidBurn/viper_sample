@@ -14,14 +14,9 @@
 
 @implementation UsersCellObjectBuilder
 
-/**
- @author Valeria Mozghova
- 
- Method that collects cell objects
- 
- @param users - array of users which information will be displayed
- @return array of cell objects (view models of cell)
- */
+
+#pragma mark -  Public -
+
 - (NSArray*) buildCellObjectsWithUsers: (NSArray*) users
 {
     NSMutableArray* objects = [NSMutableArray new];

@@ -17,10 +17,9 @@
 // properties
 @property (weak, nonatomic) IBOutlet UICollectionView* avatarsCollectionView;
 
-
-
 // methods
 
+- (IBAction) onDismiss: (UIButton*) sender;
 
 @end
 
@@ -36,15 +35,6 @@
 	[self.output didTriggerViewReadyEvent];
     
     [self.output setupView];
-    
-    __weak typeof(self) blockSelf = self;
-    self.displayDataManager.dismiss = ^(){
-        
-        [blockSelf dismissViewControllerAnimated: YES
-                                      completion: nil];
-        
-    };
-    
 }
 
 
@@ -58,30 +48,37 @@
 }
 
 
-
 #pragma mark - Methods OSAvatarsGalleryViewInput -
 
+/**
+ @author Valeria Mozghova
+
+ In this method there is setup of the initial view with list of avatars
+ 
+ @param avatarsArray list of avatars for displaying in collection
+ */
 - (void) setupInitialStateWithAvatars: (NSArray*) avatarsArray
 {
     self.displayDataManager.delegate = self;
-    
-   
     
     self.avatarsCollectionView.dataSource = [self.displayDataManager dataSourceForCollectionView: self.avatarsCollectionView];
     
     self.avatarsCollectionView.delegate = [self.displayDataManager delegateForCollectionView: self.avatarsCollectionView];
     
     [self.displayDataManager updateDataSourceWithAvatars: avatarsArray];
-	/**
-	@author Valeria Mozghova
-	
-	In this method there is setup of the initial view parameter, 
-	which depend from controller life cycle (creation of elements, animation, etc.)
-	*/
 }
+
 
 #pragma mark - Methods AvatarsDataDisplayManagerDelegate -
 
+
+/**
+ @author Valeria Mozghova
+ 
+ Method that informs that avatar was selected
+
+ @param object - selected avatar
+ */
 - (void) didTapCellWithObject: (NSString*) object
 {
     [self.output didSelectAvatar: object];
@@ -90,4 +87,10 @@
                              completion: nil];
 }
 
+
+- (IBAction) onDismiss: (UIButton*) sender
+{
+    [self dismissViewControllerAnimated: YES
+                             completion: nil];
+}
 @end

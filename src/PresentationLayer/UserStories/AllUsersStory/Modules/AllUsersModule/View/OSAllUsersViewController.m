@@ -24,6 +24,7 @@
 // methods
 
 @end
+
 @implementation OSAllUsersViewController
 
 
@@ -50,7 +51,6 @@
 
 
 #pragma mark - Methods OSAllUsersViewInput -
-
 
 /**
  @author Valeria Mozghova

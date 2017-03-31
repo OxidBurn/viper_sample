@@ -77,6 +77,10 @@
                           }];
 }
 
+
+
+#pragma mark - Internal -
+
 - (AvatarsDataDisplayManager*) adataDisplayManager
 {
     return [TyphoonDefinition withClass: [AvatarsDataDisplayManager class]

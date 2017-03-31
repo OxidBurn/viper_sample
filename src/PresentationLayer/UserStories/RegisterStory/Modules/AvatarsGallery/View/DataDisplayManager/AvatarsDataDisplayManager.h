@@ -19,10 +19,8 @@
 
 @property (nonatomic, weak) id<AvatarsDataDisplayManagerDelegate> delegate;
 
-@property (nonatomic, copy) void(^dismiss)();
-
 /**
- @author Egor Tolstoy
+ @author Valeria Mozghova
  
  Returns a data source object for UICollectionView
  
@@ -33,7 +31,7 @@
 - (id<UICollectionViewDataSource>) dataSourceForCollectionView: (UICollectionView*) collectionView;
 
 /**
- @author Egor Tolstoy
+ @author Valeria Mozghova
  
  Returns a delegate object for UICollectionView with events
  
@@ -44,9 +42,9 @@
 - (id<UICollectionViewDelegate>) delegateForCollectionView: (UICollectionView*) collectionView;
 
 /**
- @author Egor Tolstoy
+ @author Valeria Mozghova
  
- Updates a collection view data source with events array
+ Updates a collection view data source with avatars array
  
  @param avatars Avatars array
  */

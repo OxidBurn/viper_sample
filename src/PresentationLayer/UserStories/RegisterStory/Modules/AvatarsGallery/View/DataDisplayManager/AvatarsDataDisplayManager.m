@@ -27,6 +27,8 @@
 @implementation AvatarsDataDisplayManager
 
 
+#pragma mark - Public -
+
 - (id<UICollectionViewDataSource>) dataSourceForCollectionView: (UICollectionView*) collectionView
 {
     self.collectionModel = [[NIMutableCollectionViewModel alloc] initWithSectionedArray: @[@""]
@@ -58,28 +60,29 @@
     self.collectionActions = [[NICollectionViewActions alloc] initWithTarget: self];
     
     @weakify(self);
-    NIActionBlock announcementTapActionBlock = ^BOOL(AvatarCellObject *object, id target, NSIndexPath *indexPath) {
+    
+    NIActionBlock avatarTapActionBlock = ^BOOL(AvatarCellObject* object, id target, NSIndexPath* indexPath) {
+        
         @strongify(self);
+        
         [self.delegate didTapCellWithObject: object.avatar];
+        
         return YES;
     };
     
     [self.collectionActions attachToClass: [AvatarCellObject class]
-                                 tapBlock: announcementTapActionBlock];
-    
-    if (self.dismiss) {
-        self.dismiss();
-    }
+                                 tapBlock: avatarTapActionBlock];
+
 }
 
 #pragma mark - <UICollectionViewDelegate>
 
-- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
-    
+- (void)  collectionView: (UICollectionView*) collectionView
+didSelectItemAtIndexPath: (NSIndexPath*)      indexPath
+{
     return [self.collectionActions collectionView: collectionView
                          didSelectItemAtIndexPath: indexPath];
    
-    
 }
 
 @end

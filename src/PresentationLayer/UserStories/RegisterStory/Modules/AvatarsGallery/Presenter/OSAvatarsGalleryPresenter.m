@@ -35,8 +35,14 @@
 
 }
 
+
 - (void) setupView
 {
+    /**
+     @author Valeria Mozghova
+     
+     obtaing array of avatars for displaying in collection view
+     */
    NSArray* avatars = [self.interactor obtainAvatarsArray];
     
    [self.view setupInitialStateWithAvatars: avatars];

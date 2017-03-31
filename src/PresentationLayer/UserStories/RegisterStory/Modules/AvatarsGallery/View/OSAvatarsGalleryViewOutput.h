@@ -19,8 +19,18 @@
  */
 - (void) didTriggerViewReadyEvent;
 
+/**
+ @author Valeria Mozghova
+ 
+ Method which setup initial view of controller
+ */
 - (void) setupView;
 
+/**
+ @author Valeria Mozghova
+ 
+ Method which inform presenter, that avatar was selected
+ */
 - (void) didSelectAvatar: (NSString*) avatar;
 
 @end

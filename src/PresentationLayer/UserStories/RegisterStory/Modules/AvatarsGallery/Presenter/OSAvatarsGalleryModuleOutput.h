@@ -11,6 +11,14 @@
 
 @protocol OSAvatarsGalleryModuleOutput <RamblerViperModuleOutput>
 
+
+/**
+ @author Valeria Mozghova
+ 
+ Method which says that avatar was selected for future setting it to module which called avatarGallary module
+
+ @param avatarName name of selected avatar
+ */
 - (void) didSelectCellWithAvatar: (NSString*) avatarName;
 
 @end

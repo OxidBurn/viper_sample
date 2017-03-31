@@ -11,6 +11,13 @@
 
 @protocol OSAvatarsGalleryInteractorInput <NSObject>
 
+/**
+ @author Valeria Mozghova
+ 
+ Method for getting avatar names
+ 
+ @return array of avatar names
+ */
 - (NSArray*) obtainAvatarsArray;
 
 @end

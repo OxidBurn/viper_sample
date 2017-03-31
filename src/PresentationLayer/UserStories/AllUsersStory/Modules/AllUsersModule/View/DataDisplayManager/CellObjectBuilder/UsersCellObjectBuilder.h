@@ -13,6 +13,14 @@
 
 @interface UsersCellObjectBuilder : NSObject
 
+/**
+ @author Valeria Mozghova
+ 
+ Method that collects cell objects
+ 
+ @param users - array of users which information will be displayed
+ @return array of cell objects (view models of cell)
+ */
 - (NSArray*) buildCellObjectsWithUsers: (NSArray*) users;
 
 @end
