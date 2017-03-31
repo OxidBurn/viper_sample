@@ -22,6 +22,15 @@
 
 @property (nonatomic, strong, readonly) UserInfoPlainObject* user;
 
+
+/**
+ @author Valeria Mozghova
+
+ Method that inits cell object with user
+ 
+ @param user - property from which cell will be filling
+ @return UserInfoCellObject
+ */
 + (instancetype) objectWithUser: (UserInfoPlainObject*) user;
 
 @end

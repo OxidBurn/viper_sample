@@ -38,7 +38,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Registration Screen" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lbK-qv-uoL">
-                                <rect key="frame" x="113" y="139" width="150" height="21"/>
+                                <rect key="frame" x="112" y="51" width="150" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="150" id="B97-KI-SLb"/>
                                     <constraint firstAttribute="height" constant="21" id="c1D-bT-YLx"/>
@@ -72,6 +72,21 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="empty_avatar" translatesAutoresizingMaskIntoConstraints="NO" id="X24-p5-lwh">
+                                <rect key="frame" x="124" y="94" width="126" height="128"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" notEnabled="YES"/>
+                                    <bool key="isElement" value="NO"/>
+                                </accessibility>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="JCQ-Zr-Ku4"/>
+                                    <constraint firstAttribute="width" constant="126" id="tzI-yb-iLd"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="7GA-IW-lGw" appends="YES" id="0iA-lD-MGk"/>
+                                </connections>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.68113888452028859" green="1" blue="0.89981844183842574" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -80,14 +95,15 @@
                             <constraint firstItem="cbv-cy-3fj" firstAttribute="top" secondItem="DIT-Hb-hxV" secondAttribute="bottom" constant="16" id="5Vf-0f-DGs"/>
                             <constraint firstItem="cbv-cy-3fj" firstAttribute="width" secondItem="DIT-Hb-hxV" secondAttribute="width" id="6kt-kK-Taq"/>
                             <constraint firstItem="Vfn-2E-BeS" firstAttribute="height" secondItem="ehv-71-k6I" secondAttribute="height" id="7b7-OE-gpP"/>
-                            <constraint firstItem="JyL-Cp-y6E" firstAttribute="top" secondItem="lbK-qv-uoL" secondAttribute="bottom" constant="86" id="Bu1-dP-8qt"/>
                             <constraint firstItem="ehv-71-k6I" firstAttribute="centerX" secondItem="JyL-Cp-y6E" secondAttribute="centerX" id="FX6-qi-za7"/>
                             <constraint firstItem="fYy-xj-ZiA" firstAttribute="centerX" secondItem="ehv-71-k6I" secondAttribute="centerX" id="G4h-0E-fgE"/>
-                            <constraint firstItem="lbK-qv-uoL" firstAttribute="top" secondItem="Wvf-B8-pSY" secondAttribute="bottom" constant="119" id="KLg-K7-Hv0"/>
+                            <constraint firstItem="X24-p5-lwh" firstAttribute="centerX" secondItem="ieN-3u-JAi" secondAttribute="centerX" id="GsK-A3-8Gp"/>
+                            <constraint firstItem="lbK-qv-uoL" firstAttribute="top" secondItem="Wvf-B8-pSY" secondAttribute="bottom" constant="31" id="KLg-K7-Hv0"/>
                             <constraint firstItem="DIT-Hb-hxV" firstAttribute="height" secondItem="Vfn-2E-BeS" secondAttribute="height" id="RYr-Iq-dmH"/>
                             <constraint firstItem="Vfn-2E-BeS" firstAttribute="top" secondItem="ehv-71-k6I" secondAttribute="bottom" constant="14" id="Shc-N3-Dyd"/>
                             <constraint firstItem="DIT-Hb-hxV" firstAttribute="top" secondItem="Vfn-2E-BeS" secondAttribute="bottom" constant="15" id="TH0-0A-UYu"/>
                             <constraint firstItem="Vfn-2E-BeS" firstAttribute="width" secondItem="ehv-71-k6I" secondAttribute="width" id="XjO-qO-pdw"/>
+                            <constraint firstItem="JyL-Cp-y6E" firstAttribute="top" secondItem="X24-p5-lwh" secondAttribute="bottom" constant="24" id="ZyX-uL-gre"/>
                             <constraint firstItem="DIT-Hb-hxV" firstAttribute="width" secondItem="Vfn-2E-BeS" secondAttribute="width" id="aTA-rg-wWB"/>
                             <constraint firstItem="cbv-cy-3fj" firstAttribute="centerX" secondItem="DIT-Hb-hxV" secondAttribute="centerX" id="buQ-jV-JGR"/>
                             <constraint firstItem="ehv-71-k6I" firstAttribute="height" secondItem="JyL-Cp-y6E" secondAttribute="height" id="fBs-f4-e1V"/>
@@ -96,19 +112,38 @@
                             <constraint firstItem="ehv-71-k6I" firstAttribute="width" secondItem="JyL-Cp-y6E" secondAttribute="width" id="vHW-EG-eSI"/>
                             <constraint firstItem="JyL-Cp-y6E" firstAttribute="centerX" secondItem="lbK-qv-uoL" secondAttribute="centerX" id="viZ-ha-QKw"/>
                             <constraint firstItem="Vfn-2E-BeS" firstAttribute="centerX" secondItem="ehv-71-k6I" secondAttribute="centerX" id="wbw-wG-6Ah"/>
+                            <constraint firstItem="X24-p5-lwh" firstAttribute="top" secondItem="lbK-qv-uoL" secondAttribute="bottom" constant="22" id="zhA-Jg-5Xd"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="avatarImgView" destination="X24-p5-lwh" id="JcQ-Wl-zOh"/>
                         <outlet property="confirmPasswordField" destination="Vfn-2E-BeS" id="x1F-3x-G60"/>
                         <outlet property="emailField" destination="cbv-cy-3fj" id="MP5-Re-8HN"/>
                         <outlet property="fullNameField" destination="DIT-Hb-hxV" id="K0b-vX-qeC"/>
                         <outlet property="passwordField" destination="ehv-71-k6I" id="8d5-kH-yGm"/>
                         <outlet property="userNameField" destination="JyL-Cp-y6E" id="Nl9-vu-RVo"/>
+                        <segue destination="8x5-Sy-0QW" kind="presentation" identifier="ShowAvatarsGallery" id="o76-oM-rju"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZKg-hb-SNT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="7GA-IW-lGw">
+                    <connections>
+                        <action selector="didTapSelectAvatar:" destination="6v7-5D-QpE" id="wP3-oN-KLj"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="1111" y="-273"/>
+            <point key="canvasLocation" x="1109.5999999999999" y="-273.01349325337333"/>
+        </scene>
+        <!--AvatarsGallery-->
+        <scene sceneID="CRu-9R-Hdj">
+            <objects>
+                <viewControllerPlaceholder storyboardName="AvatarsGallery" id="8x5-Sy-0QW" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TeX-b7-VVW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2020" y="-273.01349325337333"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="empty_avatar" width="930" height="930"/>
+    </resources>
 </document>

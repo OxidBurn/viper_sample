@@ -48,6 +48,10 @@
     [self.view setupViewStateWithUsersArray: usersArray];
 }
 
+- (void) didSelectUser: (UserInfoPlainObject*) user
+{
+    [self.router openUserInfoModuleWithUser: user];
+}
 
 #pragma mark - Methods OSAllUsersInteractorOutput -
 

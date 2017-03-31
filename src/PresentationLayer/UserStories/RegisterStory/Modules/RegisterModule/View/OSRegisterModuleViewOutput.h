@@ -21,4 +21,6 @@
 
 - (void) sendRegistrationRequest;
 
+- (void) didTapAvatarImage;
+
 @end

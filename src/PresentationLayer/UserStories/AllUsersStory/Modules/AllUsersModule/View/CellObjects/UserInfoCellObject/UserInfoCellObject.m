@@ -28,7 +28,6 @@
     return self;
 }
 
-
 + (instancetype) objectWithUser: (UserInfoPlainObject*) user
 {
     return [[self alloc] initWithUser: user];

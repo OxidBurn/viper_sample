@@ -9,7 +9,11 @@
 #import "OSAllUsersViewController.h"
 
 // Classes
+#import "UserInfoPlainObject.h"
+
+// Protocols
 #import "OSAllUsersViewOutput.h"
+
 
 @interface OSAllUsersViewController()
 
@@ -20,6 +24,7 @@
 // methods
 
 @end
+
 @implementation OSAllUsersViewController
 
 
@@ -47,17 +52,6 @@
 
 #pragma mark - Methods OSAllUsersViewInput -
 
-- (void) setupInitialState 
-{
-	/**
-	@author Valeria Mozghova
-	
-	In this method there is setup of the initial view parameter, 
-	which depend from controller life cycle (creation of elements, animation, etc.)
-	*/
-}
-
-
 /**
  @author Valeria Mozghova
  
@@ -73,6 +67,14 @@
                                                                      withBaseDelegate: self.dataDisplayManager];
     
     [self.dataDisplayManager updateTableViewModelWithUsers: users];
+}
+
+
+#pragma mark - AllUsersDataDisplayManagerDelegate -
+
+- (void) didTapCellWithUser: (UserInfoPlainObject*) user
+{
+    [self.output didSelectUser: user];
 }
 
 @end

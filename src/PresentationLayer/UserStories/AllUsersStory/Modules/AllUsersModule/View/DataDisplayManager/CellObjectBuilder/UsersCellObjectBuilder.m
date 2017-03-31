@@ -10,29 +10,38 @@
 
 #import "UserInfoCellObject.h"
 #import "UserInfoPlainObject.h"
+#import "UserWithAvatarCellObject.h"
 
 @implementation UsersCellObjectBuilder
 
-/**
- @author Valeria Mozghova
- 
- Method that collects cell objects
- 
- @param users - array of users which information will be displayed
- @return array of cell objects (view models of cell)
- */
+
+#pragma mark -  Public -
+
 - (NSArray*) buildCellObjectsWithUsers: (NSArray*) users
 {
     NSMutableArray* objects = [NSMutableArray new];
     
     [users enumerateObjectsUsingBlock: ^(UserInfoPlainObject*  _Nonnull user, NSUInteger idx, BOOL * _Nonnull stop) {
         
-        UserInfoCellObject* object = [UserInfoCellObject objectWithUser: user];
+        NSObject* userObject = nil;
         
-        [objects addObject: object];
+        if (user.imagePath > 0)
+        {
+            userObject = [UserWithAvatarCellObject objectWithUser: user];
+        }
+        else
+        {
+            userObject = [UserInfoCellObject objectWithUser: user];
+        }
+        
+        [objects addObject: userObject];
+        
+        
     }];
     
     return objects.copy;
 }
 
+
 @end
+

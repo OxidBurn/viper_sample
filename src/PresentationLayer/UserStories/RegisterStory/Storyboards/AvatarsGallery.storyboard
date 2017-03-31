@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="uPt-Qo-qVJ">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Avatars Gallery View Controller-->
+        <scene sceneID="Cov-fU-wrC">
+            <objects>
+                <viewController id="uPt-Qo-qVJ" customClass="OSAvatarsGalleryViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="WpR-9g-3Cf"/>
+                        <viewControllerLayoutGuide type="bottom" id="MvV-Rp-5ad"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="G94-Zm-74i">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="M13-Il-eSn">
+                                <rect key="frame" x="0.0" y="58" width="375" height="609"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="20" minimumInteritemSpacing="20" id="cBT-DS-uVA">
+                                    <size key="itemSize" width="200" height="200"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="AvatarsCellID" id="WPD-Sl-xTB">
+                                        <rect key="frame" x="88" y="0.0" width="200" height="200"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </view>
+                                        <size key="customSize" width="200" height="200"/>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GM7-vd-ror">
+                                <rect key="frame" x="16" y="20" width="82" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Exit"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="izZ-3e-VcL">
+                                <rect key="frame" x="16" y="19" width="82" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="82" id="1Rt-rE-bBY"/>
+                                    <constraint firstAttribute="height" constant="30" id="d5D-Ne-Jzo"/>
+                                </constraints>
+                                <state key="normal" title="Exit"/>
+                                <connections>
+                                    <action selector="onDismiss:" destination="uPt-Qo-qVJ" eventType="touchUpInside" id="LTl-dX-UwJ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="M13-Il-eSn" firstAttribute="top" secondItem="izZ-3e-VcL" secondAttribute="bottom" constant="9" id="AWT-t2-Am4"/>
+                            <constraint firstItem="izZ-3e-VcL" firstAttribute="top" secondItem="WpR-9g-3Cf" secondAttribute="bottom" constant="-1" id="D0f-cl-YRy"/>
+                            <constraint firstAttribute="trailing" secondItem="M13-Il-eSn" secondAttribute="trailing" id="Eav-Xx-NBe"/>
+                            <constraint firstItem="MvV-Rp-5ad" firstAttribute="top" secondItem="M13-Il-eSn" secondAttribute="bottom" id="TFL-KH-0z3"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="izZ-3e-VcL" secondAttribute="leading" id="eKQ-ML-IQt"/>
+                            <constraint firstItem="M13-Il-eSn" firstAttribute="leading" secondItem="G94-Zm-74i" secondAttribute="leading" id="yOC-lP-Kcc"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="avatarsCollectionView" destination="M13-Il-eSn" id="X97-mD-LRc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hXE-Dy-zBt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1973.5999999999999" y="-265.81709145427288"/>
+        </scene>
+    </scenes>
+</document>

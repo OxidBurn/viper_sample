@@ -22,4 +22,6 @@
 
 @property (strong, nonatomic) NSString* imagePath;
 
+@property (nonatomic, strong) NSString* avatar;
+
 @end

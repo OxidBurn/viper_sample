@@ -15,6 +15,7 @@
 #import "UserInfoCellObject.h"
 #import "UsersCellObjectBuilder.h"
 #import "UserInfoPlainObject.h"
+#import "AllUserDataDisplayManagerOutput.h"
 
 @interface AllUsersDataDisplayManager()
 
@@ -79,7 +80,6 @@
     return [self.tableViewActions forwardingTo: baseTableViewDelegate];
 }
 
-
 /**
  @author Valeria Mozghova
  
@@ -90,6 +90,17 @@
 - (void) updateTableViewModelWithUsers: (NSArray*) users
 {
     [self updateTableViewModel: users];
+}
+
+
+#pragma mark - UITableViewDelegate methods -
+
+- (CGFloat)     tableView: (UITableView*) tableView
+  heightForRowAtIndexPath: (NSIndexPath*) indexPath
+{
+    return [NICellFactory tableView: tableView
+            heightForRowAtIndexPath: indexPath
+                              model: self.tableViewModel];
 }
 
 
@@ -104,7 +115,21 @@
 
 - (void) setupTableViewActions
 {
-   // обработка метода делагата ддм и все такое
+    self.tableViewActions = [[NITableViewActions alloc] initWithTarget:self];
+    
+    @weakify(self);
+    
+    NIActionBlock userListTapActionBlock = ^BOOL(UserInfoCellObject* object, id target, NSIndexPath* indexPath) {
+        
+        @strongify(self);
+        
+        [self.output didTapCellWithUser: object.user];
+        
+        return YES;
+    };
+    
+    [self.tableViewActions attachToClass: [UserInfoCellObject class]
+                                tapBlock: userListTapActionBlock];
 }
 
 @end

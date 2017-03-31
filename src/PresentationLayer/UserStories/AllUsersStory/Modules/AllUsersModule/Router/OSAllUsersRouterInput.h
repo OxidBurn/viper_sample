@@ -9,6 +9,11 @@
 // Frameworks
 @import Foundation;
 
+//Classes
+@class UserInfoPlainObject;
+
 @protocol OSAllUsersRouterInput <NSObject>
+
+- (void) openUserInfoModuleWithUser: (UserInfoPlainObject*) user;
 
 @end
