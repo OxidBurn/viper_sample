@@ -94,9 +94,19 @@
 - (void) loadAvatarForUser: (UserInfoPlainObject*)      user
        withCompletionBlock: (LoadAvatarCompletionBlock) completion
 {
+    /**
+     @author Nikolay Chaban
+     
+     Create compound download avatar operation object with factory
+     */
     CompoundOperationBase* downloadOperation = [self.downloadFactory getDownloadOperationWithFileURL: user.imageURL
                                                                                  withDestinationPath: user.imagePath];
     
+    /**
+     @author Nikolay Chaban
+     
+     Operation complete callback block with data or error
+     */
     downloadOperation.resultBlock = ^(NSURL* imagePath, NSError *error) {
         
         dispatch_async(dispatch_get_main_queue(), ^{

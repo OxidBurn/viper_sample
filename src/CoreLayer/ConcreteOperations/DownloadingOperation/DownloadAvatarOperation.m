@@ -51,7 +51,11 @@
 
 - (void) main
 {
-    // Fetch data from buffer
+    /**
+     @author Nikolay Chaban
+     
+     Fetch data from buffer
+     */
     FileLoaderModel* loaderModel = [self.input obtainInputDataWithTypeValidationBlock: ^BOOL(id data) {
         
         if ( data )
@@ -63,7 +67,11 @@
     }];
     
     @weakify(self)
-    // Start loading avatar from server
+    /**
+     @author Nikolay Chaban
+     
+     Start loading avatar from server
+     */
     [self.imageDownloader downloadImageWithInfo: loaderModel
                                  withCompletion: ^(NSURL* imagePath, NSError* error) {
                                      

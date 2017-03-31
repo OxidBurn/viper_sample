@@ -43,10 +43,25 @@
 
 - (CompoundOperationBase*) buildCompoundDownloadOperationWithData: (FileLoaderModel*) inputData
 {
+    /**
+     @author Nikolay Chaban
+     
+     Initialize download operatoin object
+     */
     [self buildDownloadImageOperation];
     
+    /**
+     @author Nikolay Chaban
+     
+     Initialize compound operation for handling when operation complete it job
+     */
     CompoundOperationBase* compoundOperation = [self getNewCompoundOperation];
     
+    /**
+     @author Nikolay Chaban
+     
+     Put operation input model through buffer
+     */
     [compoundOperation.queueInput setOperationQueueInputData: inputData];
     
     return compoundOperation;
@@ -57,6 +72,11 @@
 
 - (void) buildDownloadImageOperation
 {
+    /**
+     @author Nikolay Chaban
+     
+     Initialize class, which will perform loading procedure
+     */
     id<ImageDownloader> imgDownloader = [ImageDownloaderImplementation new];
     
     DownloadAvatarOperation* downloadAvatarOperaiton = [DownloadAvatarOperation operationWithImageDownloader: imgDownloader];
@@ -66,6 +86,12 @@
 
 - (CompoundOperationBase*) getNewCompoundOperation
 {
+    /**
+     @author Nikolay Chaban
+     
+     Initialize buffers for processing input and output methods into callback blocks
+     Use buffers for passing input data models and handling complete/cancel operation methods
+     */
     OperationBuffer* firstBuffer = [OperationBuffer buffer];
     OperationBuffer* lastBuffer  = [OperationBuffer buffer];
     

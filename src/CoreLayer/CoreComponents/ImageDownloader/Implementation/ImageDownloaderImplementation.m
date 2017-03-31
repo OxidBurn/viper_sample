@@ -23,6 +23,11 @@
 - (void) downloadImageWithInfo: (FileLoaderModel*)               info
                 withCompletion: (ImageDownloaderCompletionBlock) completion
 {
+    /**
+     @author Nikolay Chaban
+     
+     Check if input operation model is nil, fire assert exception
+     */
     NSAssert((info != nil), @"File info shouldn't be nil");
     
     NSURLSessionConfiguration* sessionConfig = [NSURLSessionConfiguration defaultSessionConfiguration];

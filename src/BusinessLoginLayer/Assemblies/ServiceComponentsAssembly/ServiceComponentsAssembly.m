@@ -43,8 +43,18 @@
     return [TyphoonDefinition withClass: [UserInfoServiceImplementation class]
                           configuration: ^(TyphoonDefinition *definition) {
                               
+                              /**
+                               @author Nikolay Chaban
+                               
+                               Inject download operation factory to the service
+                               */
                               [definition injectProperty: @selector(downloadFactory)
                                                     with: [self.operationFactoriesAssembly downloadOperationFactory]];
+                              /**
+                               @author Nikolay Chaban
+                               
+                               Inject operation scheduler for managing operation queue
+                               */
                               [definition injectProperty: @selector(operationScheduler)
                                                     with: [self operationScheduler]];
                               

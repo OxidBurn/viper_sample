@@ -18,6 +18,11 @@
 
 @interface ServiceComponentsAssembly : TyphoonAssembly <ServiceComponents, RamblerInitialAssembly>
 
+/**
+ @author Nikolay Chaban
+ 
+ Assembly for injection NSOperation factories
+ */
 @property (strong, nonatomic) OperationsFactoryAssebmly* operationFactoriesAssembly;
 
 @end
