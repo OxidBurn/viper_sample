@@ -43,8 +43,6 @@
 	[super viewDidLoad];
 
 	[self.output didTriggerViewReadyEvent];
-    
-    self.avatarImgView.userInteractionEnabled = YES;
 }
 
 
@@ -62,7 +60,7 @@
 
 - (void) setupInitialState 
 {
-	// In this method there is setup of the initial view parameter, which depend from controller life cycle (creation of elements, animation, etc.)
+	self.avatarImgView.userInteractionEnabled = YES;
 }
 
 - (NSString*) obtainUserName
