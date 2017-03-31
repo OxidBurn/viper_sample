@@ -123,8 +123,9 @@
 		C5924DD11E8E562100790D01 /* UserInfoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C5924DCE1E8E562100790D01 /* UserInfoCell.xib */; };
 		C5924DD51E8E564C00790D01 /* UserWithAvatarCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C5924DD31E8E564C00790D01 /* UserWithAvatarCell.m */; };
 		C5924DD61E8E564C00790D01 /* UserWithAvatarCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C5924DD41E8E564C00790D01 /* UserWithAvatarCell.xib */; };
-		C5924DDB1E8E5EB500790D01 /* UserInfoCellObject.m in Sources */ = {isa = PBXBuildFile; fileRef = C5924DD91E8E5EB500790D01 /* UserInfoCellObject.m */; };
-		C5924DDE1E8E5EE200790D01 /* UserWithAvatarCellObject.m in Sources */ = {isa = PBXBuildFile; fileRef = C5924DDD1E8E5EE200790D01 /* UserWithAvatarCellObject.m */; };
+		C5924F021E8EB95300790D01 /* ParentUserCellObject.m in Sources */ = {isa = PBXBuildFile; fileRef = C5924EFB1E8EB95300790D01 /* ParentUserCellObject.m */; };
+		C5924F031E8EB95300790D01 /* UserInfoCellObject.m in Sources */ = {isa = PBXBuildFile; fileRef = C5924EFE1E8EB95300790D01 /* UserInfoCellObject.m */; };
+		C5924F041E8EB95300790D01 /* UserWithAvatarCellObject.m in Sources */ = {isa = PBXBuildFile; fileRef = C5924F011E8EB95300790D01 /* UserWithAvatarCellObject.m */; };
 		C598C3351E891543000C2465 /* PonsomizerAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = C598C3341E891543000C2465 /* PonsomizerAssembly.m */; };
 		C598C3BE1E8A6F42000C2465 /* OSUserInfoAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = C598C3AA1E8A6F42000C2465 /* OSUserInfoAssembly.m */; };
 		C598C3BF1E8A6F42000C2465 /* OSUserInfoInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = C598C3AD1E8A6F42000C2465 /* OSUserInfoInteractor.m */; };
@@ -365,11 +366,13 @@
 		C5924DD21E8E564C00790D01 /* UserWithAvatarCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserWithAvatarCell.h; sourceTree = "<group>"; };
 		C5924DD31E8E564C00790D01 /* UserWithAvatarCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserWithAvatarCell.m; sourceTree = "<group>"; };
 		C5924DD41E8E564C00790D01 /* UserWithAvatarCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserWithAvatarCell.xib; sourceTree = "<group>"; };
-		C5924DD81E8E5EB500790D01 /* UserInfoCellObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserInfoCellObject.h; sourceTree = "<group>"; };
-		C5924DD91E8E5EB500790D01 /* UserInfoCellObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserInfoCellObject.m; sourceTree = "<group>"; };
-		C5924DDC1E8E5EE200790D01 /* UserWithAvatarCellObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserWithAvatarCellObject.h; sourceTree = "<group>"; };
-		C5924DDD1E8E5EE200790D01 /* UserWithAvatarCellObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserWithAvatarCellObject.m; sourceTree = "<group>"; };
 		C5924DE01E8EA3D700790D01 /* AvatarsDataDisplayManagerOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AvatarsDataDisplayManagerOutput.h; sourceTree = "<group>"; };
+		C5924EFA1E8EB95300790D01 /* ParentUserCellObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParentUserCellObject.h; sourceTree = "<group>"; };
+		C5924EFB1E8EB95300790D01 /* ParentUserCellObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParentUserCellObject.m; sourceTree = "<group>"; };
+		C5924EFD1E8EB95300790D01 /* UserInfoCellObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserInfoCellObject.h; sourceTree = "<group>"; };
+		C5924EFE1E8EB95300790D01 /* UserInfoCellObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserInfoCellObject.m; sourceTree = "<group>"; };
+		C5924F001E8EB95300790D01 /* UserWithAvatarCellObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserWithAvatarCellObject.h; sourceTree = "<group>"; };
+		C5924F011E8EB95300790D01 /* UserWithAvatarCellObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserWithAvatarCellObject.m; sourceTree = "<group>"; };
 		C598C3331E891543000C2465 /* PonsomizerAssembly.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PonsomizerAssembly.h; sourceTree = "<group>"; };
 		C598C3341E891543000C2465 /* PonsomizerAssembly.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PonsomizerAssembly.m; sourceTree = "<group>"; };
 		C598C3A91E8A6F42000C2465 /* OSUserInfoAssembly.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSUserInfoAssembly.h; sourceTree = "<group>"; };
@@ -1607,7 +1610,7 @@
 		C52110E51E8BD42900A072BC /* View */ = {
 			isa = PBXGroup;
 			children = (
-				C52111001E8C04FE00A072BC /* CellObjects */,
+				C5924EF81E8EB95300790D01 /* CellObjects */,
 				C52111011E8C04FE00A072BC /* Cells */,
 				C52110F21E8BFA2C00A072BC /* DataDisplayManager */,
 				C52110E61E8BD42900A072BC /* OSAllUsersViewController.h */,
@@ -1670,15 +1673,6 @@
 			path = CellObjectBuilder;
 			sourceTree = "<group>";
 		};
-		C52111001E8C04FE00A072BC /* CellObjects */ = {
-			isa = PBXGroup;
-			children = (
-				C5924DD71E8E5EB500790D01 /* UserInfoCellObject */,
-				C5924DDA1E8E5EB500790D01 /* UserInfoWithAvatarObject */,
-			);
-			path = CellObjects;
-			sourceTree = "<group>";
-		};
 		C52111011E8C04FE00A072BC /* Cells */ = {
 			isa = PBXGroup;
 			children = (
@@ -1708,20 +1702,39 @@
 			path = UserWithAvatarCell;
 			sourceTree = "<group>";
 		};
-		C5924DD71E8E5EB500790D01 /* UserInfoCellObject */ = {
+		C5924EF81E8EB95300790D01 /* CellObjects */ = {
 			isa = PBXGroup;
 			children = (
-				C5924DD81E8E5EB500790D01 /* UserInfoCellObject.h */,
-				C5924DD91E8E5EB500790D01 /* UserInfoCellObject.m */,
+				C5924EF91E8EB95300790D01 /* ParentCellObject */,
+				C5924EFC1E8EB95300790D01 /* UserInfoCellObject */,
+				C5924EFF1E8EB95300790D01 /* UserInfoWithAvatarObject */,
+			);
+			path = CellObjects;
+			sourceTree = "<group>";
+		};
+		C5924EF91E8EB95300790D01 /* ParentCellObject */ = {
+			isa = PBXGroup;
+			children = (
+				C5924EFA1E8EB95300790D01 /* ParentUserCellObject.h */,
+				C5924EFB1E8EB95300790D01 /* ParentUserCellObject.m */,
+			);
+			path = ParentCellObject;
+			sourceTree = "<group>";
+		};
+		C5924EFC1E8EB95300790D01 /* UserInfoCellObject */ = {
+			isa = PBXGroup;
+			children = (
+				C5924EFD1E8EB95300790D01 /* UserInfoCellObject.h */,
+				C5924EFE1E8EB95300790D01 /* UserInfoCellObject.m */,
 			);
 			path = UserInfoCellObject;
 			sourceTree = "<group>";
 		};
-		C5924DDA1E8E5EB500790D01 /* UserInfoWithAvatarObject */ = {
+		C5924EFF1E8EB95300790D01 /* UserInfoWithAvatarObject */ = {
 			isa = PBXGroup;
 			children = (
-				C5924DDC1E8E5EE200790D01 /* UserWithAvatarCellObject.h */,
-				C5924DDD1E8E5EE200790D01 /* UserWithAvatarCellObject.m */,
+				C5924F001E8EB95300790D01 /* UserWithAvatarCellObject.h */,
+				C5924F011E8EB95300790D01 /* UserWithAvatarCellObject.m */,
 			);
 			path = UserInfoWithAvatarObject;
 			sourceTree = "<group>";
@@ -2117,8 +2130,10 @@
 				C52110EE1E8BD42A00A072BC /* OSAllUsersRouter.m in Sources */,
 				C51174761E8D456400A29F13 /* AvatarCellObject.m in Sources */,
 				C5924DD51E8E564C00790D01 /* UserWithAvatarCell.m in Sources */,
+				C5924F031E8EB95300790D01 /* UserInfoCellObject.m in Sources */,
 				56F69CC51E859CD80099A584 /* _UserInfoModelObject.m in Sources */,
 				56277E361E8EB05900A27543 /* DownloadOperationFactory.m in Sources */,
+				C5924F041E8EB95300790D01 /* UserWithAvatarCellObject.m in Sources */,
 				56DB4A1B1E833CF30015C039 /* OSRegisterModuleAssembly.m in Sources */,
 				56DB4A161E833CF30015C039 /* OSLoginModuleAssembly.m in Sources */,
 				561B8B721E8AAB3100238561 /* UserInfoPresenterStateStorage.m in Sources */,
@@ -2139,10 +2154,8 @@
 				56DB4A191E833CF30015C039 /* OSLoginModuleRouter.m in Sources */,
 				56277E2D1E8EB05900A27543 /* OperationsFactoryAssebmly.m in Sources */,
 				56E3680F1E85730D00F24E61 /* UserInfoServiceImplementation.m in Sources */,
-				C5924DDE1E8E5EE200790D01 /* UserWithAvatarCellObject.m in Sources */,
 				562B85F01E848D110075F962 /* RegistrationInfoValidator.m in Sources */,
 				56DB49E01E833A980015C039 /* ModuleAssemblyBase.m in Sources */,
-				C5924DDB1E8E5EB500790D01 /* UserInfoCellObject.m in Sources */,
 				562B85ED1E848A0D0075F962 /* EXTScope.m in Sources */,
 				C598C3BF1E8A6F42000C2465 /* OSUserInfoInteractor.m in Sources */,
 				417DCD191BFF5A945E4D6532 /* OSRegisterModuleAssemblyTests.m in Sources */,
@@ -2179,6 +2192,7 @@
 				5F64B99A0AEA5AA1184AE61D /* OSUserUpdateInfoRouterTests.m in Sources */,
 				4E6471843BE6DD51CC08D78E /* OSAllUsersAssemblyTests.m in Sources */,
 				C52110EF1E8BD42A00A072BC /* OSAllUsersViewController.m in Sources */,
+				C5924F021E8EB95300790D01 /* ParentUserCellObject.m in Sources */,
 				9EF62764C1E4EDFCBC95099A /* OSAllUsersViewControllerTests.m in Sources */,
 				C511744A1E8D0D3100A29F13 /* ROSPonsomizerImplementation.m in Sources */,
 				C52110EB1E8BD42900A072BC /* OSAllUsersAssembly.m in Sources */,

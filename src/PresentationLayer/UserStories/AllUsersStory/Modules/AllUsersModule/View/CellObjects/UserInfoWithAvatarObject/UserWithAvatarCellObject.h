@@ -6,21 +6,14 @@
 //  Copyright © 2017 Nikolay Chaban. All rights reserved.
 //
 
+//Frameworks
 #import <Foundation/Foundation.h>
+#import <Nimbus/NimbusModels.h>
+
+//Classes
 #import "UserInfoPlainObject.h"
+#import "ParentUserCellObject.h"
 
-@interface UserWithAvatarCellObject : NSObject
-
-@property (nonatomic, strong, readonly) UserInfoPlainObject* user;
-
-/**
- @author Valeria Mozghova
- 
- Method that inits cell object with user
- 
- @param user - property from which cell will be filling
- @return UserInfoCellObject
- */
-+ (instancetype) objectWithUser: (UserInfoPlainObject*) user;
+@interface UserWithAvatarCellObject : ParentUserCellObject <NICellObject>
 
 @end
