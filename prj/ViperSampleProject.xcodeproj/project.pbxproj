@@ -181,6 +181,7 @@
 		561B8BCD1E8D18B300238561 /* CompoundOperationBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CompoundOperationBase.m; sourceTree = "<group>"; };
 		561B8BCF1E8D18B300238561 /* CompoundOperationQueueInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CompoundOperationQueueInput.h; sourceTree = "<group>"; };
 		561B8BD01E8D18B300238561 /* CompoundOperationQueueOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CompoundOperationQueueOutput.h; sourceTree = "<group>"; };
+		56277DFB1E8E98BA00A27543 /* AllUserDataDisplayManagerOutput.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AllUserDataDisplayManagerOutput.h; sourceTree = "<group>"; };
 		562B85DF1E8466C60075F962 /* RegisterService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RegisterService.h; path = Register/RegisterService.h; sourceTree = "<group>"; };
 		562B85E01E8467020075F962 /* RegisterServiceImplementation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RegisterServiceImplementation.h; path = Register/RegisterServiceImplementation.h; sourceTree = "<group>"; };
 		562B85E11E8467020075F962 /* RegisterServiceImplementation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RegisterServiceImplementation.m; path = Register/RegisterServiceImplementation.m; sourceTree = "<group>"; };
@@ -1509,6 +1510,7 @@
 				C52110FA1E8C031E00A072BC /* CellObjectBuilder */,
 				C52110F31E8BFB9A00A072BC /* AllUsersDataDisplayManager.h */,
 				C52110F41E8BFB9A00A072BC /* AllUsersDataDisplayManager.m */,
+				56277DFB1E8E98BA00A27543 /* AllUserDataDisplayManagerOutput.h */,
 			);
 			path = DataDisplayManager;
 			sourceTree = "<group>";

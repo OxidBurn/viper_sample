@@ -15,21 +15,14 @@
 
 //Protocols
 #import "DataDisplayManager.h"
-
-@protocol AllUsersDataDisplayManagerDelegate;
+@protocol AllUserDataDisplayManagerOutput;
 
 @interface AllUsersDataDisplayManager : NSObject <DataDisplayManager, UITableViewDelegate>
 
 @property (nonatomic, strong) UsersCellObjectBuilder* cellObjectBuilder;
 
-@property (nonatomic, weak) id<AllUsersDataDisplayManagerDelegate> delegate;
+@property (nonatomic, weak) id<AllUserDataDisplayManagerOutput> output;
 
 - (void) updateTableViewModelWithUsers: (NSArray*) users;
-
-@end
-
-@protocol AllUsersDataDisplayManagerDelegate <NSObject>
-
-- (void) didTapCellWithUser: (UserInfoPlainObject*) user;
 
 @end

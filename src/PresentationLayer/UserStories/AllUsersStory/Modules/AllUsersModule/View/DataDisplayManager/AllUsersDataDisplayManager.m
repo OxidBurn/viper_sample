@@ -15,6 +15,7 @@
 #import "UserInfoCellObject.h"
 #import "UsersCellObjectBuilder.h"
 #import "UserInfoPlainObject.h"
+#import "AllUserDataDisplayManagerOutput.h"
 
 @interface AllUsersDataDisplayManager()
 
@@ -122,7 +123,7 @@
         
         @strongify(self);
         
-        [self.delegate didTapCellWithUser: object.user];
+        [self.output didTapCellWithUser: object.user];
         
         return YES;
     };

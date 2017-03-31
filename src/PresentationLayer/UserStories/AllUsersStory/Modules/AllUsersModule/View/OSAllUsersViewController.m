@@ -61,8 +61,6 @@
  */
 - (void) setupViewStateWithUsersArray: (NSArray*) users
 {
-    self.dataDisplayManager.delegate = self;
-    
     self.allUsersTableView.dataSource = [self.dataDisplayManager dataSourceForTableView: self.allUsersTableView];
     
     self.allUsersTableView.delegate   = [self.dataDisplayManager delegateForTableView: self.allUsersTableView
