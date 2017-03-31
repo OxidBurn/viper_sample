@@ -38,6 +38,8 @@
 	return keyPaths;
 }
 
+@dynamic avatar;
+
 @dynamic email;
 
 @dynamic fullName;
@@ -73,6 +75,9 @@
 @end
 
 @implementation UserInfoModelObjectAttributes 
++ (NSString *)avatar {
+	return @"avatar";
+}
 + (NSString *)email {
 	return @"email";
 }

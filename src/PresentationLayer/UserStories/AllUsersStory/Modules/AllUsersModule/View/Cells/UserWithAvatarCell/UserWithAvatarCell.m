@@ -28,7 +28,7 @@
 
 - (BOOL) shouldUpdateCellWithObject: (UserWithAvatarCellObject*) object
 {
-    self.avatarImgView.image = [UIImage imageNamed: object.user.imagePath];
+    self.avatarImgView.image = [UIImage imageNamed: object.user.avatar];
     
     self.fullNameLabel.text  = object.user.fullName;
     self.usernameLabel.text  = object.user.username;

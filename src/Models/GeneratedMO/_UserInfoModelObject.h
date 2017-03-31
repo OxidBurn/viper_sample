@@ -20,6 +20,8 @@ NS_ASSUME_NONNULL_BEGIN
 + (nullable NSEntityDescription*)entityInManagedObjectContext:(NSManagedObjectContext*)moc_;
 @property (nonatomic, readonly, strong) UserInfoModelObjectID *objectID;
 
+@property (nonatomic, strong, nullable) NSString* avatar;
+
 @property (nonatomic, strong, nullable) NSString* email;
 
 @property (nonatomic, strong, nullable) NSString* fullName;
@@ -41,6 +43,9 @@ NS_ASSUME_NONNULL_BEGIN
 @end
 
 @interface _UserInfoModelObject (CoreDataGeneratedPrimitiveAccessors)
+
+- (nullable NSString*)primitiveAvatar;
+- (void)setPrimitiveAvatar:(nullable NSString*)value;
 
 - (nullable NSString*)primitiveEmail;
 - (void)setPrimitiveEmail:(nullable NSString*)value;
@@ -69,6 +74,7 @@ NS_ASSUME_NONNULL_BEGIN
 @end
 
 @interface UserInfoModelObjectAttributes: NSObject 
++ (NSString *)avatar;
 + (NSString *)email;
 + (NSString *)fullName;
 + (NSString *)imagePath;

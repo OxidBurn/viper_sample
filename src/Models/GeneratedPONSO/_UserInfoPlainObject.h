@@ -9,6 +9,7 @@
 
 @interface _UserInfoPlainObject : NSObject <NSCoding, NSCopying>
 
+@property (nonatomic, copy, readwrite) NSString *avatar;
 @property (nonatomic, copy, readwrite) NSString *email;
 @property (nonatomic, copy, readwrite) NSString *fullName;
 @property (nonatomic, copy, readwrite) NSString *imagePath;

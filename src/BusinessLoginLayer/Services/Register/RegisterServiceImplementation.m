@@ -49,6 +49,7 @@
         localPerson.password  = info.confirmPassword;
         localPerson.imagePath = info.imagePath;
         localPerson.imageURL  = info.imageURL;
+        localPerson.avatar    = info.avatar;
     }
                       completion: ^(BOOL contextDidSave, NSError * _Nullable error) {
                           

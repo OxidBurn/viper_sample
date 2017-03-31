@@ -25,7 +25,7 @@
         
         NSObject* userObject = nil;
         
-        if (user.imagePath > 0)
+        if (user.avatar > 0)
         {
             userObject = [UserWithAvatarCellObject objectWithUser: user];
         }
