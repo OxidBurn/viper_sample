@@ -119,6 +119,7 @@
 		C5924DD61E8E564C00790D01 /* UserWithAvatarCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C5924DD41E8E564C00790D01 /* UserWithAvatarCell.xib */; };
 		C5924DDB1E8E5EB500790D01 /* UserInfoCellObject.m in Sources */ = {isa = PBXBuildFile; fileRef = C5924DD91E8E5EB500790D01 /* UserInfoCellObject.m */; };
 		C5924DDE1E8E5EE200790D01 /* UserWithAvatarCellObject.m in Sources */ = {isa = PBXBuildFile; fileRef = C5924DDD1E8E5EE200790D01 /* UserWithAvatarCellObject.m */; };
+		C5924DE41E8EB02A00790D01 /* ParentUserCellObject.m in Sources */ = {isa = PBXBuildFile; fileRef = C5924DE31E8EB02A00790D01 /* ParentUserCellObject.m */; };
 		C598C3351E891543000C2465 /* PonsomizerAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = C598C3341E891543000C2465 /* PonsomizerAssembly.m */; };
 		C598C3BE1E8A6F42000C2465 /* OSUserInfoAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = C598C3AA1E8A6F42000C2465 /* OSUserInfoAssembly.m */; };
 		C598C3BF1E8A6F42000C2465 /* OSUserInfoInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = C598C3AD1E8A6F42000C2465 /* OSUserInfoInteractor.m */; };
@@ -351,6 +352,8 @@
 		C5924DDC1E8E5EE200790D01 /* UserWithAvatarCellObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserWithAvatarCellObject.h; sourceTree = "<group>"; };
 		C5924DDD1E8E5EE200790D01 /* UserWithAvatarCellObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserWithAvatarCellObject.m; sourceTree = "<group>"; };
 		C5924DE01E8EA3D700790D01 /* AvatarsDataDisplayManagerOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AvatarsDataDisplayManagerOutput.h; sourceTree = "<group>"; };
+		C5924DE21E8EB02A00790D01 /* ParentUserCellObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParentUserCellObject.h; sourceTree = "<group>"; };
+		C5924DE31E8EB02A00790D01 /* ParentUserCellObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParentUserCellObject.m; sourceTree = "<group>"; };
 		C598C3331E891543000C2465 /* PonsomizerAssembly.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PonsomizerAssembly.h; sourceTree = "<group>"; };
 		C598C3341E891543000C2465 /* PonsomizerAssembly.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PonsomizerAssembly.m; sourceTree = "<group>"; };
 		C598C3A91E8A6F42000C2465 /* OSUserInfoAssembly.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSUserInfoAssembly.h; sourceTree = "<group>"; };
@@ -1553,6 +1556,7 @@
 		C52111001E8C04FE00A072BC /* CellObjects */ = {
 			isa = PBXGroup;
 			children = (
+				C5924DE11E8EAFF900790D01 /* ParentCellObject */,
 				C5924DD71E8E5EB500790D01 /* UserInfoCellObject */,
 				C5924DDA1E8E5EB500790D01 /* UserInfoWithAvatarObject */,
 			);
@@ -1604,6 +1608,15 @@
 				C5924DDD1E8E5EE200790D01 /* UserWithAvatarCellObject.m */,
 			);
 			path = UserInfoWithAvatarObject;
+			sourceTree = "<group>";
+		};
+		C5924DE11E8EAFF900790D01 /* ParentCellObject */ = {
+			isa = PBXGroup;
+			children = (
+				C5924DE21E8EB02A00790D01 /* ParentUserCellObject.h */,
+				C5924DE31E8EB02A00790D01 /* ParentUserCellObject.m */,
+			);
+			path = ParentCellObject;
 			sourceTree = "<group>";
 		};
 		C598C3321E891543000C2465 /* PonsomizerAssembly */ = {
@@ -1989,6 +2002,7 @@
 				561B8BC51E8D18A000238561 /* DownloadAvatarOperation.m in Sources */,
 				C52110EC1E8BD42900A072BC /* OSAllUsersInteractor.m in Sources */,
 				56F69CBF1E859CCF0099A584 /* UserInfoModelObject.m in Sources */,
+				C5924DE41E8EB02A00790D01 /* ParentUserCellObject.m in Sources */,
 				56DB49E31E833B140015C039 /* StoryboardAssembly.m in Sources */,
 				561B8B8C1E8BBCBF00238561 /* OSUserUpdateInfoAssembly.m in Sources */,
 				56F69C961E85999C0099A584 /* RegistrationParametersModel.m in Sources */,

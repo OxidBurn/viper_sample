@@ -16,6 +16,7 @@
 #import "UsersCellObjectBuilder.h"
 #import "UserInfoPlainObject.h"
 #import "AllUserDataDisplayManagerOutput.h"
+#import "ParentUserCellObject.h"
 
 @interface AllUsersDataDisplayManager()
 
@@ -119,7 +120,7 @@
     
     @weakify(self);
     
-    NIActionBlock userListTapActionBlock = ^BOOL(UserInfoCellObject* object, id target, NSIndexPath* indexPath) {
+    NIActionBlock userListTapActionBlock = ^BOOL(ParentUserCellObject* object, id target, NSIndexPath* indexPath) {
         
         @strongify(self);
         
@@ -128,7 +129,7 @@
         return YES;
     };
     
-    [self.tableViewActions attachToClass: [UserInfoCellObject class]
+    [self.tableViewActions attachToClass: [ParentUserCellObject class]
                                 tapBlock: userListTapActionBlock];
 }
 

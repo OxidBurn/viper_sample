@@ -11,6 +11,7 @@
 #import "UserInfoCellObject.h"
 #import "UserInfoPlainObject.h"
 #import "UserWithAvatarCellObject.h"
+#import "ParentUserCellObject.h"
 
 @implementation UsersCellObjectBuilder
 
@@ -23,7 +24,7 @@
     
     [users enumerateObjectsUsingBlock: ^(UserInfoPlainObject*  _Nonnull user, NSUInteger idx, BOOL * _Nonnull stop) {
         
-        NSObject* userObject = nil;
+        ParentUserCellObject* userObject = nil;
         
         if (user.imagePath > 0)
         {
