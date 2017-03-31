@@ -43,10 +43,16 @@
 		561B8B8E1E8BBCBF00238561 /* OSUserUpdateInfoPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 561B8B821E8BBCBF00238561 /* OSUserUpdateInfoPresenter.m */; };
 		561B8B8F1E8BBCBF00238561 /* OSUserUpdateInfoRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 561B8B851E8BBCBF00238561 /* OSUserUpdateInfoRouter.m */; };
 		561B8B901E8BBCBF00238561 /* OSUserUpdateInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 561B8B891E8BBCBF00238561 /* OSUserUpdateInfoViewController.m */; };
-		561B8BC01E8D17EC00238561 /* AsyncOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 561B8BBA1E8D17EC00238561 /* AsyncOperation.m */; };
-		561B8BC11E8D17EC00238561 /* OperationShcedulerImplementation.m in Sources */ = {isa = PBXBuildFile; fileRef = 561B8BBF1E8D17EC00238561 /* OperationShcedulerImplementation.m */; };
-		561B8BC51E8D18A000238561 /* DownloadAvatarOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 561B8BC41E8D18A000238561 /* DownloadAvatarOperation.m */; };
-		561B8BD11E8D18B300238561 /* CompoundOperationBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 561B8BCD1E8D18B300238561 /* CompoundOperationBase.m */; };
+		56277E2D1E8EB05900A27543 /* OperationsFactoryAssebmly.m in Sources */ = {isa = PBXBuildFile; fileRef = 56277E001E8EB05900A27543 /* OperationsFactoryAssebmly.m */; };
+		56277E2E1E8EB05900A27543 /* DownloadAvatarOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 56277E041E8EB05900A27543 /* DownloadAvatarOperation.m */; };
+		56277E2F1E8EB05900A27543 /* ImageDownloaderImplementation.m in Sources */ = {isa = PBXBuildFile; fileRef = 56277E091E8EB05900A27543 /* ImageDownloaderImplementation.m */; };
+		56277E301E8EB05900A27543 /* FileLoaderModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 56277E0C1E8EB05900A27543 /* FileLoaderModel.m */; };
+		56277E311E8EB05900A27543 /* AsyncOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 56277E121E8EB05900A27543 /* AsyncOperation.m */; };
+		56277E321E8EB05900A27543 /* OperationBuffer.m in Sources */ = {isa = PBXBuildFile; fileRef = 56277E151E8EB05900A27543 /* OperationBuffer.m */; };
+		56277E331E8EB05900A27543 /* CompoundOperationBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 56277E191E8EB05900A27543 /* CompoundOperationBase.m */; };
+		56277E341E8EB05900A27543 /* DownloadOperationBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 56277E241E8EB05900A27543 /* DownloadOperationBuilder.m */; };
+		56277E351E8EB05900A27543 /* OperationShcedulerImplementation.m in Sources */ = {isa = PBXBuildFile; fileRef = 56277E281E8EB05900A27543 /* OperationShcedulerImplementation.m */; };
+		56277E361E8EB05900A27543 /* DownloadOperationFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 56277E2C1E8EB05900A27543 /* DownloadOperationFactory.m */; };
 		562B85E21E8467020075F962 /* RegisterServiceImplementation.m in Sources */ = {isa = PBXBuildFile; fileRef = 562B85E11E8467020075F962 /* RegisterServiceImplementation.m */; };
 		562B85ED1E848A0D0075F962 /* EXTScope.m in Sources */ = {isa = PBXBuildFile; fileRef = 562B85EB1E848A0D0075F962 /* EXTScope.m */; };
 		562B85F01E848D110075F962 /* RegistrationInfoValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = 562B85EF1E848D110075F962 /* RegistrationInfoValidator.m */; };
@@ -166,22 +172,35 @@
 		561B8B8B1E8BBCBF00238561 /* OSUserUpdateInfoViewOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSUserUpdateInfoViewOutput.h; sourceTree = "<group>"; };
 		561B8BB31E8D161000238561 /* OSUserUpdateInfoModuleOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSUserUpdateInfoModuleOutput.h; sourceTree = "<group>"; };
 		561B8BB41E8D162900238561 /* UserInfoModuleSegueIdentifiersConstance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserInfoModuleSegueIdentifiersConstance.h; sourceTree = "<group>"; };
-		561B8BB91E8D17EC00238561 /* AsyncOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AsyncOperation.h; sourceTree = "<group>"; };
-		561B8BBA1E8D17EC00238561 /* AsyncOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AsyncOperation.m; sourceTree = "<group>"; };
-		561B8BBD1E8D17EC00238561 /* OperationScheduler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OperationScheduler.h; sourceTree = "<group>"; };
-		561B8BBE1E8D17EC00238561 /* OperationShcedulerImplementation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OperationShcedulerImplementation.h; sourceTree = "<group>"; };
-		561B8BBF1E8D17EC00238561 /* OperationShcedulerImplementation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OperationShcedulerImplementation.m; sourceTree = "<group>"; };
-		561B8BC31E8D18A000238561 /* DownloadAvatarOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownloadAvatarOperation.h; sourceTree = "<group>"; };
-		561B8BC41E8D18A000238561 /* DownloadAvatarOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownloadAvatarOperation.m; sourceTree = "<group>"; };
-		561B8BC71E8D18AD00238561 /* ChainableOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChainableOperation.h; sourceTree = "<group>"; };
-		561B8BC81E8D18AD00238561 /* ChainableOperationDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChainableOperationDelegate.h; sourceTree = "<group>"; };
-		561B8BC91E8D18AD00238561 /* ChainableOperationInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChainableOperationInput.h; sourceTree = "<group>"; };
-		561B8BCA1E8D18AD00238561 /* ChainableOperationOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChainableOperationOutput.h; sourceTree = "<group>"; };
-		561B8BCC1E8D18B300238561 /* CompoundOperationBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CompoundOperationBase.h; sourceTree = "<group>"; };
-		561B8BCD1E8D18B300238561 /* CompoundOperationBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CompoundOperationBase.m; sourceTree = "<group>"; };
-		561B8BCF1E8D18B300238561 /* CompoundOperationQueueInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CompoundOperationQueueInput.h; sourceTree = "<group>"; };
-		561B8BD01E8D18B300238561 /* CompoundOperationQueueOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CompoundOperationQueueOutput.h; sourceTree = "<group>"; };
 		56277DFB1E8E98BA00A27543 /* AllUserDataDisplayManagerOutput.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AllUserDataDisplayManagerOutput.h; sourceTree = "<group>"; };
+		56277DFF1E8EB05900A27543 /* OperationsFactoryAssebmly.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OperationsFactoryAssebmly.h; sourceTree = "<group>"; };
+		56277E001E8EB05900A27543 /* OperationsFactoryAssebmly.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OperationsFactoryAssebmly.m; sourceTree = "<group>"; };
+		56277E031E8EB05900A27543 /* DownloadAvatarOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownloadAvatarOperation.h; sourceTree = "<group>"; };
+		56277E041E8EB05900A27543 /* DownloadAvatarOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownloadAvatarOperation.m; sourceTree = "<group>"; };
+		56277E081E8EB05900A27543 /* ImageDownloaderImplementation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageDownloaderImplementation.h; sourceTree = "<group>"; };
+		56277E091E8EB05900A27543 /* ImageDownloaderImplementation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageDownloaderImplementation.m; sourceTree = "<group>"; };
+		56277E0B1E8EB05900A27543 /* FileLoaderModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileLoaderModel.h; sourceTree = "<group>"; };
+		56277E0C1E8EB05900A27543 /* FileLoaderModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileLoaderModel.m; sourceTree = "<group>"; };
+		56277E0E1E8EB05900A27543 /* ImageDownloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageDownloader.h; sourceTree = "<group>"; };
+		56277E111E8EB05900A27543 /* AsyncOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AsyncOperation.h; sourceTree = "<group>"; };
+		56277E121E8EB05900A27543 /* AsyncOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AsyncOperation.m; sourceTree = "<group>"; };
+		56277E141E8EB05900A27543 /* OperationBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OperationBuffer.h; sourceTree = "<group>"; };
+		56277E151E8EB05900A27543 /* OperationBuffer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OperationBuffer.m; sourceTree = "<group>"; };
+		56277E181E8EB05900A27543 /* CompoundOperationBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CompoundOperationBase.h; sourceTree = "<group>"; };
+		56277E191E8EB05900A27543 /* CompoundOperationBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CompoundOperationBase.m; sourceTree = "<group>"; };
+		56277E1B1E8EB05900A27543 /* CompoundOperationQueueInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CompoundOperationQueueInput.h; sourceTree = "<group>"; };
+		56277E1C1E8EB05900A27543 /* CompoundOperationQueueOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CompoundOperationQueueOutput.h; sourceTree = "<group>"; };
+		56277E1E1E8EB05900A27543 /* ChainableOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChainableOperation.h; sourceTree = "<group>"; };
+		56277E1F1E8EB05900A27543 /* ChainableOperationDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChainableOperationDelegate.h; sourceTree = "<group>"; };
+		56277E201E8EB05900A27543 /* ChainableOperationInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChainableOperationInput.h; sourceTree = "<group>"; };
+		56277E211E8EB05900A27543 /* ChainableOperationOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChainableOperationOutput.h; sourceTree = "<group>"; };
+		56277E231E8EB05900A27543 /* DownloadOperationBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownloadOperationBuilder.h; sourceTree = "<group>"; };
+		56277E241E8EB05900A27543 /* DownloadOperationBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownloadOperationBuilder.m; sourceTree = "<group>"; };
+		56277E261E8EB05900A27543 /* OperationScheduler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OperationScheduler.h; sourceTree = "<group>"; };
+		56277E271E8EB05900A27543 /* OperationShcedulerImplementation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OperationShcedulerImplementation.h; sourceTree = "<group>"; };
+		56277E281E8EB05900A27543 /* OperationShcedulerImplementation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OperationShcedulerImplementation.m; sourceTree = "<group>"; };
+		56277E2B1E8EB05900A27543 /* DownloadOperationFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownloadOperationFactory.h; sourceTree = "<group>"; };
+		56277E2C1E8EB05900A27543 /* DownloadOperationFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownloadOperationFactory.m; sourceTree = "<group>"; };
 		562B85DF1E8466C60075F962 /* RegisterService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RegisterService.h; path = Register/RegisterService.h; sourceTree = "<group>"; };
 		562B85E01E8467020075F962 /* RegisterServiceImplementation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RegisterServiceImplementation.h; path = Register/RegisterServiceImplementation.h; sourceTree = "<group>"; };
 		562B85E11E8467020075F962 /* RegisterServiceImplementation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RegisterServiceImplementation.m; path = Register/RegisterServiceImplementation.m; sourceTree = "<group>"; };
@@ -545,99 +564,200 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		561B8BB51E8D17EC00238561 /* CoreLayer */ = {
+		56277DFC1E8EB05900A27543 /* CoreLayer */ = {
 			isa = PBXGroup;
 			children = (
-				561B8BB61E8D17EC00238561 /* ConcreteOperations */,
-				561B8BB71E8D17EC00238561 /* Operations */,
-				561B8BBC1E8D17EC00238561 /* OperationScheduler */,
+				56277DFD1E8EB05900A27543 /* Assemblies */,
+				56277E011E8EB05900A27543 /* ConcreteOperations */,
+				56277E051E8EB05900A27543 /* CoreComponents */,
+				56277E0F1E8EB05900A27543 /* Operations */,
+				56277E221E8EB05900A27543 /* OperationsBuilders */,
+				56277E251E8EB05900A27543 /* OperationScheduler */,
+				56277E291E8EB05900A27543 /* OperationsFactories */,
 			);
 			name = CoreLayer;
 			path = ../src/CoreLayer;
 			sourceTree = "<group>";
 		};
-		561B8BB61E8D17EC00238561 /* ConcreteOperations */ = {
+		56277DFD1E8EB05900A27543 /* Assemblies */ = {
 			isa = PBXGroup;
 			children = (
-				561B8BC21E8D18A000238561 /* DownloadingOperation */,
+				56277DFE1E8EB05900A27543 /* OperationsFactoryAssemblies */,
+			);
+			path = Assemblies;
+			sourceTree = "<group>";
+		};
+		56277DFE1E8EB05900A27543 /* OperationsFactoryAssemblies */ = {
+			isa = PBXGroup;
+			children = (
+				56277DFF1E8EB05900A27543 /* OperationsFactoryAssebmly.h */,
+				56277E001E8EB05900A27543 /* OperationsFactoryAssebmly.m */,
+			);
+			path = OperationsFactoryAssemblies;
+			sourceTree = "<group>";
+		};
+		56277E011E8EB05900A27543 /* ConcreteOperations */ = {
+			isa = PBXGroup;
+			children = (
+				56277E021E8EB05900A27543 /* DownloadingOperation */,
 			);
 			path = ConcreteOperations;
 			sourceTree = "<group>";
 		};
-		561B8BB71E8D17EC00238561 /* Operations */ = {
+		56277E021E8EB05900A27543 /* DownloadingOperation */ = {
 			isa = PBXGroup;
 			children = (
-				561B8BC61E8D18AD00238561 /* Protocols */,
-				561B8BB81E8D17EC00238561 /* BaseClasses */,
-				561B8BBB1E8D17EC00238561 /* CompoundOperations */,
-			);
-			path = Operations;
-			sourceTree = "<group>";
-		};
-		561B8BB81E8D17EC00238561 /* BaseClasses */ = {
-			isa = PBXGroup;
-			children = (
-				561B8BB91E8D17EC00238561 /* AsyncOperation.h */,
-				561B8BBA1E8D17EC00238561 /* AsyncOperation.m */,
-			);
-			path = BaseClasses;
-			sourceTree = "<group>";
-		};
-		561B8BBB1E8D17EC00238561 /* CompoundOperations */ = {
-			isa = PBXGroup;
-			children = (
-				561B8BCB1E8D18B300238561 /* BaseClasses */,
-				561B8BCE1E8D18B300238561 /* Protocols */,
-			);
-			path = CompoundOperations;
-			sourceTree = "<group>";
-		};
-		561B8BBC1E8D17EC00238561 /* OperationScheduler */ = {
-			isa = PBXGroup;
-			children = (
-				561B8BBD1E8D17EC00238561 /* OperationScheduler.h */,
-				561B8BBE1E8D17EC00238561 /* OperationShcedulerImplementation.h */,
-				561B8BBF1E8D17EC00238561 /* OperationShcedulerImplementation.m */,
-			);
-			path = OperationScheduler;
-			sourceTree = "<group>";
-		};
-		561B8BC21E8D18A000238561 /* DownloadingOperation */ = {
-			isa = PBXGroup;
-			children = (
-				561B8BC31E8D18A000238561 /* DownloadAvatarOperation.h */,
-				561B8BC41E8D18A000238561 /* DownloadAvatarOperation.m */,
+				56277E031E8EB05900A27543 /* DownloadAvatarOperation.h */,
+				56277E041E8EB05900A27543 /* DownloadAvatarOperation.m */,
 			);
 			path = DownloadingOperation;
 			sourceTree = "<group>";
 		};
-		561B8BC61E8D18AD00238561 /* Protocols */ = {
+		56277E051E8EB05900A27543 /* CoreComponents */ = {
 			isa = PBXGroup;
 			children = (
-				561B8BC71E8D18AD00238561 /* ChainableOperation.h */,
-				561B8BC81E8D18AD00238561 /* ChainableOperationDelegate.h */,
-				561B8BC91E8D18AD00238561 /* ChainableOperationInput.h */,
-				561B8BCA1E8D18AD00238561 /* ChainableOperationOutput.h */,
+				56277E061E8EB05900A27543 /* ImageDownloader */,
 			);
-			path = Protocols;
+			path = CoreComponents;
 			sourceTree = "<group>";
 		};
-		561B8BCB1E8D18B300238561 /* BaseClasses */ = {
+		56277E061E8EB05900A27543 /* ImageDownloader */ = {
 			isa = PBXGroup;
 			children = (
-				561B8BCC1E8D18B300238561 /* CompoundOperationBase.h */,
-				561B8BCD1E8D18B300238561 /* CompoundOperationBase.m */,
+				56277E071E8EB05900A27543 /* Implementation */,
+				56277E0A1E8EB05900A27543 /* Models */,
+				56277E0D1E8EB05900A27543 /* Protocol */,
+			);
+			path = ImageDownloader;
+			sourceTree = "<group>";
+		};
+		56277E071E8EB05900A27543 /* Implementation */ = {
+			isa = PBXGroup;
+			children = (
+				56277E081E8EB05900A27543 /* ImageDownloaderImplementation.h */,
+				56277E091E8EB05900A27543 /* ImageDownloaderImplementation.m */,
+			);
+			path = Implementation;
+			sourceTree = "<group>";
+		};
+		56277E0A1E8EB05900A27543 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				56277E0B1E8EB05900A27543 /* FileLoaderModel.h */,
+				56277E0C1E8EB05900A27543 /* FileLoaderModel.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		56277E0D1E8EB05900A27543 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				56277E0E1E8EB05900A27543 /* ImageDownloader.h */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		56277E0F1E8EB05900A27543 /* Operations */ = {
+			isa = PBXGroup;
+			children = (
+				56277E101E8EB05900A27543 /* BaseClasses */,
+				56277E131E8EB05900A27543 /* Buffers */,
+				56277E161E8EB05900A27543 /* CompoundOperations */,
+				56277E1D1E8EB05900A27543 /* Protocols */,
+			);
+			path = Operations;
+			sourceTree = "<group>";
+		};
+		56277E101E8EB05900A27543 /* BaseClasses */ = {
+			isa = PBXGroup;
+			children = (
+				56277E111E8EB05900A27543 /* AsyncOperation.h */,
+				56277E121E8EB05900A27543 /* AsyncOperation.m */,
 			);
 			path = BaseClasses;
 			sourceTree = "<group>";
 		};
-		561B8BCE1E8D18B300238561 /* Protocols */ = {
+		56277E131E8EB05900A27543 /* Buffers */ = {
 			isa = PBXGroup;
 			children = (
-				561B8BCF1E8D18B300238561 /* CompoundOperationQueueInput.h */,
-				561B8BD01E8D18B300238561 /* CompoundOperationQueueOutput.h */,
+				56277E141E8EB05900A27543 /* OperationBuffer.h */,
+				56277E151E8EB05900A27543 /* OperationBuffer.m */,
+			);
+			path = Buffers;
+			sourceTree = "<group>";
+		};
+		56277E161E8EB05900A27543 /* CompoundOperations */ = {
+			isa = PBXGroup;
+			children = (
+				56277E171E8EB05900A27543 /* BaseClasses */,
+				56277E1A1E8EB05900A27543 /* Protocols */,
+			);
+			path = CompoundOperations;
+			sourceTree = "<group>";
+		};
+		56277E171E8EB05900A27543 /* BaseClasses */ = {
+			isa = PBXGroup;
+			children = (
+				56277E181E8EB05900A27543 /* CompoundOperationBase.h */,
+				56277E191E8EB05900A27543 /* CompoundOperationBase.m */,
+			);
+			path = BaseClasses;
+			sourceTree = "<group>";
+		};
+		56277E1A1E8EB05900A27543 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				56277E1B1E8EB05900A27543 /* CompoundOperationQueueInput.h */,
+				56277E1C1E8EB05900A27543 /* CompoundOperationQueueOutput.h */,
 			);
 			path = Protocols;
+			sourceTree = "<group>";
+		};
+		56277E1D1E8EB05900A27543 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				56277E1E1E8EB05900A27543 /* ChainableOperation.h */,
+				56277E1F1E8EB05900A27543 /* ChainableOperationDelegate.h */,
+				56277E201E8EB05900A27543 /* ChainableOperationInput.h */,
+				56277E211E8EB05900A27543 /* ChainableOperationOutput.h */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		56277E221E8EB05900A27543 /* OperationsBuilders */ = {
+			isa = PBXGroup;
+			children = (
+				56277E231E8EB05900A27543 /* DownloadOperationBuilder.h */,
+				56277E241E8EB05900A27543 /* DownloadOperationBuilder.m */,
+			);
+			path = OperationsBuilders;
+			sourceTree = "<group>";
+		};
+		56277E251E8EB05900A27543 /* OperationScheduler */ = {
+			isa = PBXGroup;
+			children = (
+				56277E261E8EB05900A27543 /* OperationScheduler.h */,
+				56277E271E8EB05900A27543 /* OperationShcedulerImplementation.h */,
+				56277E281E8EB05900A27543 /* OperationShcedulerImplementation.m */,
+			);
+			path = OperationScheduler;
+			sourceTree = "<group>";
+		};
+		56277E291E8EB05900A27543 /* OperationsFactories */ = {
+			isa = PBXGroup;
+			children = (
+				56277E2A1E8EB05900A27543 /* DownloadOperationFactory */,
+			);
+			path = OperationsFactories;
+			sourceTree = "<group>";
+		};
+		56277E2A1E8EB05900A27543 /* DownloadOperationFactory */ = {
+			isa = PBXGroup;
+			children = (
+				56277E2B1E8EB05900A27543 /* DownloadOperationFactory.h */,
+				56277E2C1E8EB05900A27543 /* DownloadOperationFactory.m */,
+			);
+			path = DownloadOperationFactory;
 			sourceTree = "<group>";
 		};
 		562B85DD1E84668F0075F962 /* Register */ = {
@@ -1125,7 +1245,7 @@
 				56DB49851E8335DA0015C039 /* ApplicationLayer */,
 				56DB498E1E8335DA0015C039 /* BusinessLoginLayer */,
 				56DB49961E8335DA0015C039 /* PresentationLayer */,
-				561B8BB51E8D17EC00238561 /* CoreLayer */,
+				56277DFC1E8EB05900A27543 /* CoreLayer */,
 				562B85E31E847C0A0075F962 /* Models */,
 				562B85E81E848A0D0075F962 /* Helpers */,
 			);
@@ -1979,6 +2099,8 @@
 				56F69CC21E859CD40099A584 /* _UserInfoPlainObject.m in Sources */,
 				56DB49CB1E8335DA0015C039 /* TyphoonAppDelegate.m in Sources */,
 				56E367FA1E85633F00F24E61 /* FakeDataGenerator.m in Sources */,
+				56277E331E8EB05900A27543 /* CompoundOperationBase.m in Sources */,
+				56277E321E8EB05900A27543 /* OperationBuffer.m in Sources */,
 				56DB4A1C1E833CF30015C039 /* OSRegisterModuleInteractor.m in Sources */,
 				562B85F51E848EB20075F962 /* PresentationLayerHelpersAssembly.m in Sources */,
 				56E54D391E0C19E400E39B9F /* main.m in Sources */,
@@ -1986,7 +2108,6 @@
 				C52110ED1E8BD42A00A072BC /* OSAllUsersPresenter.m in Sources */,
 				C52110F51E8BFB9A00A072BC /* AllUsersDataDisplayManager.m in Sources */,
 				56DB4A1E1E833CF30015C039 /* OSRegisterModuleRouter.m in Sources */,
-				561B8BC51E8D18A000238561 /* DownloadAvatarOperation.m in Sources */,
 				C52110EC1E8BD42900A072BC /* OSAllUsersInteractor.m in Sources */,
 				56F69CBF1E859CCF0099A584 /* UserInfoModelObject.m in Sources */,
 				56DB49E31E833B140015C039 /* StoryboardAssembly.m in Sources */,
@@ -1997,6 +2118,7 @@
 				C51174761E8D456400A29F13 /* AvatarCellObject.m in Sources */,
 				C5924DD51E8E564C00790D01 /* UserWithAvatarCell.m in Sources */,
 				56F69CC51E859CD80099A584 /* _UserInfoModelObject.m in Sources */,
+				56277E361E8EB05900A27543 /* DownloadOperationFactory.m in Sources */,
 				56DB4A1B1E833CF30015C039 /* OSRegisterModuleAssembly.m in Sources */,
 				56DB4A161E833CF30015C039 /* OSLoginModuleAssembly.m in Sources */,
 				561B8B721E8AAB3100238561 /* UserInfoPresenterStateStorage.m in Sources */,
@@ -2007,7 +2129,6 @@
 				56DB4A1A1E833CF30015C039 /* OSLoginModuleViewController.m in Sources */,
 				56DB4A1D1E833CF30015C039 /* OSRegisterModulePresenter.m in Sources */,
 				C511748C1E8D560300A29F13 /* AvatarsCellObjectBuilder.m in Sources */,
-				561B8BC01E8D17EC00238561 /* AsyncOperation.m in Sources */,
 				562B85E21E8467020075F962 /* RegisterServiceImplementation.m in Sources */,
 				56DB49C91E8335DA0015C039 /* ActivityAppDelegate.m in Sources */,
 				C598C3C21E8A6F42000C2465 /* OSUserInfoViewController.m in Sources */,
@@ -2016,6 +2137,7 @@
 				561B8B8E1E8BBCBF00238561 /* OSUserUpdateInfoPresenter.m in Sources */,
 				56DB49DD1E8339590015C039 /* ServiceComponentsAssembly.m in Sources */,
 				56DB4A191E833CF30015C039 /* OSLoginModuleRouter.m in Sources */,
+				56277E2D1E8EB05900A27543 /* OperationsFactoryAssebmly.m in Sources */,
 				56E3680F1E85730D00F24E61 /* UserInfoServiceImplementation.m in Sources */,
 				C5924DDE1E8E5EE200790D01 /* UserWithAvatarCellObject.m in Sources */,
 				562B85F01E848D110075F962 /* RegistrationInfoValidator.m in Sources */,
@@ -2025,17 +2147,18 @@
 				C598C3BF1E8A6F42000C2465 /* OSUserInfoInteractor.m in Sources */,
 				417DCD191BFF5A945E4D6532 /* OSRegisterModuleAssemblyTests.m in Sources */,
 				C598C3BE1E8A6F42000C2465 /* OSUserInfoAssembly.m in Sources */,
+				56277E2F1E8EB05900A27543 /* ImageDownloaderImplementation.m in Sources */,
 				C51174631E8D3C2F00A29F13 /* OSAvatarsGalleryPresenter.m in Sources */,
 				56F69CBC1E859CCB0099A584 /* UserInfoPlainObject.m in Sources */,
 				56F69C971E85999C0099A584 /* UserInfoResponseObject.m in Sources */,
 				8EEEE613F9F83DCFA1F44B47 /* OSRegisterModuleViewControllerTests.m in Sources */,
+				56277E2E1E8EB05900A27543 /* DownloadAvatarOperation.m in Sources */,
 				C598C3C01E8A6F42000C2465 /* OSUserInfoPresenter.m in Sources */,
 				C559A0F4C40627334D183F5B /* OSRegisterModulePresenterTests.m in Sources */,
 				30D7B0D4FD3F99535E58573F /* OSRegisterModuleInteractorTests.m in Sources */,
 				C598C3351E891543000C2465 /* PonsomizerAssembly.m in Sources */,
 				C511746E1E8D423C00A29F13 /* AvatarCollectionCell.m in Sources */,
 				56E368081E8566CA00F24E61 /* UserDataResponseParserImplementation.m in Sources */,
-				561B8BC11E8D17EC00238561 /* OperationShcedulerImplementation.m in Sources */,
 				561B8B901E8BBCBF00238561 /* OSUserUpdateInfoViewController.m in Sources */,
 				D6B6D41C3B0DACE740576EAF /* OSRegisterModuleRouterTests.m in Sources */,
 				58FEE1B2A635EF7652C0AF39 /* OSUserInfoAssemblyTests.m in Sources */,
@@ -2045,7 +2168,9 @@
 				2C9A5E434B0B49FBA43EACCD /* OSUserInfoInteractorTests.m in Sources */,
 				C51174621E8D3C2F00A29F13 /* OSAvatarsGalleryInteractor.m in Sources */,
 				0F3D5C0241D9E324371B5A6A /* OSUserInfoRouterTests.m in Sources */,
+				56277E351E8EB05900A27543 /* OperationShcedulerImplementation.m in Sources */,
 				C51174641E8D3C2F00A29F13 /* OSAvatarsGalleryRouter.m in Sources */,
+				56277E341E8EB05900A27543 /* DownloadOperationBuilder.m in Sources */,
 				561B8B8F1E8BBCBF00238561 /* OSUserUpdateInfoRouter.m in Sources */,
 				F76B580054116BE60D2BCA8F /* OSUserUpdateInfoAssemblyTests.m in Sources */,
 				57BF94427CF7B08297380068 /* OSUserUpdateInfoViewControllerTests.m in Sources */,
@@ -2053,7 +2178,6 @@
 				F1D878A5D2896A1268B297AF /* OSUserUpdateInfoInteractorTests.m in Sources */,
 				5F64B99A0AEA5AA1184AE61D /* OSUserUpdateInfoRouterTests.m in Sources */,
 				4E6471843BE6DD51CC08D78E /* OSAllUsersAssemblyTests.m in Sources */,
-				561B8BD11E8D18B300238561 /* CompoundOperationBase.m in Sources */,
 				C52110EF1E8BD42A00A072BC /* OSAllUsersViewController.m in Sources */,
 				9EF62764C1E4EDFCBC95099A /* OSAllUsersViewControllerTests.m in Sources */,
 				C511744A1E8D0D3100A29F13 /* ROSPonsomizerImplementation.m in Sources */,
@@ -2063,7 +2187,9 @@
 				1BE257251265690B0B7AF937 /* OSAllUsersInteractorTests.m in Sources */,
 				00EF4C09591C38A935023839 /* OSAllUsersRouterTests.m in Sources */,
 				0FF1FB34D00C0C62C605D9E8 /* OSAvatarsGalleryAssemblyTests.m in Sources */,
+				56277E311E8EB05900A27543 /* AsyncOperation.m in Sources */,
 				6A7EA27BE7C4F96127E6ED9A /* OSAvatarsGalleryViewControllerTests.m in Sources */,
+				56277E301E8EB05900A27543 /* FileLoaderModel.m in Sources */,
 				4ED4A58D1EE22C2D985F86CA /* OSAvatarsGalleryPresenterTests.m in Sources */,
 				4CC295829E0712C2C4D06332 /* OSAvatarsGalleryInteractorTests.m in Sources */,
 				175B0AB32EB4918DC29EB369 /* OSAvatarsGalleryRouterTests.m in Sources */,
