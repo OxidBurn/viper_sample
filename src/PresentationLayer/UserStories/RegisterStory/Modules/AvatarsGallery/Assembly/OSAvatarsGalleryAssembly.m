@@ -35,7 +35,7 @@
                               [definition injectProperty: @selector(moduleInput)
                                                     with: [self presenterAvatarsGallery]];
                               [definition injectProperty: @selector(displayDataManager)
-                                                    with: [self adataDisplayManager]];
+                                                    with: [self avatarDataDisplayManager]];
                                                     
                           }];
 }
@@ -81,10 +81,10 @@
 
 #pragma mark - Internal -
 
-- (AvatarsDataDisplayManager*) adataDisplayManager
+- (AvatarsDataDisplayManager*) avatarDataDisplayManager
 {
     return [TyphoonDefinition withClass: [AvatarsDataDisplayManager class]
-                          configuration: ^(TyphoonDefinition *definition) {
+                          configuration: ^(TyphoonDefinition* definition) {
                 
                               [definition injectProperty: @selector(cellObjectBuilder)
                                                     with: [self avatarCellObjBuilder]];

@@ -46,7 +46,6 @@
 
 - (void) didRegisterWithSuccess
 {
-    //[self.interactor ]
     [self.view didFinishRegistrationWithSuccessOrError: nil];
 }
 
