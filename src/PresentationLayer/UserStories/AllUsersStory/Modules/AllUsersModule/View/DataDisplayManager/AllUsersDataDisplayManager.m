@@ -17,6 +17,7 @@
 #import "UserInfoPlainObject.h"
 #import "AllUserDataDisplayManagerOutput.h"
 #import "ParentUserCellObject.h"
+#import "BGTableViewRowActionWithImage.h"
 
 @interface AllUsersDataDisplayManager()
 
@@ -93,7 +94,6 @@
     [self updateTableViewModel: users];
 }
 
-
 #pragma mark - UITableViewDelegate methods -
 
 - (CGFloat)     tableView: (UITableView*) tableView
@@ -104,6 +104,42 @@
                               model: self.tableViewModel];
 }
 
+- (NSArray<UITableViewRowAction*>*) tableView: (UITableView*) tableView
+                 editActionsForRowAtIndexPath: (NSIndexPath*) indexPath
+{
+    UITableViewRowAction* favouriteAction = nil;
+    
+    favouriteAction = [BGTableViewRowActionWithImage rowActionWithStyle: UITableViewRowActionStyleNormal
+                                                                  title: @"      "
+                                                        backgroundColor: [UIColor colorWithRed: 0.289f
+                                                                                         green: 0.562f
+                                                                                          blue: 0.88f
+                                                                                         alpha: 1]
+                                                                  image: [UIImage imageNamed: @"libraryListFavoriteBtnIcon"]
+                                                          forCellHeight: 80.f
+                                                                handler: ^(UITableViewRowAction * rowAction, NSIndexPath * indexPath) {
+                                                                    
+                                                                    NSLog(@"lol ");
+                                                                    
+                                                                }];
+    
+    
+    UITableViewRowAction* tagAction = nil;
+    
+    tagAction = [BGTableViewRowActionWithImage rowActionWithStyle: UITableViewRowActionStyleNormal
+                                                            title: @"     "
+                                                  backgroundColor: [UIColor colorWithRed: 0.289f
+                                                                                   green: 0.562f
+                                                                                    blue: 0.88f
+                                                                                   alpha: 1]
+                                                            image: [UIImage imageNamed: @"libraryListTagBtnIcon"]
+                                                    forCellHeight: 80.f
+                                                          handler: ^(UITableViewRowAction * rowAction, NSIndexPath * indexPath) {
+                                                              
+                                                          }];
+    
+    return @[ tagAction, favouriteAction ];
+}
 
 #pragma mark - Internal -
 
@@ -116,7 +152,7 @@
 
 - (void) setupTableViewActions
 {
-    self.tableViewActions = [[NITableViewActions alloc] initWithTarget:self];
+    self.tableViewActions = [[NITableViewActions alloc] initWithTarget: self];
     
     @weakify(self);
     
@@ -132,5 +168,6 @@
     [self.tableViewActions attachToClass: [ParentUserCellObject class]
                                 tapBlock: userListTapActionBlock];
 }
+
 
 @end

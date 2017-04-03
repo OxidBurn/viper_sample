@@ -16,5 +16,6 @@ target 'ViperSampleProject' do
   pod 'Nimbus/Models', :git => 'https://github.com/rambler-ios/nimbus'
   pod 'Nimbus/Collections', :git => 'https://github.com/rambler-ios/nimbus'
   pod 'AFNetworking'
+  pod 'BGTableViewRowActionWithImage'
   
 end
