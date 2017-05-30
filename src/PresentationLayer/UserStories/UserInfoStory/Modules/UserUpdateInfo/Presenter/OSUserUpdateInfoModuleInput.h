@@ -10,6 +10,9 @@
 @import Foundation;
 #import <ViperMcFlurry/ViperMcFlurry.h>
 
+// Classes
+#import "UserInfoPlainObject.h"
+
 // Protocols
 @protocol OSUserUpdateInfoModuleInput <RamblerViperModuleInput>
 
@@ -18,6 +21,6 @@
 
  Method initialized start configuration of current module
  */
-- (void) configureModule;
+- (void) configureModuleWithUser: (UserInfoPlainObject*) user;
 
 @end

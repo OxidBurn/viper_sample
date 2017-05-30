@@ -10,10 +10,17 @@
 
 // Classes
 #import "OSUserInfoInteractorOutput.h"
+#import "UserInfoService.h"
+#import "ROSPonsomizer.h"
 
 @implementation OSUserInfoInteractor
 
 
 #pragma mark - Methods OSUserInfoInteractorInput -
+
+- (UserInfoPlainObject*) obtainUpdatedUserInfoWithUserName: (NSString*) username
+{
+    return [self.ponsomizer convertObject: [self.userInfoService obtainUserInfoMOWithUsername: username]];
+}
 
 @end

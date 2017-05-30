@@ -36,11 +36,20 @@
                     </view>
                     <connections>
                         <outlet property="allUsersTableView" destination="8sU-Ig-dJ0" id="Pj8-V5-iUV"/>
+                        <segue destination="ZGF-wb-YaQ" kind="show" identifier="ShowSingleUser" id="gxl-G0-olH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Bc0-j5-jXx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-105" y="5"/>
+        </scene>
+        <!--OSUserInfoModuleStoryboardID-->
+        <scene sceneID="2zK-bA-ZbA">
+            <objects>
+                <viewControllerPlaceholder storyboardName="UserInfo" referencedIdentifier="OSUserInfoModuleStoryboardID" id="ZGF-wb-YaQ" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xkf-z4-p1w" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="668" y="-71"/>
         </scene>
     </scenes>
 </document>

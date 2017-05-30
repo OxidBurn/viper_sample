@@ -5,6 +5,7 @@ platform :ios, '10.0'
 inhibit_all_warnings!
 
 target 'ViperSampleProject' do
+
   pod 'Typhoon'
   pod 'OCMock'
   pod 'RamblerTyphoonUtils'
@@ -14,4 +15,6 @@ target 'ViperSampleProject' do
   pod 'MagicalRecord'
   pod 'Nimbus/Models', :git => 'https://github.com/rambler-ios/nimbus'
   pod 'Nimbus/Collections', :git => 'https://github.com/rambler-ios/nimbus'
+  pod 'AFNetworking'
+  
 end

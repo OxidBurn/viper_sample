@@ -11,13 +11,17 @@
 
 //Classes
 @class UsersCellObjectBuilder;
+@class UserInfoPlainObject;
 
 //Protocols
 #import "DataDisplayManager.h"
+@protocol AllUserDataDisplayManagerOutput;
 
 @interface AllUsersDataDisplayManager : NSObject <DataDisplayManager, UITableViewDelegate>
 
 @property (nonatomic, strong) UsersCellObjectBuilder* cellObjectBuilder;
+
+@property (nonatomic, weak) id<AllUserDataDisplayManagerOutput> output;
 
 - (void) updateTableViewModelWithUsers: (NSArray*) users;
 

@@ -9,6 +9,11 @@
 // Frameworks
 @import Foundation;
 
+// Classes
+#import "UserInfoPlainObject.h"
+
 @protocol OSUserUpdateInfoInteractorInput <NSObject>
+
+- (void) updateUserInfoInDB: (UserInfoPlainObject*) userInfo;
 
 @end

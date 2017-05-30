@@ -12,6 +12,7 @@
 // Classes
 #import "UserInfoResponseObject.h"
 #import "UserInfoModelObject.h"
+#import "UserInfoPlainObject.h"
 
 ///-------------------------------------------------
 /// @name Completion block definition
@@ -40,6 +41,18 @@ typedef void(^CompletionUpdateBlock)(BOOL isUpdate);
  */
 - (void) saveOrUpdateUserInfoInDB: (UserInfoResponseObject*) info
                    withCompletion: (CompletionUpdateBlock)   completion;
+
+
+/**
+ @author Nikolay Chaban
+ 
+ Method for updating user information in database
+
+ @param info updated object with user info
+ @param completion completion block with success save parameter
+ */
+- (void) updateUserInfoInDB: (UserInfoPlainObject*)  info
+             withCompletion: (CompletionUpdateBlock) completion;
 
 
 /**

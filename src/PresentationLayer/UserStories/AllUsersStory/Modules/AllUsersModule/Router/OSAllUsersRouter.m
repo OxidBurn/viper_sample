@@ -11,9 +11,25 @@
 // Frameworks
 #import <ViperMcFlurry/ViperMcFlurry.h>
 
+// Classes
+#import "UserInfoPlainObject.h"
+
+//Protocold
+#import "OSUserInfoModuleInput.h"
+
 @implementation OSAllUsersRouter
 
 
 #pragma mark - Methods OSAllUsersRouterInput -
+
+- (void) openUserInfoModuleWithUser: (UserInfoPlainObject*) user
+{
+    [[self.transitionHandler openModuleUsingSegue: @"ShowSingleUser"] thenChainUsingBlock: ^id<RamblerViperModuleOutput> (id<OSUserInfoModuleInput> moduleInput) {
+        
+        [moduleInput configureModuleWithUser: user];
+        
+        return nil;
+    }];
+}
 
 @end

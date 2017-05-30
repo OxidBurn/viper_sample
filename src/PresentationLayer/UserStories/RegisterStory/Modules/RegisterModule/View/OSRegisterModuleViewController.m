@@ -20,10 +20,15 @@
 @property (weak, nonatomic) IBOutlet UITextField* confirmPasswordField;
 @property (weak, nonatomic) IBOutlet UITextField* fullNameField;
 @property (weak, nonatomic) IBOutlet UITextField* emailField;
+@property (weak, nonatomic) IBOutlet UIImageView *avatarImgView;
+@property (nonatomic, strong) NSString* avatarPath;
+
 
 // methods
 
 - (IBAction) didRegisterButtonClicked: (UIButton*) sender;
+
+- (IBAction) didTapSelectAvatar: (UITapGestureRecognizer*) sender;
 
 @end
 
@@ -55,7 +60,7 @@
 
 - (void) setupInitialState 
 {
-	// In this method there is setup of the initial view parameter, which depend from controller life cycle (creation of elements, animation, etc.)
+	self.avatarImgView.userInteractionEnabled = YES;
 }
 
 - (NSString*) obtainUserName
@@ -83,6 +88,11 @@
     return self.emailField.text;
 }
 
+- (NSString*) obtainAvatar
+{
+    return self.avatarPath;
+}
+
 - (void) didFinishRegistrationWithSuccessOrError: (NSError*) error
 {
     NSString* title   = @"";
@@ -104,12 +114,23 @@
                                        fromController: self];
 }
 
+- (void) updateAvatarPath: (NSString*) avatarPath
+{
+    self.avatarImgView.image = [UIImage imageNamed: avatarPath];
+    self.avatarPath = avatarPath;
+}
+
 
 #pragma mark - Actions -
 
 - (IBAction) didRegisterButtonClicked: (UIButton*) sender
 {
     [self.output sendRegistrationRequest];
+}
+
+- (IBAction) didTapSelectAvatar: (UITapGestureRecognizer*) sender
+{
+    [self.output didTapAvatarImage];
 }
 
 @end

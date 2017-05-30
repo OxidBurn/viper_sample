@@ -9,6 +9,11 @@
 // Frameworks
 @import Foundation;
 
+// Classes
+@class UserInfoPlainObject;
+
 @protocol OSUserInfoInteractorInput <NSObject>
+
+- (UserInfoPlainObject*) obtainUpdatedUserInfoWithUserName: (NSString*) username;
 
 @end

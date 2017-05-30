@@ -18,4 +18,6 @@
 
 @property (nonatomic, strong) NSString* email;
 
+@property (nonatomic, strong) NSString* avatar;
+
 @end

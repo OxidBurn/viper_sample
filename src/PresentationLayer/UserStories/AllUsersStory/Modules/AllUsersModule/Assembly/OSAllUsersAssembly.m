@@ -102,9 +102,10 @@
                               
                               [definition injectProperty: @selector(cellObjectBuilder)
                                                     with: [self cellObjectBuilder]];
+                              [definition injectProperty: @selector(output)
+                                                    with: [self viewAllUsers]];
                           }];
 }
-
 
 - (UsersCellObjectBuilder*) cellObjectBuilder
 {

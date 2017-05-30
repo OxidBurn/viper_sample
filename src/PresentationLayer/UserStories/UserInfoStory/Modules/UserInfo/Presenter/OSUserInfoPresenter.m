@@ -12,8 +12,9 @@
 #import "OSUserInfoViewInput.h"
 #import "OSUserInfoInteractorInput.h"
 #import "OSUserInfoRouterInput.h"
+#import "OSUserUpdateInfoModuleOutput.h"
 
-@interface OSUserInfoPresenter()
+@interface OSUserInfoPresenter() <OSUserUpdateInfoModuleOutput>
 
 // properties
 
@@ -53,10 +54,30 @@
      Setup initial state of the view with passing user parameter
      */
     [self.view setupInitialStateWithUser: self.presenterStateStorage.userInfo];
+    
+    /**
+     @author Nikolay Chaban
+     
+     Configuration of the embed container view of the Update User Info module
+     */
+    [self.router configureUpdateUserInfoModuleWithInfo: self.presenterStateStorage.userInfo
+                                      withModuleOutput: self];
 }
 
 
 #pragma mark - Methods OSUserInfoInteractorOutput -
+
+
+
+
+#pragma mark - Methods OSUserUpdateInfoModuleOutput -
+
+- (void) didUpdateUserInfo
+{
+    self.presenterStateStorage.userInfo = [self.interactor obtainUpdatedUserInfoWithUserName: self.presenterStateStorage.userInfo.username];
+    
+    [self.view updateUserInfo: self.presenterStateStorage.userInfo];
+}
 
 
 @end

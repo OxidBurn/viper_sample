@@ -8,10 +8,14 @@
 
 #import "OSUserInfoViewController.h"
 
+// Frameworks
+#import <RamblerSegues/RamblerSegues.h>
+
 // Classes
 #import "OSUserInfoViewOutput.h"
+#import "OSUserUpdateInfoModuleInput.h"
 
-@interface OSUserInfoViewController()
+@interface OSUserInfoViewController() <RamblerEmbedSegueViewContainer>
 
 // properties
 @property (weak, nonatomic) IBOutlet UIImageView* userImgView;
@@ -21,6 +25,8 @@
 @property (weak, nonatomic) IBOutlet UILabel *emailLabel;
 
 @property (weak, nonatomic) IBOutlet UILabel *userNameLabel;
+
+@property (weak, nonatomic) IBOutlet UIView* updateInfoView;
 
 // methods
 
@@ -71,9 +77,24 @@
 - (void) setupInitialStateWithUser: (UserInfoPlainObject*) user
 {
     self.fullnameLabel.text = user.fullName;
-    self.userImgView.image  = [UIImage imageNamed: user.imagePath];
-    self.emailLabel.text = user.email;
+    self.userImgView.image  = [UIImage imageNamed : user.imagePath];
+    self.emailLabel.text    = user.email;
     self.userNameLabel.text = user.username;
+}
+
+- (void) updateUserInfo: (UserInfoPlainObject*) user
+{
+    self.fullnameLabel.text = user.fullName;
+    self.emailLabel.text    = user.email;
+    self.userNameLabel.text = user.username;
+}
+
+
+#pragma mark - Methods RamblerSegue -
+
+- (UIView*) viewForEmbedIdentifier: (NSString*) embedIdentifier
+{
+    return self.updateInfoView;
 }
 
 @end

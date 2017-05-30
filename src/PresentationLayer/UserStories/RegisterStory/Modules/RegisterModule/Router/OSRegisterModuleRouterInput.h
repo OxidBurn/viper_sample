@@ -9,7 +9,11 @@
 // Frameworks
 @import Foundation;
 
+//Classes
+#import "OSAvatarsGalleryModuleOutput.h"
+
 @protocol OSRegisterModuleRouterInput <NSObject>
 
+- (void) openSelectAvatarModuleWithModuleOutput: (id <OSAvatarsGalleryModuleOutput>) moduleOutput;
 
 @end

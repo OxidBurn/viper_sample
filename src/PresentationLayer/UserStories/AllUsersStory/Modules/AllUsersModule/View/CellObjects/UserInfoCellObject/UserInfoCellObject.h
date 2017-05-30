@@ -17,11 +17,9 @@
 
 //Classes
 #import "UserInfoPlainObject.h"
+#import "ParentUserCellObject.h"
 
-@interface UserInfoCellObject : NSObject <NICellObject>
+@interface UserInfoCellObject : ParentUserCellObject <NICellObject>
 
-@property (nonatomic, strong, readonly) UserInfoPlainObject* user;
-
-+ (instancetype) objectWithUser: (UserInfoPlainObject*) user;
 
 @end

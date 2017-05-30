@@ -18,6 +18,7 @@
 #import "OSUserInfoRouter.h"
 #import "PonsomizerAssembly.h"
 #import "UserInfoPresenterStateStorage.h"
+#import "ServiceComponents.h"
 
 
 @implementation OSUserInfoAssembly
@@ -88,6 +89,9 @@
                                */
                               [definition injectProperty: @selector(ponsomizer)
                                                     with: [self.ponsomizerAssembly ponsomizer]];
+                              
+                              [definition injectProperty: @selector(userInfoService)
+                                                    with: [self.serviceComponents userInfoService]];
                                                     
                           }];
 }

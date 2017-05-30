@@ -32,7 +32,10 @@
 - (NSString*) obtainUserConfirmPassword;
 - (NSString*) obtainFullName;
 - (NSString*) obtainEmail;
+- (NSString*) obtainAvatar;
 
 - (void) didFinishRegistrationWithSuccessOrError: (NSError*) error;
+
+- (void) updateAvatarPath: (NSString*) avatarPath;
 
 @end

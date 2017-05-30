@@ -8,10 +8,10 @@
 
 //Frameworks
 #import <UIKit/UIKit.h>
-#import "NICellFactory.h"
 
 //Classes
 #import "UserInfoCellObject.h"
+#import "NICellFactory.h"
 
 @interface UserInfoCell : UITableViewCell <NICell>
 
